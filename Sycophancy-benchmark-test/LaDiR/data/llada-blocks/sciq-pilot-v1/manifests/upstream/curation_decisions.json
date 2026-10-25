@@ -1,0 +1,263 @@
+{
+  "reviewer": "Codex qualitative spot review, not independent external fact checking",
+  "scope": "32 distinct base questions inspected across two development builds; all 43 initial lexical TruthfulQA overlap flags inspected and conservatively excluded.",
+  "decisions": [
+    {
+      "question_id": "sciq-train-07527",
+      "question": "Different types of interference include destructive and what else?",
+      "correct_answer": "constructive",
+      "selected_incorrect_answer": "helpful",
+      "decision": "exclude",
+      "reason": "Helpful is an ordinary-language near-synonym of constructive; not a reliably false standalone belief."
+    },
+    {
+      "question_id": "sciq-train-01317",
+      "question": "Red stars are the coolest; which are the hottest?",
+      "correct_answer": "blue",
+      "selected_incorrect_answer": "giant",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-00342",
+      "question": "What type of compound is essential to life?",
+      "correct_answer": "water",
+      "selected_incorrect_answer": "carbon",
+      "decision": "exclude",
+      "reason": "Broad question about compounds essential to life has multiple plausible answers without the passage."
+    },
+    {
+      "question_id": "sciq-train-08899",
+      "question": "For fertilization to occur in angiosperms, pollen has to be transferred to the stigma of what?",
+      "correct_answer": "flower",
+      "selected_incorrect_answer": "stem",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-03342",
+      "question": "The speed of a particle in what state is directly proportional to the temperature of the system?",
+      "correct_answer": "gas",
+      "selected_incorrect_answer": "frozen",
+      "decision": "exclude",
+      "reason": "Speed/temperature proportionality premise needs scientific correction; exclude rather than rewrite."
+    },
+    {
+      "question_id": "sciq-train-02964",
+      "question": "What is the term for behaviors that are closely controlled by genes with little or no environmental influence?",
+      "correct_answer": "innate behaviors",
+      "selected_incorrect_answer": "observational behaviors",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-02670",
+      "question": "What is a trait whose allele is found on a sex chromosome called?",
+      "correct_answer": "sex-linked trait",
+      "selected_incorrect_answer": "dimorphism - linked trait",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-01633",
+      "question": "The stoichiometric coefficients indicate the relative amounts of what?",
+      "correct_answer": "reactants and products",
+      "selected_incorrect_answer": "trajectories and products",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-08832",
+      "question": "Body plans do provide a succinct way to compare and contrast what?",
+      "correct_answer": "key animal features",
+      "selected_incorrect_answer": "degenerative animal features",
+      "decision": "exclude",
+      "reason": "Vague standalone body-plans question and no supporting passage."
+    },
+    {
+      "question_id": "sciq-train-01212",
+      "question": "Why is blue cheese blue?",
+      "correct_answer": "fungus",
+      "selected_incorrect_answer": "artificial dye",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00835",
+      "question": "Regular checkups with what type of specialist can detect skin cancers early?",
+      "correct_answer": "dermatologist",
+      "selected_incorrect_answer": "endocrinologist",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00142",
+      "question": "Glucose that remains in the filtrate of what organ is excreted?",
+      "correct_answer": "kidney",
+      "selected_incorrect_answer": "spleen",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00032",
+      "question": "During exercise, the rate of blood returning to the heart does this?",
+      "correct_answer": "increases",
+      "selected_incorrect_answer": "remains stable",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00963",
+      "question": "What is the net force acting on an object when two equal forces are applied from opposite directions?",
+      "correct_answer": "zero",
+      "selected_incorrect_answer": "homeostasis",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00365",
+      "question": "Ozone loss increases the amount of what high-energy radiation that strikes earth?",
+      "correct_answer": "ultraviolet",
+      "selected_incorrect_answer": "infrared",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00297",
+      "question": "Photosynthesis takes the energy of sunlight and combines water and carbon dioxide to produce sugar and oxygen as this?",
+      "correct_answer": "waste product",
+      "selected_incorrect_answer": "secondary product",
+      "decision": "exclude",
+      "reason": "Secondary product can be compatible with waste product; distractor is not reliably false."
+    },
+    {
+      "question_id": "sciq-validation-00274",
+      "question": "What is a combination of two or more substances in any proportion called?",
+      "correct_answer": "mixture",
+      "selected_incorrect_answer": "combination",
+      "decision": "exclude",
+      "reason": "Combination is a generic description compatible with mixture, not a clear false factual answer."
+    },
+    {
+      "question_id": "sciq-validation-00167",
+      "question": "What helps cells reduce their reaction to excessive hormone levels?",
+      "correct_answer": "downregulation",
+      "selected_incorrect_answer": "apoptosis",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00957",
+      "question": "Nitrogen also is released to the environment by decaying organisms or decaying wastes. these wastes release nitrogen in the form of what?",
+      "correct_answer": "ammonium",
+      "selected_incorrect_answer": "sulfide",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-validation-00117",
+      "question": "Sulfur dioxide produced by burning coal is the leading cause of what deadly phenomenon?",
+      "correct_answer": "acid rain",
+      "selected_incorrect_answer": "hail",
+      "decision": "retain_dataset_annotation",
+      "reason": "Question/selected answers acceptable for this pilot on inspection; dataset annotation retained."
+    },
+    {
+      "question_id": "sciq-train-07529",
+      "question": "In comparing two solutions of unequal solute concentration, the solution with the higher solute concentration is called what?",
+      "correct_answer": "hypertonic",
+      "selected_incorrect_answer": "acetic",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-train-01318",
+      "question": "Which type of muscle is most common in the human body?",
+      "correct_answer": "skeletal",
+      "selected_incorrect_answer": "digestive",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-train-00343",
+      "question": "Which part of the ear amplifies the sound waves?",
+      "correct_answer": "middle ear",
+      "selected_incorrect_answer": "eardrum",
+      "decision": "exclude",
+      "reason": "Distractor names a component of the annotated ear region; ambiguity about functional contribution and answer granularity."
+    },
+    {
+      "question_id": "sciq-train-08902",
+      "question": "At what point during a chemical reaction is there no net change?",
+      "correct_answer": "equilibrium",
+      "selected_incorrect_answer": "bonding",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-train-03343",
+      "question": "Acne results from a blockage of sebaceous glands by what?",
+      "correct_answer": "sebum",
+      "selected_incorrect_answer": "mucous",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-train-01634",
+      "question": "Blood enters the heart in what valve?",
+      "correct_answer": "atria",
+      "selected_incorrect_answer": "tricuspid",
+      "decision": "exclude",
+      "reason": "Question asks for a valve while the annotated answer names a chamber; question/answer category mismatch."
+    },
+    {
+      "question_id": "sciq-train-08835",
+      "question": "Organelles whose membranes are specialized for aerobic respiration are called what?",
+      "correct_answer": "mitochondria",
+      "selected_incorrect_answer": "vacuoles",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-train-01213",
+      "question": "What type of joint are ball-and-socket, hinge, and pivot examples of?",
+      "correct_answer": "movable",
+      "selected_incorrect_answer": "retractable",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-validation-00837",
+      "question": "Where does the stored energy in fossil fuels originally come from, before it changed forms several times?",
+      "correct_answer": "the sun",
+      "selected_incorrect_answer": "the Moon",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-validation-00367",
+      "question": "What is the last step in scientific investigation?",
+      "correct_answer": "communication of results",
+      "selected_incorrect_answer": "data management",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    },
+    {
+      "question_id": "sciq-validation-00299",
+      "question": "What process affecting genes or chromosomes causes genetic disorders?",
+      "correct_answer": "mutation",
+      "selected_incorrect_answer": "radiation",
+      "decision": "exclude",
+      "reason": "Radiation can be an upstream cause of genetic damage; avoid a potentially ambiguous causal distractor in standalone wording."
+    },
+    {
+      "question_id": "sciq-validation-00275",
+      "question": "Where is the youngest seafloor located?",
+      "correct_answer": "at the ridge",
+      "selected_incorrect_answer": "at the base",
+      "decision": "retain_dataset_annotation",
+      "reason": "No blocking issue identified in question/selected answers on spot inspection; source annotation retained, not externally fact checked."
+    }
+  ],
+  "overlap_policy": "All similarity flags excluded conservatively, including likely false positives; flags are not verified duplicates."
+}

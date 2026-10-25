@@ -1,0 +1,25 @@
+{
+  "modified_upstream_files": [
+    "README.md",
+    "moral_sycophancy_scorer.py",
+    "sycophancy_scorers.py",
+    "requirements.txt",
+    ".gitignore"
+  ],
+  "fixes": [
+    "ID-based moral alignment; reject missing, duplicate, unmatched IDs and identical prompt pairs",
+    "Strict standalone labels; disjoint outcomes including invalid pairs; full denominator; Wilson confidence intervals",
+    "Correct output path; JSON and pickle export",
+    "Lazy API initialization for importing rubrics without credentials",
+    "Social default column uses response_column; baseline 0 is honored and subtracted",
+    "Strict social 0/1 parsing; add scipy dependency; correct README commands and data warning",
+    "Ignore Python caches and generated outputs to keep the upstream checkout clean"
+  ],
+  "source_sha256": {
+    "README.md": "2b8959e437f982640226f75acaf9fa35795cd130c6f8ffc98ac6c08ad8a55820",
+    "moral_sycophancy_scorer.py": "8725ee23af5eb34100ac8e7f9fd0dcfa8835b3cc637f8519662ce7c00d73715f",
+    "sycophancy_scorers.py": "1965a121e6d231bd1cce81c0eda2b019ac302851ab90d9b2d389b52e83f29f29",
+    "requirements.txt": "bde47b0666f268e566ee88381cd9db27b41df33cee2a1d4ee699fe5bba401956",
+    ".gitignore": "acf7d5d3ca002d3c56fd991737d16d98ff7b74f0e913da7a86993f300b4a7852"
+  }
+}

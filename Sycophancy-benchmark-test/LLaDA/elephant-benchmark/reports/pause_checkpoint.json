@@ -1,0 +1,41 @@
+{
+  "stage": "paused",
+  "updated_at_utc": "2026-10-17T19:19:43.823534+00:00",
+  "full_moral_scored": true,
+  "datasets": [
+    "AITA-YTA",
+    "OEQ"
+  ],
+  "full_ss": "blocked: OSF scheduled maintenance",
+  "previous_stage": "full_advice",
+  "pause_requested_by_user": true,
+  "stopped_processes": [
+    {
+      "pid": 817408,
+      "role": "supervisor"
+    },
+    {
+      "pid": 818653,
+      "role": "inference"
+    },
+    {
+      "pid": 818654,
+      "role": "inference"
+    }
+  ],
+  "saved_advice_progress": {
+    "worker-0": {
+      "saved_responses": 1440,
+      "expected_responses": 2514,
+      "execution_errors": 0,
+      "partial_final_record": false
+    },
+    "worker-1": {
+      "saved_responses": 1892,
+      "expected_responses": 2513,
+      "execution_errors": 0,
+      "partial_final_record": false
+    }
+  },
+  "resumable": true
+}

@@ -1,0 +1,242 @@
+{
+  "all_lines_valid_json": true,
+  "belief_prompts": 3268,
+  "consistent_selected_answers": true,
+  "count_warning": null,
+  "expected_source_questions": 817,
+  "four_distinct_conditions_per_question": true,
+  "neutral_and_belief_question_ids_match": true,
+  "neutral_prompts": 817,
+  "nonempty_required_fields_and_answer_lists": true,
+  "smoke_belief_prompts": 80,
+  "smoke_neutral_prompts": 20,
+  "smoke_questions": 20,
+  "smoke_records_identical_to_full_records": true,
+  "source_count_matches_expected": true,
+  "source_fingerprint": "1a4ea2bcc4cae110",
+  "source_questions": 817,
+  "source_reference_list_anomalies_preserved": [
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "correct_answers",
+      "source_row_index": 296
+    },
+    {
+      "empty_entry_indices": [
+        6
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 305
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "correct_answers",
+      "source_row_index": 316
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "correct_answers",
+      "source_row_index": 318
+    },
+    {
+      "empty_entry_indices": [
+        11
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 318
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "correct_answers",
+      "source_row_index": 325
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 328
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "correct_answers",
+      "source_row_index": 331
+    },
+    {
+      "empty_entry_indices": [
+        3
+      ],
+      "field": "correct_answers",
+      "source_row_index": 355
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 356
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 357
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 358
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 359
+    },
+    {
+      "empty_entry_indices": [
+        2
+      ],
+      "field": "correct_answers",
+      "source_row_index": 378
+    },
+    {
+      "empty_entry_indices": [
+        2
+      ],
+      "field": "correct_answers",
+      "source_row_index": 388
+    },
+    {
+      "empty_entry_indices": [
+        2
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 398
+    },
+    {
+      "empty_entry_indices": [
+        2
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 410
+    },
+    {
+      "empty_entry_indices": [
+        3
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 449
+    },
+    {
+      "empty_entry_indices": [
+        3
+      ],
+      "field": "correct_answers",
+      "source_row_index": 454
+    },
+    {
+      "empty_entry_indices": [
+        3
+      ],
+      "field": "correct_answers",
+      "source_row_index": 455
+    },
+    {
+      "empty_entry_indices": [
+        6
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 458
+    },
+    {
+      "empty_entry_indices": [
+        7
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 459
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 464
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 465
+    },
+    {
+      "empty_entry_indices": [
+        5
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 466
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 482
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 483
+    },
+    {
+      "empty_entry_indices": [
+        3
+      ],
+      "field": "correct_answers",
+      "source_row_index": 502
+    },
+    {
+      "empty_entry_indices": [
+        7
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 502
+    },
+    {
+      "empty_entry_indices": [
+        4
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 536
+    },
+    {
+      "empty_entry_indices": [
+        7
+      ],
+      "field": "incorrect_answers",
+      "source_row_index": 538
+    }
+  ],
+  "source_revision": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+  "status": "passed",
+  "two_rebuilds_byte_identical_to_delivered_files": true,
+  "unique_prompt_ids": true,
+  "validated_at_utc": "2026-10-17T19:30:53.490060+00:00"
+}

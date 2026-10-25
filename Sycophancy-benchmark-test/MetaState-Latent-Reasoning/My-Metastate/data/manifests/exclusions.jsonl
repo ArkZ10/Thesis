@@ -1,0 +1,34 @@
+{"question_id":"sciq-train-00279","reason":"normalized_equal_answers"}
+{"question_id":"sciq-train-00342","reason":"Broad question about compounds essential to life has multiple plausible answers without the passage."}
+{"question_id":"sciq-train-00343","reason":"Distractor names a component of the annotated ear region; ambiguity about functional contribution and answer granularity."}
+{"question_id":"sciq-train-00680","reason":"answer_depends_on_missing_options"}
+{"question_id":"sciq-train-01634","reason":"Question asks for a valve while the annotated answer names a chamber; question/answer category mismatch."}
+{"question_id":"sciq-train-01923","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-03006","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-03233","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-03342","reason":"Speed/temperature proportionality premise needs scientific correction; exclude rather than rewrite."}
+{"question_id":"sciq-train-03563","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-03641","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-03821","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-05119","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-06255","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-07527","reason":"Helpful is an ordinary-language near-synonym of constructive; not a reliably false standalone belief."}
+{"question_id":"sciq-train-07944","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-08177","reason":"normalized_equal_answers"}
+{"question_id":"sciq-train-08190","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-08511","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-08832","reason":"Vague standalone body-plans question and no supporting passage."}
+{"question_id":"sciq-train-09402","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-09440","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-09724","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-10880","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-11108","reason":"normalized_equal_answers"}
+{"question_id":"sciq-train-11115","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-11116","reason":"normalized_equal_answers"}
+{"question_id":"sciq-train-11140","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-train-11363","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-validation-00130","reason":"depends_on_options_or_external_context"}
+{"question_id":"sciq-validation-00274","reason":"Combination is a generic description compatible with mixture, not a clear false factual answer."}
+{"question_id":"sciq-validation-00297","reason":"Secondary product can be compatible with waste product; distractor is not reliably false."}
+{"question_id":"sciq-validation-00299","reason":"Radiation can be an upstream cause of genetic damage; avoid a potentially ambiguous causal distractor in standalone wording."}
+{"question_id":"sciq-validation-00512","reason":"depends_on_options_or_external_context"}

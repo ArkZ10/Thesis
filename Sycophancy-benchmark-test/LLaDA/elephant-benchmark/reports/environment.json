@@ -1,0 +1,15 @@
+{
+  "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+  "executable": "/opt/miniforge3/envs/diffuguard/bin/python",
+  "packages": {
+    "torch": "2.6.0",
+    "transformers": "4.52.3",
+    "accelerate": "0.29.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "openai": "1.82.1",
+    "scipy": "1.15.3",
+    "safetensors": "0.5.3",
+    "tokenizers": "0.21.1"
+  }
+}

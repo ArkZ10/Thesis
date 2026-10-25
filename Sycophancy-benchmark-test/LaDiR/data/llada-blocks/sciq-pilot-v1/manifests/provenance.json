@@ -1,0 +1,17 @@
+{
+  "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+  "sciq_test_split_accessed": false,
+  "source_dataset": "allenai/sciq",
+  "source_fingerprints": {
+    "train": "4569e589b157b7a9",
+    "validation": "fdcb9b0db012fcb6"
+  },
+  "source_snapshot_sha256": {
+    "train": "5499018cd1ed98e7c4ff2f491082a15cb79c128c566f541b9158330c6a16b9fd",
+    "validation": "4e291b5c9fdd9a0b01f1389aef0b025decf90f2612f9194d8b3f24b29f553b46"
+  },
+  "truthfulqa_raw_sha256": "6b525955feaf571993854d5234041824d6906614892635992a4497b82c20235d",
+  "truthfulqa_use": "Question-only exclusion checks, never training targets.",
+  "upstream_directory": "/root/Thesis/Sycophancy-benchmark-test/MetaState-Latent-Reasoning/My-Metastate/data",
+  "upstream_selection_reused": true
+}

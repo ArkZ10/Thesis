@@ -1,0 +1,73 @@
+{
+  "checks": [
+    "unique_ids",
+    "five_distinct_conditions",
+    "consistent_answers",
+    "disjoint_question_families",
+    "truthfulqa_overlap_exclusion",
+    "exact_messages",
+    "assistant_boundary",
+    "answer_and_end_token_supervision",
+    "prompt_labels_minus_100",
+    "length_limit",
+    "tiny_subset_identity",
+    "independent_rebuild_json_bytes_and_token_arrays"
+  ],
+  "counts": {
+    "development": {
+      "examples": 1000,
+      "max_tokens": 116,
+      "questions": 200,
+      "supervised_tokens": 3505
+    },
+    "train": {
+      "examples": 5000,
+      "max_tokens": 151,
+      "questions": 1000,
+      "supervised_tokens": 16930
+    }
+  },
+  "file_sha256": {
+    "manifests/curation_decisions.json": "90b3f8113761caf632e78f29b872a29a69908fd3e0f23347ce2345db7edd5bbb",
+    "manifests/duplicate_exclusions.jsonl": "9c7810d163f4f1730c82b405c393f78fdb1f7be5f0b40b28dc5cf03d8701a291",
+    "manifests/exclusions.jsonl": "02ae3a5359b2494a65faad396fddde6bdfdc76e88dc8a52b218af2865dba01af",
+    "manifests/near_duplicate_pairs.jsonl": "1b51c3d049942735f3e3b04d9fc5713b0f9ae3233e7feb64e6b7289e6dd5009a",
+    "manifests/policy.json": "ac5a7f761bf26249f0b89b66097aba0c8f68057a4e93a86978664698989abc2e",
+    "manifests/preview.jsonl": "6ce9a445eeec6d73a56b277e728446f227b2e42fee75c87cc99591c20093df2c",
+    "manifests/quality_review_candidates.jsonl": "df2a6a66ffa0e0b764992f9eef121f21582283f910cfb3032c97a371e15ea4ba",
+    "manifests/selection.json": "7d563aeecffd48bc690d9eb2e4d9fe3c9e462883d80b72ce16180402393cfab9",
+    "manifests/source.json": "be6271cbe11bd08f9dbc905a855bf13ead52efec4ddc8305e1435e6bf5c53baa",
+    "manifests/truthfulqa_overlap.jsonl": "5e428a54e518816eea064b73ac6a0ec30802e109ff03d1b2bf2ab9da6aaf52ff",
+    "processed/development.jsonl": "75e3ba0a08e740e6bffe761b5b4276223173be684bef765b46bafb3280c2d2f8",
+    "processed/tiny/development.jsonl": "afb1a99bfc098bbe7910c012da9bfdf89ac943a827c7a6239804689782d063d0",
+    "processed/tiny/train.jsonl": "d914917b9068de6d89393e64d8963123180c054593d4e433ab7d90c415da2e62",
+    "processed/token_arrays/development.jsonl": "0ecf3744a34a99036e5141848ad9aa77e94a6be51e5025f5a009322d207ca52d",
+    "processed/token_arrays/train.jsonl": "3c51da949ea3bddb4ed2c9a05f32dbf7510bf370e01e507b5c27cd9f38f27fc9",
+    "processed/train.jsonl": "f1912f4da79cd2d7e2d1b7526efcdee704683b19cfe02f04587c1ad3db5b8fb8",
+    "raw/sciq/test.jsonl": "de6741d4c94f576a6c8258ecadbe166aefe55f27d27dc9c338039c240a614a77",
+    "raw/sciq/train.jsonl": "5499018cd1ed98e7c4ff2f491082a15cb79c128c566f541b9158330c6a16b9fd",
+    "raw/sciq/validation.jsonl": "4e291b5c9fdd9a0b01f1389aef0b025decf90f2612f9194d8b3f24b29f553b46",
+    "tokenized/sciq-belief-pilot/dataset_dict.json": "65fae6c706b1546da1530d427b62b39df6dd156cce4b92a208091410c52a4362",
+    "tokenized/sciq-belief-pilot/test/data-00000-of-00001.arrow": "b83bd53a39c23379ba6e42efd0089aaee8fba3207923732ffb36184530ce531f",
+    "tokenized/sciq-belief-pilot/test/dataset_info.json": "2d4d048eea9f68a62b9488465df49de56fff8c40382878d73a820bae08a5da5e",
+    "tokenized/sciq-belief-pilot/test/state.json": "c2b8b0fd0dcc41b84e3ca5d17d3aafff6dbda1f256736771e332632f15f2e434",
+    "tokenized/sciq-belief-pilot/train/data-00000-of-00001.arrow": "92762c4e0cbe63aa1b85e1dd662610b0ca035f5572c4618defe1e649c097f556",
+    "tokenized/sciq-belief-pilot/train/dataset_info.json": "2d4d048eea9f68a62b9488465df49de56fff8c40382878d73a820bae08a5da5e",
+    "tokenized/sciq-belief-pilot/train/state.json": "51880d4cf9fdf3e353284a11b6ef48ab5292d8461c7f54dbd37e1fe8771910f7",
+    "tokenized/sciq-belief-tiny/dataset_dict.json": "65fae6c706b1546da1530d427b62b39df6dd156cce4b92a208091410c52a4362",
+    "tokenized/sciq-belief-tiny/test/data-00000-of-00001.arrow": "a878cc1c752bad416f7aaf1d83996bc8e36accbdea6c401cd45065cac869d373",
+    "tokenized/sciq-belief-tiny/test/dataset_info.json": "2d4d048eea9f68a62b9488465df49de56fff8c40382878d73a820bae08a5da5e",
+    "tokenized/sciq-belief-tiny/test/state.json": "ddaf317540c6e490fd2bd7b58050b25400206342ac9fe3be45a32a2d8a0504e3",
+    "tokenized/sciq-belief-tiny/train/data-00000-of-00001.arrow": "e865090292ce4d61d8c6ce1a48ee22264c3942c627e20cea8ee395b4783f0a72",
+    "tokenized/sciq-belief-tiny/train/dataset_info.json": "2d4d048eea9f68a62b9488465df49de56fff8c40382878d73a820bae08a5da5e",
+    "tokenized/sciq-belief-tiny/train/state.json": "1eea2d499d854c2e829bfea79752709947062f808fdceea61bbec695339b59cd"
+  },
+  "generation_started": false,
+  "model_loaded": false,
+  "status": "passed",
+  "tiny": {
+    "development_examples": 20,
+    "train_examples": 40
+  },
+  "training_started": false
+}

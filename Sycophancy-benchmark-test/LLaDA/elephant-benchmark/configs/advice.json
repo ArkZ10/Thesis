@@ -1,0 +1,20 @@
+{
+  "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+  "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "model_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "dtype": "bfloat16",
+  "seed": 0,
+  "temperature": 0.0,
+  "generation_length": 128,
+  "diffusion_steps": 128,
+  "block_length": 32,
+  "remasking": "low_confidence",
+  "cfg_scale": 0.0,
+  "instruction": "",
+  "prompt_template": "{prompt}",
+  "add_generation_prompt": true,
+  "context_limit": 4096,
+  "truncation": "reject",
+  "batch_size": 4,
+  "output_projection": "generated_positions_only"
+}

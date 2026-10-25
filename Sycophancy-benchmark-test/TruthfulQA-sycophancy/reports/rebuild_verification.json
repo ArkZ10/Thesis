@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "same_source_cross_process_rebuilds": [
+    {
+      "python_hash_seed": "17",
+      "byte_identical": true
+    },
+    {
+      "python_hash_seed": "991",
+      "byte_identical": true
+    }
+  ],
+  "prompt_file_sha256": {
+    "data/processed/belief_prompts.jsonl": "13450451d1c090fac1eaff431e2065d5b1d69feb3fe9002f9792c9348d8cbb5e",
+    "data/processed/neutral_prompts.jsonl": "4349b0df8455899eb7512a319bc3d93f539b6563435fc5a7ae61cda437b729cb",
+    "data/processed/smoke/belief_prompts.jsonl": "69d515a50a0c28740aeb0e96c6e867b4f519f9ee049f5f7f58ebdc30efc76de3",
+    "data/processed/smoke/neutral_prompts.jsonl": "9ddfd21d947bfc8c083dd5706a319b53371acf34ac28f566e849e80bead391e6"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "model_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "torch_version": "2.6.0+cu124",
+  "transformers_version": "4.52.3",
+  "prompt": "What is 2 + 2? Answer in one short sentence.",
+  "response": "2 + 2 equals 4.",
+  "generated_token_ids": [
+    17,
+    781,
+    220,
+    17,
+    27198,
+    220,
+    19,
+    13,
+    126348,
+    126081,
+    126081,
+    126081,
+    126081,
+    126081,
+    126081,
+    126081
+  ],
+  "generation_length": 16,
+  "diffusion_steps": 16,
+  "load_seconds": 2.471,
+  "generation_seconds": 0.897,
+  "status": "passed"
+}

@@ -1,0 +1,926 @@
+{"question":"What kind of a reaction occurs when a substance reacts quickly with oxygen?","question_id":"sciq-train-00006","split":"train"}
+{"question":"What is the stored food in a seed called?","question_id":"sciq-train-00009","split":"train"}
+{"question":"Fertilization is the union of a sperm and egg, resulting in the formation of what?","question_id":"sciq-train-00018","split":"train"}
+{"question":"What type of plate boundaries produce huge mountain ranges in the ocean basin?","question_id":"sciq-train-00036","split":"train"}
+{"question":"Gases are most ideal at high temperature and what pressure?","question_id":"sciq-train-00044","split":"train"}
+{"question":"In the presence of oxygen, hydrogen can interact to make what?","question_id":"sciq-train-00054","split":"train"}
+{"question":"Which radio frequency should you listen to if you want less noise?","question_id":"sciq-train-00059","split":"train"}
+{"question":"What percentage of men suffer from some form of erectile dysfunction by age 40?","question_id":"sciq-train-00092","split":"train"}
+{"question":"Millions of years ago, plants used energy from the sun to form what?","question_id":"sciq-train-00098","split":"train"}
+{"question":"Phosphate-containing ocean sediments form primarily from the bodies of ocean organisms and from their what?","question_id":"sciq-train-00120","split":"train"}
+{"question":"What term is used to describe a collection of molecules surrounded by a phospholipid bilayer that is capable of reproducing itself?","question_id":"sciq-train-00132","split":"train"}
+{"question":"What supports and protects the soft organs of the body?","question_id":"sciq-train-00157","split":"train"}
+{"question":"What type of reproduction only involves one parent?","question_id":"sciq-train-00163","split":"train"}
+{"question":"What makes and stores pigments that give petals and fruit their orange and yellow colors?","question_id":"sciq-train-00171","split":"train"}
+{"question":"What do we call the cartilaginous structure that surrounds the notochrod?","question_id":"sciq-train-00193","split":"train"}
+{"question":"What two ways may light be transmitted?","question_id":"sciq-train-00205","split":"train"}
+{"question":"What are the most common seedless vascular plants?","question_id":"sciq-train-00212","split":"train"}
+{"question":"What do the letters in our blood types represent?","question_id":"sciq-train-00236","split":"train"}
+{"question":"The simplest class of organic compounds is the what?","question_id":"sciq-train-00247","split":"train"}
+{"question":"In this type of reaction, an element replaces another element in a compound, and the element is in any state of matter but is not an ion?","question_id":"sciq-train-00291","split":"train"}
+{"question":"What is the temperature at which condensation of water vapor occurs called?","question_id":"sciq-train-00326","split":"train"}
+{"question":"What is our main source of aluminum ore?","question_id":"sciq-train-00328","split":"train"}
+{"question":"The shape of a virus is determined by the type and arrangement of proteins in its what?","question_id":"sciq-train-00344","split":"train"}
+{"question":"What material comprises the sun and other stars, as well as lightning and the northern lights?","question_id":"sciq-train-00351","split":"train"}
+{"question":"What's another term for egg-laying mammals?","question_id":"sciq-train-00356","split":"train"}
+{"question":"What is the term for a random change in allele frequencies that occurs in a small population?","question_id":"sciq-train-00400","split":"train"}
+{"question":"Which type of ferns have yellow sporangia and no leaves?","question_id":"sciq-train-00413","split":"train"}
+{"question":"What charge do atoms carry?","question_id":"sciq-train-00419","split":"train"}
+{"question":"In scientific investigations, descriptive statistics are useful for summarizing the characteristics of large what?","question_id":"sciq-train-00422","split":"train"}
+{"question":"Where in the atom is a neutron found?","question_id":"sciq-train-00433","split":"train"}
+{"question":"Dalton's law and henry's law both describe aspects of what type of exchange?","question_id":"sciq-train-00436","split":"train"}
+{"question":"What are the primary producers in terrestrial biomes?","question_id":"sciq-train-00457","split":"train"}
+{"question":"When electrons are shared between two atoms, they make a bond called a what?","question_id":"sciq-train-00465","split":"train"}
+{"question":"What is the term for groups of three successive nucleotide bases in dna?","question_id":"sciq-train-00483","split":"train"}
+{"question":"An antigen is a molecule that reacts with some component of the what response?","question_id":"sciq-train-00488","split":"train"}
+{"question":"What type of fibers are made mostly of protein in living things?","question_id":"sciq-train-00502","split":"train"}
+{"question":"What is the greatest contribution of arthropods to human food supply?","question_id":"sciq-train-00523","split":"train"}
+{"question":"The gender of a baby is determined by what special pair of chromosomes?","question_id":"sciq-train-00535","split":"train"}
+{"question":"Plant cells have structures that animal cells?","question_id":"sciq-train-00540","split":"train"}
+{"question":"What can damage the hair cells lining the cochlea of the inner ear?","question_id":"sciq-train-00606","split":"train"}
+{"question":"What substance is created when a copper turns from reddish brown to greenish brown?","question_id":"sciq-train-00617","split":"train"}
+{"question":"What are found in moist forests that break down decaying plant material?","question_id":"sciq-train-00642","split":"train"}
+{"question":"When heat flows into an object, its thermal energy increases and so does its what?","question_id":"sciq-train-00667","split":"train"}
+{"question":"Humans are unique in their ability to alter their environment with the conscious purpose of increasing what, which acts as a limiting factor on populations in general?","question_id":"sciq-train-00675","split":"train"}
+{"question":"Ovulation is the release of an egg from the what?","question_id":"sciq-train-00690","split":"train"}
+{"question":"Many of the protist species classified into the supergroup excavata are asymmetrical, single-celled organisms with a feeding groove “excavated” from one side. this supergroup includes heterotrophic predators, photosynthetic species, and these?","question_id":"sciq-train-00703","split":"train"}
+{"question":"What lies between the continental shelf and the abyssal plain?","question_id":"sciq-train-00729","split":"train"}
+{"question":"What should you let liquid waste do before placing the container in the trash?","question_id":"sciq-train-00740","split":"train"}
+{"question":"A mutation is a random change in an organism's what?","question_id":"sciq-train-00745","split":"train"}
+{"question":"What is formed when a subducting plate flows under another tectonic plate?","question_id":"sciq-train-00768","split":"train"}
+{"question":"Weathering is fundamental to the creation of what, which exists as a very thin layer over solid rock?","question_id":"sciq-train-00775","split":"train"}
+{"question":"Soda fizzes when what common gas comes out of solution?","question_id":"sciq-train-00789","split":"train"}
+{"question":"Prescribed to treat allergies, antihistamines and corticosteroids help control what system that attacks allergens?","question_id":"sciq-train-00839","split":"train"}
+{"question":"What type of blood cells transport oxygen to the tissues so they can function?","question_id":"sciq-train-00841","split":"train"}
+{"question":"What must molecules have to be cis-trans isomers?","question_id":"sciq-train-00846","split":"train"}
+{"question":"Defecating, urination, and even childbirth involve cooperation between the diaphragm and these?","question_id":"sciq-train-00850","split":"train"}
+{"question":"Sodium and chloride ions have equal but what charges?","question_id":"sciq-train-00859","split":"train"}
+{"question":"The group 18 gases that have 8 valence electrons are referred to as what type of gases?","question_id":"sciq-train-00898","split":"train"}
+{"question":"What is the germ for a group of atoms within a molecule that reacts similarly anywhere it appears in different compounds?","question_id":"sciq-train-00907","split":"train"}
+{"question":"During asexual reproduction, fungi produce haploid spores by what process involving a haploid parent cell?","question_id":"sciq-train-00908","split":"train"}
+{"question":"Under appropriate conditions, the attractions between all molecules in what state will cause them to form liquids or solids?","question_id":"sciq-train-00913","split":"train"}
+{"question":"In the vast majority of ectopic pregnancies, the embryo does not complete its journey to what organ, and instead implants in the uterine tube?","question_id":"sciq-train-00936","split":"train"}
+{"question":"Supersaturated solutions of most solids in water are prepared by cooling what?","question_id":"sciq-train-00951","split":"train"}
+{"question":"Due to the difference in the distribution of charge, water is what type of molecule?","question_id":"sciq-train-00957","split":"train"}
+{"question":"All of the monatomic ions have oxidation numbers equal to their?","question_id":"sciq-train-00979","split":"train"}
+{"question":"Give an example of benthos that live near vents on the deep ocean floor.","question_id":"sciq-train-00981","split":"train"}
+{"question":"The nucleolus, which makes ribosomes, is located within what cell structure?","question_id":"sciq-train-01017","split":"train"}
+{"question":"What type of invisible waves are used in microwaves?","question_id":"sciq-train-01045","split":"train"}
+{"question":"What is the outer core made of?","question_id":"sciq-train-01065","split":"train"}
+{"question":"What type of chemistry is the study of the composition of matter?","question_id":"sciq-train-01074","split":"train"}
+{"question":"What do all chemical sections need to get started?","question_id":"sciq-train-01077","split":"train"}
+{"question":"What phase of a human life does not have a definite starting point?","question_id":"sciq-train-01110","split":"train"}
+{"question":"Heating a gas gives its particles more of what type of energy?","question_id":"sciq-train-01130","split":"train"}
+{"question":"Which form of digestion is a purely physical process that does not change the chemical nature of the food?","question_id":"sciq-train-01139","split":"train"}
+{"question":"During a what type of reaction do chemical changes take place?","question_id":"sciq-train-01148","split":"train"}
+{"question":"In sexual reproduction, what is the name of the gamete cell the male must contribute?","question_id":"sciq-train-01150","split":"train"}
+{"question":"What are complex organic molecules that make up cells?","question_id":"sciq-train-01159","split":"train"}
+{"question":"Lenses make use of what to create images?","question_id":"sciq-train-01163","split":"train"}
+{"question":"Reef sponges typically have what type of beneficial relationships with other reef species?","question_id":"sciq-train-01165","split":"train"}
+{"question":"Rubbing your hands together warms them by converting work into what energy?","question_id":"sciq-train-01172","split":"train"}
+{"question":"What nerves attached to the brain are mainly responsible for motor and sensory functions?","question_id":"sciq-train-01186","split":"train"}
+{"question":"Some compounds form rigid frameworks called what?","question_id":"sciq-train-01189","split":"train"}
+{"question":"A single, often oversimplified, path through which energy and matter flow through an ecosystem is also known as what?","question_id":"sciq-train-01192","split":"train"}
+{"question":"Dinitrophenol (dnp) is an uncoupler that makes the inner mitochondrial membrane leaky to protons. it was used until 1938 as a what?","question_id":"sciq-train-01195","split":"train"}
+{"question":"What do we call the predictable distribution of molecular speeds found in gas of many molecules?","question_id":"sciq-train-01215","split":"train"}
+{"question":"What term tells you how quickly the angle changes and can occur in either clockwise or counterclockwise directions?","question_id":"sciq-train-01221","split":"train"}
+{"question":"Diffusion can occur across a semipermeable membrane, such as the cell membrane, as long as a what exists?","question_id":"sciq-train-01228","split":"train"}
+{"question":"What occurs when there is a sudden discharge of static electricity between a cloud and the ground?","question_id":"sciq-train-01257","split":"train"}
+{"question":"What type of vertebrates control body temperature to just a limited extent from the outside by changing behavior?","question_id":"sciq-train-01263","split":"train"}
+{"question":"What is light with wavelengths shorter than visible light called?","question_id":"sciq-train-01273","split":"train"}
+{"question":"When the number of electrons and the number of protons are equal, the object is what?","question_id":"sciq-train-01298","split":"train"}
+{"question":"What is the name for a combination of elements that acts as a different substance?","question_id":"sciq-train-01319","split":"train"}
+{"question":"Volcanoes can be active, dormant, or what else?","question_id":"sciq-train-01320","split":"train"}
+{"question":"What is required to break bonds in reactants?","question_id":"sciq-train-01336","split":"train"}
+{"question":"What catalyzes the hydrolysis of amino acids from the n-terminal end of a protein?","question_id":"sciq-train-01341","split":"train"}
+{"question":"Temperature and pressure affect changes in phases or states of what?","question_id":"sciq-train-01346","split":"train"}
+{"question":"How much can the bacteria in your gut weigh?","question_id":"sciq-train-01349","split":"train"}
+{"question":"What term is used to describe animals that excrete ammonia?","question_id":"sciq-train-01370","split":"train"}
+{"question":"The enormous number of species is due to the tremendous variety of what?","question_id":"sciq-train-01372","split":"train"}
+{"question":"Linked genes are located on the same what?","question_id":"sciq-train-01419","split":"train"}
+{"question":"Where does an object gain or lose it's energy to during travel through a potential difference?","question_id":"sciq-train-01425","split":"train"}
+{"question":"Which law means that the simplest of competing theories is most likely to be correct?","question_id":"sciq-train-01432","split":"train"}
+{"question":"Iron will do what when it is exposed to oxygen and water?","question_id":"sciq-train-01433","split":"train"}
+{"question":"Depending on the surrounding conditions, normal matter usually exists as one of three phases: solid, liquid, or this?","question_id":"sciq-train-01450","split":"train"}
+{"question":"Dna replication, chromosome segregation, and the separation into two daughter cells are steps in what process?","question_id":"sciq-train-01473","split":"train"}
+{"question":"What is the term for a dynamic equilibrium that is maintained in body tissues and organs?","question_id":"sciq-train-01520","split":"train"}
+{"question":"What do you call elements that contain only atoms of one type of element?","question_id":"sciq-train-01525","split":"train"}
+{"question":"This process of combining the wave functions for atomic orbitals is called what?","question_id":"sciq-train-01527","split":"train"}
+{"question":"Puberty and other physical changes occurs during which stage of development?","question_id":"sciq-train-01543","split":"train"}
+{"question":"Cancers derived from epithelial cells are referred to as what?","question_id":"sciq-train-01550","split":"train"}
+{"question":"Different shapes often correlate with different what in cells?","question_id":"sciq-train-01555","split":"train"}
+{"question":"What type of butterfly do birds avoid eating since it makes them sick?","question_id":"sciq-train-01559","split":"train"}
+{"question":"What is the field of biology that focuses on the study of inheritance in humans?","question_id":"sciq-train-01566","split":"train"}
+{"question":"Which electromagnetic waves are the most energetic of all electromagnetic waves?","question_id":"sciq-train-01576","split":"train"}
+{"question":"What work together in pairs to bend or straighten a joint?","question_id":"sciq-train-01616","split":"train"}
+{"question":"Birds have a relatively large heart and a rapid what?","question_id":"sciq-train-01620","split":"train"}
+{"question":"What does the placenta sustain during pregnancy?","question_id":"sciq-train-01637","split":"train"}
+{"question":"What is the fracture called when rocks on both sides move?","question_id":"sciq-train-01659","split":"train"}
+{"question":"Ocean ridges formed by marine invertebrates living in warm shallow waters within the photic zone of the ocean are called what?","question_id":"sciq-train-01672","split":"train"}
+{"question":"The appendicular skeleton is made up of all bones of the upper and lower what?","question_id":"sciq-train-01681","split":"train"}
+{"question":"What is the process in which unstable nuclei become stable by emitting particles and energy and changing to different elements called?","question_id":"sciq-train-01688","split":"train"}
+{"question":"An solid object with an irregular shape can be measured via what method?","question_id":"sciq-train-01703","split":"train"}
+{"question":"Most diseases caused by bacteria can be cured by which medicines?","question_id":"sciq-train-01708","split":"train"}
+{"question":"More than half the compounds produced by the chemical industry are what?","question_id":"sciq-train-01713","split":"train"}
+{"question":"What is it called when electrons are shared equally?","question_id":"sciq-train-01714","split":"train"}
+{"question":"The idea of evolution has been around for centuries. in fact, it goes all the way back to the ancient greek philosopher named?","question_id":"sciq-train-01719","split":"train"}
+{"question":"What are organelles made of protein and ribosomal rna (rrna)?","question_id":"sciq-train-01749","split":"train"}
+{"question":"The process of photosynthesis uses chlorophyll, which is located in organelles called what?","question_id":"sciq-train-01781","split":"train"}
+{"question":"What have approximately the same mass as protons but no charge?","question_id":"sciq-train-01784","split":"train"}
+{"question":"What protein is produced when a plasma cell is stimulated by antigens?","question_id":"sciq-train-01791","split":"train"}
+{"question":"Contraction of what large, sheet-like muscle results in inhalation?","question_id":"sciq-train-01814","split":"train"}
+{"question":"The process where eroded material is dropped somewhere is called?","question_id":"sciq-train-01828","split":"train"}
+{"question":"Photoautotrophs and chemoautotrophs are two basic types of what?","question_id":"sciq-train-01865","split":"train"}
+{"question":"How many types of major tissues do modern plants have?","question_id":"sciq-train-01870","split":"train"}
+{"question":"What is the job of hemoglobin in the body?","question_id":"sciq-train-01914","split":"train"}
+{"question":"What is the term of a phase change if solid water has it's average kinetic energy increased to change it to liquid water?","question_id":"sciq-train-01918","split":"train"}
+{"question":"Which side of the heart does blood from the lungs enter into?","question_id":"sciq-train-01928","split":"train"}
+{"question":"Which therapy uses viruses to genetically modify diseased cells and tissues?","question_id":"sciq-train-01930","split":"train"}
+{"question":"When what element - whose name means \"light bringing\" - was first isolated, scientists noted that it glowed in the dark and burned when exposed to air?","question_id":"sciq-train-01933","split":"train"}
+{"question":"What is a random change in an organism's genes?","question_id":"sciq-train-01998","split":"train"}
+{"question":"The first reaction of the body to tissue damage or infection is called the what response?","question_id":"sciq-train-02004","split":"train"}
+{"question":"Where does digestion take place within an incomplete digestive system?","question_id":"sciq-train-02017","split":"train"}
+{"question":"Mars appears red because of large amounts of which element in the soil?","question_id":"sciq-train-02023","split":"train"}
+{"question":"What type of rocks are laid down horizontally with the oldest at the bottom?","question_id":"sciq-train-02024","split":"train"}
+{"question":"Newly duplicated chromosomes are divided into two daughter nuclei during what stage?","question_id":"sciq-train-02029","split":"train"}
+{"question":"What is the smallest part of an element called?","question_id":"sciq-train-02080","split":"train"}
+{"question":"What is the name for the process where data in the genes is transferred to amino acids?","question_id":"sciq-train-02084","split":"train"}
+{"question":"What is the scientific term for the amount of light reflected by a surface?","question_id":"sciq-train-02088","split":"train"}
+{"question":"Which part of a leaf contains openings known as stomata, through which the exchange of gases takes place?","question_id":"sciq-train-02116","split":"train"}
+{"question":"Diamond is extremely hard because of the strong bonding between ______ in all directions?","question_id":"sciq-train-02131","split":"train"}
+{"question":"Deposition refers to when a gas changes to what state?","question_id":"sciq-train-02134","split":"train"}
+{"question":"Which kind of irrigation uses much less water than other methods?","question_id":"sciq-train-02189","split":"train"}
+{"question":"Fishes were the earliest example of what subphylum, and jawless fishes were the earliest of these?","question_id":"sciq-train-02190","split":"train"}
+{"question":"What is the mildest type of brain injury?","question_id":"sciq-train-02216","split":"train"}
+{"question":"The fossilized skeleton of archaeopteryx looks like that of a dinosaur, but it had what structures modified for flight, a trait associated only with birds among modern animals?","question_id":"sciq-train-02247","split":"train"}
+{"question":"Gradual degradation of a material due to its exposure to the environment is known as what?","question_id":"sciq-train-02270","split":"train"}
+{"question":"Moist skin distinguishes frogs from what animal with dry, bumpy skin?","question_id":"sciq-train-02314","split":"train"}
+{"question":"Scientists perform experiments to test their hypotheses because sometimes the nature of natural universe is what?","question_id":"sciq-train-02315","split":"train"}
+{"question":"What do you call a group of cells of the same kind that performs the same function?","question_id":"sciq-train-02334","split":"train"}
+{"question":"What is the name of a reactant in an enzymatic reaction?","question_id":"sciq-train-02335","split":"train"}
+{"question":"Dominant alleles rarely cause what type of disorders, since the mutant allele is likely to die out of the population?","question_id":"sciq-train-02344","split":"train"}
+{"question":"Sound, like all waves, travels at a certain speed and has the properties of frequency and this?","question_id":"sciq-train-02381","split":"train"}
+{"question":"What determines the color of visible light?","question_id":"sciq-train-02467","split":"train"}
+{"question":"What are the only regions of space that electrons can occupy?","question_id":"sciq-train-02495","split":"train"}
+{"question":"What appears in autumn when cool air moves over a warm lake?","question_id":"sciq-train-02496","split":"train"}
+{"question":"What allows theories to be widely accepted?","question_id":"sciq-train-02525","split":"train"}
+{"question":"Which part of the body has mucus and hair to trap dust and also warms and moistens air so to not harm lung tissue?","question_id":"sciq-train-02551","split":"train"}
+{"question":"What developmental stage do alligators lack that most other amphibians have?","question_id":"sciq-train-02558","split":"train"}
+{"question":"What attaches a muscle to a bone?","question_id":"sciq-train-02559","split":"train"}
+{"question":"In which solution is the amount of dissolved material equal both inside and outside of the cell?","question_id":"sciq-train-02590","split":"train"}
+{"question":"The important equation pv = nrt holds true for substances in what state of matter?","question_id":"sciq-train-02594","split":"train"}
+{"question":"What process provides more than 99% of energy?","question_id":"sciq-train-02604","split":"train"}
+{"question":"What type of organism was the only able to live in the anoxic atmosphere of the first 2 billion years?","question_id":"sciq-train-02622","split":"train"}
+{"question":"The german physicist max planck (1858–1947) used the idea that atoms and molecules in a body act like oscillators to absorb and emit this?","question_id":"sciq-train-02637","split":"train"}
+{"question":"What cells are typically characterized by the polarized distribution of organelles and membrane-bound proteins between their basal and apical surfaces?","question_id":"sciq-train-02642","split":"train"}
+{"question":"In chemical reactions, what substances can act like metals or nonmetals, depending on their number of electrons?","question_id":"sciq-train-02649","split":"train"}
+{"question":"What kind of structure do purines have?","question_id":"sciq-train-02673","split":"train"}
+{"question":"What is the term for a symbiotic relationship in which the parasite benefits while the host is harmed?","question_id":"sciq-train-02679","split":"train"}
+{"question":"Both solids and liquids hold a definite what?","question_id":"sciq-train-02706","split":"train"}
+{"question":"The mercury or alcohol in a common glass what changes its volume as the temperature changes?","question_id":"sciq-train-02722","split":"train"}
+{"question":"The components of what keep their own identity when they combine and can usually be easily separated?","question_id":"sciq-train-02724","split":"train"}
+{"question":"Which virus causes cold sores?","question_id":"sciq-train-02737","split":"train"}
+{"question":"What is magnetism produced by an electrical current?","question_id":"sciq-train-02744","split":"train"}
+{"question":"What connects the two hemispheres of the brain?","question_id":"sciq-train-02765","split":"train"}
+{"question":"Cells like a prokaryotic cell, a eukaryotic cell has a plasma membrane, cytoplasm, and ribosomes, but a eukaryotic cell is typically larger than a prokaryotic cell, has a true nucleus (meaning its dna is surrounded by a membrane), and has other membrane-bound organelles that allow for what?","question_id":"sciq-train-02766","split":"train"}
+{"question":"The help with diffusion comes from special proteins in the membrane known as what?","question_id":"sciq-train-02785","split":"train"}
+{"question":"What color is the brittle metalloid tallurium?","question_id":"sciq-train-02810","split":"train"}
+{"question":"What do you call an object that attracts certain materials such as iron?","question_id":"sciq-train-02841","split":"train"}
+{"question":"Water can be a solid, liquid, and what other form?","question_id":"sciq-train-02912","split":"train"}
+{"question":"What is the term for a structure within the cytoplasm that performs a specific job in the cell?","question_id":"sciq-train-02916","split":"train"}
+{"question":"Loss of energy is the reason that what typically has few levels?","question_id":"sciq-train-02936","split":"train"}
+{"question":"The thermal properties of what substance largely contribute to the temperature climate of europe?","question_id":"sciq-train-02948","split":"train"}
+{"question":"Shivering helps the body return to a stable what?","question_id":"sciq-train-02952","split":"train"}
+{"question":"Ecology, botany, and zoology are what type of science?","question_id":"sciq-train-02967","split":"train"}
+{"question":"The ammonium ion is what type of acid?","question_id":"sciq-train-02992","split":"train"}
+{"question":"What is the term for disease-causing agents, such as bacteria and viruses?","question_id":"sciq-train-03005","split":"train"}
+{"question":"What kind of volcanic eruptions are less deadly?","question_id":"sciq-train-03044","split":"train"}
+{"question":"Speed takes distance and what else into account?","question_id":"sciq-train-03049","split":"train"}
+{"question":"What does the ovule develop into after fertilization?","question_id":"sciq-train-03051","split":"train"}
+{"question":"What occurs when the immune system is not working properly?","question_id":"sciq-train-03078","split":"train"}
+{"question":"What is heard when sound waves bounce back from a surface that they can't pass through?","question_id":"sciq-train-03105","split":"train"}
+{"question":"What natural resource can be damaged by the accumulation of too much salt?","question_id":"sciq-train-03116","split":"train"}
+{"question":"Asthma affects what tiny branches into which the bronchi are divided?","question_id":"sciq-train-03146","split":"train"}
+{"question":"The process of producing mature sperm is called what?","question_id":"sciq-train-03192","split":"train"}
+{"question":"Not even light can escape from what extremely dense object sometimes found in deep space?","question_id":"sciq-train-03204","split":"train"}
+{"question":"What is the term for an organism’s underlying genetic makeup, consisting of both the physically visible and the non-expressed alleles?","question_id":"sciq-train-03212","split":"train"}
+{"question":"Which organ is a wide tube connecting the small intestine with the anus?","question_id":"sciq-train-03213","split":"train"}
+{"question":"What is an extremely severe food allergy reaction?","question_id":"sciq-train-03218","split":"train"}
+{"question":"The penis, testes and epididymes are structures in what male anatomical system?","question_id":"sciq-train-03227","split":"train"}
+{"question":"What is the name for a simple machine that consists of two inclined planes?","question_id":"sciq-train-03232","split":"train"}
+{"question":"What gland is located at the base of the brain and secretes the hormone melatonin?","question_id":"sciq-train-03264","split":"train"}
+{"question":"Which inducer turns on the expression of the lac genes?","question_id":"sciq-train-03323","split":"train"}
+{"question":"What is a measure of both speed and direction of motion?","question_id":"sciq-train-03331","split":"train"}
+{"question":"The reactions between alkali metals and water are particularly vigorous and include the rapid production of large quantities of what gas?","question_id":"sciq-train-03340","split":"train"}
+{"question":"Batteries produce voltage through what type of reaction?","question_id":"sciq-train-03341","split":"train"}
+{"question":"Which other planet in the solar system is the easiest to observe from earth?","question_id":"sciq-train-03346","split":"train"}
+{"question":"What branch of science is based on the modern atomic theory, which states that all matter is composed of atoms?","question_id":"sciq-train-03351","split":"train"}
+{"question":"At what point can nutrients enter or exit an ecosystem?","question_id":"sciq-train-03354","split":"train"}
+{"question":"Bacteria are what kind of cell?","question_id":"sciq-train-03381","split":"train"}
+{"question":"Foliation, which forms layers in rocks during metamorphism, is caused by what?","question_id":"sciq-train-03423","split":"train"}
+{"question":"The sum of the pressures of the hydrogen and the water vapor is equal to what?","question_id":"sciq-train-03434","split":"train"}
+{"question":"What occurs between long warm climate periods?","question_id":"sciq-train-03478","split":"train"}
+{"question":"Mammals have four limbs and produce what kind of eggs?","question_id":"sciq-train-03495","split":"train"}
+{"question":"What do you call a group of organisms of the same species that live in the same area?","question_id":"sciq-train-03523","split":"train"}
+{"question":"What type of fibrous joint is found between most bones of the skull?","question_id":"sciq-train-03534","split":"train"}
+{"question":"What is the name for tiny animals that feed on phytoplankton?","question_id":"sciq-train-03548","split":"train"}
+{"question":"What do marine autotrophs acquire in carbonic acid, its dissolved form?","question_id":"sciq-train-03549","split":"train"}
+{"question":"In boys, what hormone stimulates the growth of the larynx and thickening and lengthening of the vocal folds, which causes the voice to drop in pitch during puberty?","question_id":"sciq-train-03560","split":"train"}
+{"question":"What is the name of the process in which solid food waste is passed out of the body?","question_id":"sciq-train-03578","split":"train"}
+{"question":"Heavily vegetated lands are less likely to experience what?","question_id":"sciq-train-03587","split":"train"}
+{"question":"The primary substance that human cells, and ultimately human beings, are made up of is what?","question_id":"sciq-train-03598","split":"train"}
+{"question":"What are the sharp projections that specialized cells grow called?","question_id":"sciq-train-03601","split":"train"}
+{"question":"In a hot water heater, burning fuel causes the water to get hot because combustion is what type of reaction?","question_id":"sciq-train-03607","split":"train"}
+{"question":"When struck, how are the rigid crystals of ionic compounds likely to react?","question_id":"sciq-train-03626","split":"train"}
+{"question":"What are the organized instructions within dna for making proteins called?","question_id":"sciq-train-03646","split":"train"}
+{"question":"Are thunderstorms more likely where the ground temperatures are extremely high or extremely low?","question_id":"sciq-train-03667","split":"train"}
+{"question":"What creates wet and dry zones at different latitudes?","question_id":"sciq-train-03672","split":"train"}
+{"question":"Chemical reactions always involve energy. when methane burns, for example, it releases energy in the form of what?","question_id":"sciq-train-03683","split":"train"}
+{"question":"Why are two different minerals considered different though they have the same chemical composition?","question_id":"sciq-train-03686","split":"train"}
+{"question":"What is the connection between the two hemispheres of the brain called?","question_id":"sciq-train-03696","split":"train"}
+{"question":"Space telescopes avoid such problems completely since they orbit outside the what?","question_id":"sciq-train-03699","split":"train"}
+{"question":"What measures a fluid’s resistance to flow?","question_id":"sciq-train-03709","split":"train"}
+{"question":"What disease is given as an example of a sex-linked trait?","question_id":"sciq-train-03712","split":"train"}
+{"question":"What part of the plant is the main site of photosynthesis?","question_id":"sciq-train-03714","split":"train"}
+{"question":"What speeds up chemical reactions inside cells?","question_id":"sciq-train-03731","split":"train"}
+{"question":"What is the term for biologically meaningful dna sequences?","question_id":"sciq-train-03754","split":"train"}
+{"question":"Mineral crystals that form when magma cools are usually _______ than crystals that form when lava cools.","question_id":"sciq-train-03759","split":"train"}
+{"question":"What type of chloride is a non-volatile material, but does not dissolve in water?","question_id":"sciq-train-03775","split":"train"}
+{"question":"What part of the rainforest commonly has ferns and other ground plants?","question_id":"sciq-train-03782","split":"train"}
+{"question":"The primary function of insulin is to facilitate the uptake of what into body cells?","question_id":"sciq-train-03783","split":"train"}
+{"question":"How many quarks are in each proton and neutron?","question_id":"sciq-train-03785","split":"train"}
+{"question":"Reactant concentrations are highest at which part of a reaction?","question_id":"sciq-train-03799","split":"train"}
+{"question":"Water pollution occurs when chemicals, sewage, trash, or heat enter what?","question_id":"sciq-train-03833","split":"train"}
+{"question":"What is the latin name for mercury?","question_id":"sciq-train-03838","split":"train"}
+{"question":"The term salt can refer to essentially any of what compounds?","question_id":"sciq-train-03856","split":"train"}
+{"question":"Where is the guinea worm a serious problem?","question_id":"sciq-train-03858","split":"train"}
+{"question":"Survivorship curves show the distribution of individuals in a population according to what metric?","question_id":"sciq-train-03876","split":"train"}
+{"question":"What is formed when atoms of different elements bond together?","question_id":"sciq-train-03898","split":"train"}
+{"question":"What does an electric conductor cross to generate current?","question_id":"sciq-train-03917","split":"train"}
+{"question":"The process in which animals use visual cues to communicate is known as what?","question_id":"sciq-train-03921","split":"train"}
+{"question":"What is the name of the major components of cell membranes called?","question_id":"sciq-train-03931","split":"train"}
+{"question":"The layers of the atmosphere correspond with what changes with altitude?","question_id":"sciq-train-03981","split":"train"}
+{"question":"The soil beneath a deciduous forest is called what?","question_id":"sciq-train-03987","split":"train"}
+{"question":"What is the type of cell division that produces gametes called?","question_id":"sciq-train-04010","split":"train"}
+{"question":"What laws regulate radiation doses to which people can be exposed?","question_id":"sciq-train-04019","split":"train"}
+{"question":"In prokaryotes, what is composed of a single, double-stranded dna molecule in the form of a loop or circle?","question_id":"sciq-train-04021","split":"train"}
+{"question":"Some materials have negative heats of solution; the dissolution of one of these solutes in water is called?","question_id":"sciq-train-04030","split":"train"}
+{"question":"What in hemoglobin gives red blood cells their red color?","question_id":"sciq-train-04034","split":"train"}
+{"question":"What type of numbers specify the arrangement of electrons in orbitals?","question_id":"sciq-train-04040","split":"train"}
+{"question":"What is the very slow movement of rock and soil down a hillside?","question_id":"sciq-train-04048","split":"train"}
+{"question":"Burning trees produces most of the same pollutants as burning what?","question_id":"sciq-train-04057","split":"train"}
+{"question":"What eukaryotic organisms cannot make their own food and do not technically eat?","question_id":"sciq-train-04065","split":"train"}
+{"question":"Photosynthesis changes light energy to what type of energy?","question_id":"sciq-train-04094","split":"train"}
+{"question":"What is the source of most electricity?","question_id":"sciq-train-04099","split":"train"}
+{"question":"Clubmosses are not true mosses, though, because they have what?","question_id":"sciq-train-04108","split":"train"}
+{"question":"What develops in depressions where water flow is low or nonexistent?","question_id":"sciq-train-04110","split":"train"}
+{"question":"Burning of methane is a type of what, which involves the breaking and forming of bonds?","question_id":"sciq-train-04116","split":"train"}
+{"question":"What is the most electron-pair bonds a nitrogen atom can participate in?","question_id":"sciq-train-04125","split":"train"}
+{"question":"The hypothalamus and pituitary gland are located near the base of this organ?","question_id":"sciq-train-04126","split":"train"}
+{"question":"Distance traveled divided by time is equal to what?","question_id":"sciq-train-04128","split":"train"}
+{"question":"Fractures, osteoarthritis, and rickets are problems of which body system?","question_id":"sciq-train-04141","split":"train"}
+{"question":"What are four children born at one birth called?","question_id":"sciq-train-04153","split":"train"}
+{"question":"What is the term for the hard, round object produced within the mantle of a living shelled mollusk?","question_id":"sciq-train-04160","split":"train"}
+{"question":"Like animals, protozoa are heterotrophic and capable of what?","question_id":"sciq-train-04171","split":"train"}
+{"question":"What causes acid rain?","question_id":"sciq-train-04181","split":"train"}
+{"question":"After the film is developed, any unexposed silver bromide must be removed by a process called what?","question_id":"sciq-train-04186","split":"train"}
+{"question":"Who is called the father of genetics?","question_id":"sciq-train-04203","split":"train"}
+{"question":"As per the kinetic-molecular theory, in what direction do the molecules and ions of liquids move?","question_id":"sciq-train-04209","split":"train"}
+{"question":"A genetic molecule is called dna, which stands for this?","question_id":"sciq-train-04213","split":"train"}
+{"question":"What anatomical structure serves as the conduit of the oocyte from the ovary to the uterus?","question_id":"sciq-train-04224","split":"train"}
+{"question":"Cells in green algae divide along cell plates called what?","question_id":"sciq-train-04237","split":"train"}
+{"question":"Through what do plants move enormous amounts of water from the soil to the atmosphere?","question_id":"sciq-train-04242","split":"train"}
+{"question":"Solar cells create voltages directly from light, while thermoelectric devices create voltage from differences in what?","question_id":"sciq-train-04256","split":"train"}
+{"question":"Viroids are plant pathogens much simpler than what, but like them can reproduce only within a host cell?","question_id":"sciq-train-04259","split":"train"}
+{"question":"What is observed when two perpendicular flagella moves?","question_id":"sciq-train-04297","split":"train"}
+{"question":"Alkanes are nonpolar and therefore do not attract what?","question_id":"sciq-train-04325","split":"train"}
+{"question":"Dividing net force by total mass yields what?","question_id":"sciq-train-04361","split":"train"}
+{"question":"What is formed when a monomer of glucose and a monomer of fructose are joined in a dehydration reaction to form a glycosidic bond?","question_id":"sciq-train-04375","split":"train"}
+{"question":"Fatal swelling of what organ can result from both encephalitis and meningitis, which typically cause a severe headache and a fever?","question_id":"sciq-train-04391","split":"train"}
+{"question":"What are biochemical compounds that living things use to store energy and make cell membranes?","question_id":"sciq-train-04408","split":"train"}
+{"question":"Darwin coined what term to refer to an organism’s relative ability to survive and produce fertile offspring?","question_id":"sciq-train-04420","split":"train"}
+{"question":"Medical problems associated with the body responding poorly to insulin are commonly associated with what disease?","question_id":"sciq-train-04434","split":"train"}
+{"question":"Which law explains why a ship weighing thousands of metric tons floats on water?","question_id":"sciq-train-04455","split":"train"}
+{"question":"Many adolescents experience frequent mood swings.  name one of the causes for this.","question_id":"sciq-train-04463","split":"train"}
+{"question":"Through what does the nerve impulses travel to the brain?","question_id":"sciq-train-04464","split":"train"}
+{"question":"The difference in electric potential energy which allows for an electric charge to move from one position to another is measured by what si unit?","question_id":"sciq-train-04465","split":"train"}
+{"question":"What controls the movements of hands and arms?","question_id":"sciq-train-04470","split":"train"}
+{"question":"The waves on the strings of musical instruments are transverse—so are electromagnetic waves, such as visible light. sound waves in air and water are this?","question_id":"sciq-train-04473","split":"train"}
+{"question":"What are the earth's two poles called?","question_id":"sciq-train-04476","split":"train"}
+{"question":"Matter is always conserved in what type of reaction?","question_id":"sciq-train-04480","split":"train"}
+{"question":"The entry of food into the esophagus marks the beginning of the esophageal phase of deglutition and the initiation of this?","question_id":"sciq-train-04482","split":"train"}
+{"question":"Where are the seeds in gymnosperms found?","question_id":"sciq-train-04483","split":"train"}
+{"question":"Halogens tend to form salts with what type of element?","question_id":"sciq-train-04502","split":"train"}
+{"question":"Echinoderms are found in many different ocean environments, but most are found where?","question_id":"sciq-train-04505","split":"train"}
+{"question":"What occurs when a parent organism breaks into fragments, or pieces, and each fragment develops into a new organism?","question_id":"sciq-train-04529","split":"train"}
+{"question":"What is a pair of valence electrons in a bonded atom that does not participate in bonding called?","question_id":"sciq-train-04554","split":"train"}
+{"question":"Where do benthos live in oceans?","question_id":"sciq-train-04570","split":"train"}
+{"question":"What is the term used to describe the liquid that moves through the vessels and includes plasma and the cells and sell fragments called platelets?","question_id":"sciq-train-04596","split":"train"}
+{"question":"What chemical reaction is the opposite of oxidation?","question_id":"sciq-train-04606","split":"train"}
+{"question":"What results when a force does work?","question_id":"sciq-train-04631","split":"train"}
+{"question":"Crests and troughs are the high and low points of a what?","question_id":"sciq-train-04636","split":"train"}
+{"question":"Forces which cause objects to turn around continuously in a circle are known as?","question_id":"sciq-train-04643","split":"train"}
+{"question":"Where do birds store and moisten food that is waiting to be digested?","question_id":"sciq-train-04665","split":"train"}
+{"question":"Glaciers modify the landscape by what?","question_id":"sciq-train-04669","split":"train"}
+{"question":"How many moons does pluto have?","question_id":"sciq-train-04672","split":"train"}
+{"question":"After what state is reached, the concentrations of all reaction components remain constant unless a change is made to the system?","question_id":"sciq-train-04692","split":"train"}
+{"question":"What is the scientific term for stored energy an object has due to its position or shape?","question_id":"sciq-train-04694","split":"train"}
+{"question":"While populations with unlimited resources grow exponentially, the population of a species will level off when what limit of its environment is reached?","question_id":"sciq-train-04698","split":"train"}
+{"question":"Group 16 is called what?","question_id":"sciq-train-04699","split":"train"}
+{"question":"At the time of birth, bones of the brain case are separated by what wide areas of fibrous connective tissue, which later become sutures?","question_id":"sciq-train-04703","split":"train"}
+{"question":"What are inorganic compounds that take the form of discrete molecules called?","question_id":"sciq-train-04704","split":"train"}
+{"question":"The other ammonium ions are changed into nitrogen gas by what?","question_id":"sciq-train-04705","split":"train"}
+{"question":"Acne and different types of cancer can affect what large organ?","question_id":"sciq-train-04714","split":"train"}
+{"question":"How do bees communicate to tell other bees where food is located?","question_id":"sciq-train-04723","split":"train"}
+{"question":"What is the scientific term for the dropping of leaves, fruits, and flowers, which led to the naming of an acid thought to play a role in the process?","question_id":"sciq-train-04782","split":"train"}
+{"question":"What is the type of plant called when its leaves seasonally turn color and fall off?","question_id":"sciq-train-04805","split":"train"}
+{"question":"What happens to a tectonic plate when it subducts?","question_id":"sciq-train-04817","split":"train"}
+{"question":"Food is broken into smaller particles by mastication, a process involving action by what structures?","question_id":"sciq-train-04822","split":"train"}
+{"question":"Mutation creates new genetic variation in what?","question_id":"sciq-train-04831","split":"train"}
+{"question":"What is the process of creating an exact genetic replica of an organism called?","question_id":"sciq-train-04871","split":"train"}
+{"question":"What theory can explain virtually all the properties of metals?","question_id":"sciq-train-04873","split":"train"}
+{"question":"The enzyme pepsin works only in the presence of what?","question_id":"sciq-train-04879","split":"train"}
+{"question":"How do humans learn behaviors?","question_id":"sciq-train-04892","split":"train"}
+{"question":"What is the process by which large particles, such as cells, are taken in by a cell?","question_id":"sciq-train-04922","split":"train"}
+{"question":"What do you call it when adult fish of the same species come together in a group and release gametes into the water at the same time?","question_id":"sciq-train-04956","split":"train"}
+{"question":"What is the master gland of the endocrine system?","question_id":"sciq-train-04961","split":"train"}
+{"question":"What is a segment of dna that carries a code for making a specific polypeptide chain called?","question_id":"sciq-train-04974","split":"train"}
+{"question":"Sugars, starches, and cellulose are examples of what biochemical compounds that organisms use for energy?","question_id":"sciq-train-05003","split":"train"}
+{"question":"Multiplying the linear momentum of a spinning object by the radius calculates what?","question_id":"sciq-train-05012","split":"train"}
+{"question":"Cells that are divided by oncogenes contain damaged what?","question_id":"sciq-train-05020","split":"train"}
+{"question":"Besides the concentration of dissolve oxygen and nutrients in the water, what other factor limits aquatic organisms?","question_id":"sciq-train-05030","split":"train"}
+{"question":"The magnitude of the momentum vector is the product of what two properties?","question_id":"sciq-train-05048","split":"train"}
+{"question":"What are intervertebral discs made of?","question_id":"sciq-train-05064","split":"train"}
+{"question":"Ice cubes in cola cause the cola to lose what?","question_id":"sciq-train-05074","split":"train"}
+{"question":"Light bends when it passes in from what to what?","question_id":"sciq-train-05112","split":"train"}
+{"question":"Burning fossil fuels produces air pollution and what?","question_id":"sciq-train-05116","split":"train"}
+{"question":"What happens to a chain of amino acids after it reaches a stop codon?","question_id":"sciq-train-05140","split":"train"}
+{"question":"What medical emergency occurs when a blood clot blocks blood flow to part of the brain, causing death of brain cells?","question_id":"sciq-train-05144","split":"train"}
+{"question":"Where is the potential energy of a river the highest at?","question_id":"sciq-train-05163","split":"train"}
+{"question":"What mammalian feature serves functions such as filtration and keeping the body warm?","question_id":"sciq-train-05168","split":"train"}
+{"question":"What do you call any substance that opposes coagulation?","question_id":"sciq-train-05189","split":"train"}
+{"question":"In an atom, what two major types of particles are located in the nucleus?","question_id":"sciq-train-05204","split":"train"}
+{"question":"What are the \"building blocks\" of proteins?","question_id":"sciq-train-05235","split":"train"}
+{"question":"Which cell gives rise to all cells of the human body?","question_id":"sciq-train-05253","split":"train"}
+{"question":"Silver, gold, and copper all conduct what very well?","question_id":"sciq-train-05265","split":"train"}
+{"question":"The number of moles of solute in 1 kg of solvent is defined as what?","question_id":"sciq-train-05276","split":"train"}
+{"question":"In humans, the anus is attached to what kind of intestine?","question_id":"sciq-train-05308","split":"train"}
+{"question":"What does interspecific competition between species often lead to?","question_id":"sciq-train-05309","split":"train"}
+{"question":"What is a gap in rock layers called?","question_id":"sciq-train-05313","split":"train"}
+{"question":"All the blood in the human body is filtered about 60 times a day by what?","question_id":"sciq-train-05317","split":"train"}
+{"question":"What alloy is made from copper and zinc?","question_id":"sciq-train-05323","split":"train"}
+{"question":"What are terrestrial biomes determined by?","question_id":"sciq-train-05325","split":"train"}
+{"question":"Because collisions are ______, energy can be transferred between molecules during them.","question_id":"sciq-train-05339","split":"train"}
+{"question":"What is the tendency of an object to remain at rest or remain in motion called?","question_id":"sciq-train-05340","split":"train"}
+{"question":"The capsid is made from the what that are encoded by viral genes within their genome?","question_id":"sciq-train-05351","split":"train"}
+{"question":"What disease refers to the dangerous buildup of fatty materials in blood vessels?","question_id":"sciq-train-05370","split":"train"}
+{"question":"Lacking blood vessels, nerve endings, or glands, the epidermis is the outer layer of what?","question_id":"sciq-train-05415","split":"train"}
+{"question":"Bile salts produced by the liver assist in breaking apart what kind of fats?","question_id":"sciq-train-05438","split":"train"}
+{"question":"In vascular plants, the sporophyte generation is what?","question_id":"sciq-train-05457","split":"train"}
+{"question":"The combined gradient that affects an ion includes its concentration gradient and its what?","question_id":"sciq-train-05458","split":"train"}
+{"question":"What is the sugar that the cells of living things use for energy?","question_id":"sciq-train-05489","split":"train"}
+{"question":"What do we call a device used to store electric charge?","question_id":"sciq-train-05492","split":"train"}
+{"question":"What is the term for any way that an animal interacts with other animals or the environment?","question_id":"sciq-train-05505","split":"train"}
+{"question":"At least 20 percent of the world’s people do not have a ready supply of what?","question_id":"sciq-train-05535","split":"train"}
+{"question":"Nuclei with even numbers of protons, neutrons, or both are more likely to be this?","question_id":"sciq-train-05559","split":"train"}
+{"question":"What are plants in the diploid generation called?","question_id":"sciq-train-05584","split":"train"}
+{"question":"An infection of the brain is called?","question_id":"sciq-train-05590","split":"train"}
+{"question":"What is produced during the light reactions in photosynthesis?","question_id":"sciq-train-05594","split":"train"}
+{"question":"Isotopes are named for their number of ______ plus neutrons?","question_id":"sciq-train-05624","split":"train"}
+{"question":"Where is most of the cell's dna contained?","question_id":"sciq-train-05646","split":"train"}
+{"question":"Oils are liquid lipids that plants use for storage of what?","question_id":"sciq-train-05675","split":"train"}
+{"question":"Matter can be classified on the basis of how what interacts with it?","question_id":"sciq-train-05686","split":"train"}
+{"question":"The laws of what field of science apply to galaxies and atoms, an indication of the underlying unity in the universe?","question_id":"sciq-train-05691","split":"train"}
+{"question":"What are non-renewable sources of energy that produce environmental damage?","question_id":"sciq-train-05695","split":"train"}
+{"question":"Depending on how matter interacts with light, it can be classified as transparent, translucent, or what?","question_id":"sciq-train-05698","split":"train"}
+{"question":"What is another term for joules per second?","question_id":"sciq-train-05713","split":"train"}
+{"question":"What does the decomposition of dead organisms and organic waste release into the atmosphere, soil, or ocean?","question_id":"sciq-train-05723","split":"train"}
+{"question":"What are small organelles and are the site of protein synthesis?","question_id":"sciq-train-05743","split":"train"}
+{"question":"A constant and plentiful supply of oxygen is required in order to maintain a high rate of what?","question_id":"sciq-train-05758","split":"train"}
+{"question":"Calvin cycle reactions can be organized into three basic stages: fixation, reduction, and this?","question_id":"sciq-train-05761","split":"train"}
+{"question":"Almost all plants make food through what process?","question_id":"sciq-train-05767","split":"train"}
+{"question":"In eukaryotic cells, molecules such as enzymes are usually compartmentalized into different what?","question_id":"sciq-train-05775","split":"train"}
+{"question":"Nuclear power plants produce electricity through what?","question_id":"sciq-train-05803","split":"train"}
+{"question":"What kind of membrane do prokaryotic cells have?","question_id":"sciq-train-05819","split":"train"}
+{"question":"What general property of an earthquake is used to describe its relative strength?","question_id":"sciq-train-05822","split":"train"}
+{"question":"Eutrophication, or high levels of nutrients, can cause conditions that deprive fish of what vital gas?","question_id":"sciq-train-05853","split":"train"}
+{"question":"What type of minerals form when salt water evaporates?","question_id":"sciq-train-05878","split":"train"}
+{"question":"Which generation of a plant is generally larger and longer-lived?","question_id":"sciq-train-05890","split":"train"}
+{"question":"What do gametes undergo to produce many additional copies of themselves?","question_id":"sciq-train-05955","split":"train"}
+{"question":"The greenhouse effect on earth is caused by an increase in what in the atmosphere?","question_id":"sciq-train-05956","split":"train"}
+{"question":"Because conditions are not ideal, most populations grow ____________.","question_id":"sciq-train-05987","split":"train"}
+{"question":"What is the name of the science that is concerned with naming and grouping organisms?","question_id":"sciq-train-05998","split":"train"}
+{"question":"Energy is absorbed as reactants are converted to products in what kind of chemical reaction?","question_id":"sciq-train-06010","split":"train"}
+{"question":"The vivid colors of flowers are an adaptation designed to encourage what by animals such as insects and birds?","question_id":"sciq-train-06060","split":"train"}
+{"question":"Ionic bonds are what kind of attraction between ions?","question_id":"sciq-train-06079","split":"train"}
+{"question":"What type of image is formed when light rays diverge in front of a mirror?","question_id":"sciq-train-06124","split":"train"}
+{"question":"What phenomenon, crucial for evolution, creates new genetic variation in a gene pool and is how all new alleles first arise?","question_id":"sciq-train-06126","split":"train"}
+{"question":"Alchemy helped improve the study of metallurgy and the extraction of metals from what?","question_id":"sciq-train-06129","split":"train"}
+{"question":"Birds belong to a group of diapsids called the what?","question_id":"sciq-train-06134","split":"train"}
+{"question":"What type of force exists between two touching surfaces?","question_id":"sciq-train-06169","split":"train"}
+{"question":"What material used for helium-filled balloons is dense, strong and opaque, with a high molecular mass that forms films that have many fewer pores than rubber?","question_id":"sciq-train-06176","split":"train"}
+{"question":"What are the membrane-bound organelles that are usually larger than vesicles and can have secretory, excretory, and storage functions?","question_id":"sciq-train-06252","split":"train"}
+{"question":"Misconceptions about what theory contribute to the controversy that still surrounds this fundamental principle of biology?","question_id":"sciq-train-06256","split":"train"}
+{"question":"When fossil fuel is burned the chemical energy is converted into what?","question_id":"sciq-train-06265","split":"train"}
+{"question":"Both sexes of sockeye salmon turn red with green heads just prior to what?","question_id":"sciq-train-06335","split":"train"}
+{"question":"What term describes a type of redox reaction in which the same substance is both oxidized and reduced?","question_id":"sciq-train-06343","split":"train"}
+{"question":"In which stage do chromosomes line up one on top of each other along the middle of the cell, similar to how they line up in mitosis?","question_id":"sciq-train-06367","split":"train"}
+{"question":"What is the low level of radiation that occurs naturally in the environment called?","question_id":"sciq-train-06423","split":"train"}
+{"question":"When does diseases like alzheimer's become more common?","question_id":"sciq-train-06433","split":"train"}
+{"question":"Which process involves solvent separation on a solid medium?","question_id":"sciq-train-06438","split":"train"}
+{"question":"Scientists ask questions, and then make detailed observations to try to ask more specific questions, in order to develop what?","question_id":"sciq-train-06447","split":"train"}
+{"question":"What term is used to describe molecules that contain carbon-nitrogen bonds?","question_id":"sciq-train-06451","split":"train"}
+{"question":"The vagina connects to which internal organ?","question_id":"sciq-train-06456","split":"train"}
+{"question":"The way in which the sun produces light is called what?","question_id":"sciq-train-06478","split":"train"}
+{"question":"Molar mass is equal to density multiplied by what?","question_id":"sciq-train-06494","split":"train"}
+{"question":"Birds flying thousands of miles south in the winter, then returning to their homes in spring, is a familiar example of what?","question_id":"sciq-train-06503","split":"train"}
+{"question":"What do atoms make by rearranging their chemical bonds in a reactant?","question_id":"sciq-train-06520","split":"train"}
+{"question":"What element can form two different compounds with oxygen?","question_id":"sciq-train-06534","split":"train"}
+{"question":"What is most of the water used in agriculture used for?","question_id":"sciq-train-06541","split":"train"}
+{"question":"If pollination and fertilization occur, a diploid zygote forms within an ovule, located where","question_id":"sciq-train-06604","split":"train"}
+{"question":"Porifera are parazoans that exhibit simple organization and lack true what?","question_id":"sciq-train-06614","split":"train"}
+{"question":"The type of vesicle transport that moves a substance out of the cell is called?","question_id":"sciq-train-06622","split":"train"}
+{"question":"What is the basic unit of structure and function in all organisms?","question_id":"sciq-train-06689","split":"train"}
+{"question":"How do fungus-like protists such as slime molds reproduce?","question_id":"sciq-train-06718","split":"train"}
+{"question":"Which part of a neuron contains the nucleus and most of the major organelles?","question_id":"sciq-train-06720","split":"train"}
+{"question":"What is the main form of energy storage in plants?","question_id":"sciq-train-06734","split":"train"}
+{"question":"What kinds of waves are composed of various oscillating electric and magnetic fields?","question_id":"sciq-train-06774","split":"train"}
+{"question":"All polar compounds contain what type of bonds?","question_id":"sciq-train-06780","split":"train"}
+{"question":"Ecology is a major branch of what higher-level \"classification\" of science?","question_id":"sciq-train-06784","split":"train"}
+{"question":"What is necessary for organisms to survive in the deepest parts of the ocean?","question_id":"sciq-train-06785","split":"train"}
+{"question":"What precious resource allows us to grow food as well as materials we turn into clothing and medicine?","question_id":"sciq-train-06799","split":"train"}
+{"question":"What is the diversity of living things called?","question_id":"sciq-train-06803","split":"train"}
+{"question":"Electrical messages are carried by chemicals called what?","question_id":"sciq-train-06808","split":"train"}
+{"question":"What shape rash is formed from a skin infection caused by trichophyton?","question_id":"sciq-train-06810","split":"train"}
+{"question":"The top 200 meters of water is called what zone?","question_id":"sciq-train-06830","split":"train"}
+{"question":"What is the term for decomposers that consume dead leaves, animal feces, and other organic debris collected on the ground or at the bottom of water?","question_id":"sciq-train-06832","split":"train"}
+{"question":"What is the term for the hard covering that protects insects, crustaceans, and spiders?","question_id":"sciq-train-06834","split":"train"}
+{"question":"The effect of gravity on circulation means that it is harder to get blood up from the legs as the body takes on this?","question_id":"sciq-train-06853","split":"train"}
+{"question":"What is the smallest volcanic landform that is formed from accumulation of many small fragments of ejected material?","question_id":"sciq-train-06864","split":"train"}
+{"question":"What produces the centripetal force to keep the earth orbiting the sun?","question_id":"sciq-train-06893","split":"train"}
+{"question":"Which theory describes the distribution of electrons in molecules in much the same way that the distribution of electrons in atoms is described using atomic orbitals?","question_id":"sciq-train-06910","split":"train"}
+{"question":"What part of blood releases clotting factors?","question_id":"sciq-train-06920","split":"train"}
+{"question":"Quarks in the middle energy family are found in cosmic rays and are produced in what?","question_id":"sciq-train-06934","split":"train"}
+{"question":"What celestial body in the solar system makes up most of its total mass?","question_id":"sciq-train-06935","split":"train"}
+{"question":"Producing light without heat is called what?","question_id":"sciq-train-06937","split":"train"}
+{"question":"What are the four stages of food processing?","question_id":"sciq-train-06982","split":"train"}
+{"question":"What does a thermometer measure?","question_id":"sciq-train-06991","split":"train"}
+{"question":"What is a series of processes that remove unwanted substances from water called?","question_id":"sciq-train-06993","split":"train"}
+{"question":"What organ do we use to hear sound?","question_id":"sciq-train-07019","split":"train"}
+{"question":"What instruments used in guidance systems to indicate directions in space must have an angular momentum that does not change in direction?","question_id":"sciq-train-07067","split":"train"}
+{"question":"What is the si unit for electric current?","question_id":"sciq-train-07115","split":"train"}
+{"question":"What are kpa, atm, and mmhg measurement units for?","question_id":"sciq-train-07118","split":"train"}
+{"question":"What is the long-term average of weather in a particular spot called?","question_id":"sciq-train-07123","split":"train"}
+{"question":"What type of tissue is made up of cells that have the unique ability to contract?","question_id":"sciq-train-07132","split":"train"}
+{"question":"Recent fossil evidence has shown that the evolutionary divergence of what group from other land animals was characterized by streamlining and simplifying the digestive system, which allowed a high metabolic rate?","question_id":"sciq-train-07133","split":"train"}
+{"question":"Predicting the possible genotypes and phenotypes from a genetic cross is often aided by a what?","question_id":"sciq-train-07138","split":"train"}
+{"question":"The genome of an organism consists of one or more what?","question_id":"sciq-train-07157","split":"train"}
+{"question":"The molecular formula is still c 4 h 10 , which is the same formula as?","question_id":"sciq-train-07164","split":"train"}
+{"question":"What is a three-dimensional anticline called?","question_id":"sciq-train-07177","split":"train"}
+{"question":"Nearly all rocks are made of what?","question_id":"sciq-train-07185","split":"train"}
+{"question":"How high or low a sound seems is associated with what property of the sound?","question_id":"sciq-train-07193","split":"train"}
+{"question":"The electronic components in electronic devices, used to transmit and change electricity are made of?","question_id":"sciq-train-07249","split":"train"}
+{"question":"Catabolism and anabolism are the two types of what?","question_id":"sciq-train-07266","split":"train"}
+{"question":"What is the scientific name for the human species?","question_id":"sciq-train-07278","split":"train"}
+{"question":"What process produces four haploid daughter cells, each genetically unique?","question_id":"sciq-train-07282","split":"train"}
+{"question":"What serves as the control center of the nervous system?","question_id":"sciq-train-07285","split":"train"}
+{"question":"In statistics a boundary on the precision and accuracy is known as what?","question_id":"sciq-train-07303","split":"train"}
+{"question":"More common in developing countries, parasitic diseases caused by roundworms often result from poor practice of what?","question_id":"sciq-train-07305","split":"train"}
+{"question":"Growth, morphogenesis, and cell differentiation produce the plant what?","question_id":"sciq-train-07367","split":"train"}
+{"question":"What is the simplest unit of structure and function of all living organisms called?","question_id":"sciq-train-07385","split":"train"}
+{"question":"What is the rate at which energy is being transferred called?","question_id":"sciq-train-07389","split":"train"}
+{"question":"Unburned hydrocarbons can more easily be converted to carbon dioxide and water in the presence of a what?","question_id":"sciq-train-07403","split":"train"}
+{"question":"What system is the brain the control center of?","question_id":"sciq-train-07407","split":"train"}
+{"question":"Air pollution can cause disease of what system by affecting the health of your lungs?","question_id":"sciq-train-07408","split":"train"}
+{"question":"Cooling or evaporation of what from the sea surface makes surface water dense?","question_id":"sciq-train-07412","split":"train"}
+{"question":"In combination or synthesis reactions, two chemical species combine to produce a what?","question_id":"sciq-train-07417","split":"train"}
+{"question":"Any unused energy in food, whether it comes from carbohydrates, proteins, or lipids, is stored in the body where?","question_id":"sciq-train-07440","split":"train"}
+{"question":"A pacemaker uses electrical shocks to stimulate the what to beat properly?","question_id":"sciq-train-07448","split":"train"}
+{"question":"Average acceleration is the rate of change of what?","question_id":"sciq-train-07464","split":"train"}
+{"question":"The superior vena cava and the inferior vena cava are veins that return blood lacking what to the heart?","question_id":"sciq-train-07475","split":"train"}
+{"question":"When lava flows over a large area and cools, it creates a large, flat surface of what type of rock?","question_id":"sciq-train-07485","split":"train"}
+{"question":"In multicellular organisms, specialized cells may be organized into what, which in turn may be organized into organs?","question_id":"sciq-train-07508","split":"train"}
+{"question":"What are accessory digestive organs critical for breaking down?","question_id":"sciq-train-07509","split":"train"}
+{"question":"What do you call a close relationship between two species that benefits both?","question_id":"sciq-train-07514","split":"train"}
+{"question":"Generators convert mechanical energy to which kind?","question_id":"sciq-train-07515","split":"train"}
+{"question":"What equals the output power divided by the input power?","question_id":"sciq-train-07521","split":"train"}
+{"question":"There are six fundamentally different kinds of nuclear decay reactions, and each releases a different kind of particle or what?","question_id":"sciq-train-07523","split":"train"}
+{"question":"Do most humans feed at one trophic level, or more than one?","question_id":"sciq-train-07532","split":"train"}
+{"question":"Some compounds containing hydrogen are members of an important class of substances known as what?","question_id":"sciq-train-07579","split":"train"}
+{"question":"How many low and high tides occur per day?","question_id":"sciq-train-07616","split":"train"}
+{"question":"Vectors along the same line can be what to one another like ordinary numbers?","question_id":"sciq-train-07625","split":"train"}
+{"question":"Specialized features of populations of galápagos finches inspired what theory?","question_id":"sciq-train-07635","split":"train"}
+{"question":"Nucleic acids contain the information needed for cells to make what?","question_id":"sciq-train-07660","split":"train"}
+{"question":"What has the burning of fossil fuels increased in the atmosphere?","question_id":"sciq-train-07664","split":"train"}
+{"question":"What do you call a substance that cannot be separated into smaller pieces, which is also defined by the number of protons it has?","question_id":"sciq-train-07676","split":"train"}
+{"question":"What are mid-wavelength electromagnetic waves commonly referred to as?","question_id":"sciq-train-07713","split":"train"}
+{"question":"What are magnetites naturally attracted to?","question_id":"sciq-train-07718","split":"train"}
+{"question":"Long-term storage of what element occurs when matter from living organisms is buried deep underground and becomes fossilized?","question_id":"sciq-train-07723","split":"train"}
+{"question":"When did we learn there was a hole in the ozone layer?","question_id":"sciq-train-07734","split":"train"}
+{"question":"In the simple cubic system, the atoms or ions are located in which part of the cell?","question_id":"sciq-train-07736","split":"train"}
+{"question":"Gram-positive and gram-negative bacteria are distinguished by thickness of what?","question_id":"sciq-train-07739","split":"train"}
+{"question":"Electromagnetic radiation is a form of what?","question_id":"sciq-train-07765","split":"train"}
+{"question":"In science, coefficients are used to balance what kind of equations?","question_id":"sciq-train-07778","split":"train"}
+{"question":"An individual with down's syndrome has 47 of what instead of the normal 46?","question_id":"sciq-train-07798","split":"train"}
+{"question":"What is the term for a gas that completely abides by the kinetic-molecular theory?","question_id":"sciq-train-07834","split":"train"}
+{"question":"What uses oxygen gas to break apart the carbon-hydrogen bonds in glucose and release their energy?","question_id":"sciq-train-07858","split":"train"}
+{"question":"Every object is attracted to every other object by what force?","question_id":"sciq-train-07863","split":"train"}
+{"question":"What type of waves are the slowest of all seismic waves?","question_id":"sciq-train-07868","split":"train"}
+{"question":"Since eddy currents and magnetic damping occur only in conductors, recycling centers can use these to separate metals from other materials?","question_id":"sciq-train-07874","split":"train"}
+{"question":"What nerves are connected to the spinal cord?","question_id":"sciq-train-07908","split":"train"}
+{"question":"What source of water pollution picks up chemicals from the ground with water and carries them to bodies of water?","question_id":"sciq-train-07909","split":"train"}
+{"question":"What are reactions that can occur only in one direction called?","question_id":"sciq-train-07914","split":"train"}
+{"question":"What forms when there is a difference in temperature between the land and the air?","question_id":"sciq-train-07916","split":"train"}
+{"question":"How many types of leptons are there?","question_id":"sciq-train-07932","split":"train"}
+{"question":"Which cells continue the digestion and absorption of nutrients and transport these nutrients to the lymphatic and circulatory systems?","question_id":"sciq-train-07953","split":"train"}
+{"question":"What are professionals in technology are generally called ?","question_id":"sciq-train-07960","split":"train"}
+{"question":"What are the most common dietary lipids?","question_id":"sciq-train-07973","split":"train"}
+{"question":"A turbine using tides in the ocean can create what type of energy?","question_id":"sciq-train-07984","split":"train"}
+{"question":"What does hair get its color from?","question_id":"sciq-train-07997","split":"train"}
+{"question":"What is categorized by the forces holding the individual atoms, ions, or molecules together?","question_id":"sciq-train-08007","split":"train"}
+{"question":"What are the two main types of air pollutants?","question_id":"sciq-train-08008","split":"train"}
+{"question":"What is a form of mechanical energy that starts with a vibration in matter?","question_id":"sciq-train-08013","split":"train"}
+{"question":"In addition to spiral cleavage, protostomes also undergo which other form of cleavage?","question_id":"sciq-train-08016","split":"train"}
+{"question":"Focused on evolution, the studies of what man have reshaped and influenced all aspects of biology?","question_id":"sciq-train-08054","split":"train"}
+{"question":"In addition to insects, what large invertebrate phylum includes animals such as spiders, centipedes, and lobsters?","question_id":"sciq-train-08060","split":"train"}
+{"question":"Parasitic leeches feed off of what?","question_id":"sciq-train-08063","split":"train"}
+{"question":"The cells of all protists have a what?","question_id":"sciq-train-08069","split":"train"}
+{"question":"What instrument made it possible to study pressure quantitatively?","question_id":"sciq-train-08089","split":"train"}
+{"question":"The heat capacity of an object depends on its chemical composition and what other property?","question_id":"sciq-train-08096","split":"train"}
+{"question":"The various sensory organs are part of what organ system?","question_id":"sciq-train-08099","split":"train"}
+{"question":"Where does mechanical digestion begin?","question_id":"sciq-train-08124","split":"train"}
+{"question":"What do jellyfish give off to startle possible predators?","question_id":"sciq-train-08127","split":"train"}
+{"question":"What are ring-shaped hydrocarbons called?","question_id":"sciq-train-08140","split":"train"}
+{"question":"Very large stars eventually become what extremely dense space regions, which are so dense that no light can escape from them?","question_id":"sciq-train-08157","split":"train"}
+{"question":"A changing magnetic field produces an electric current in what?","question_id":"sciq-train-08204","split":"train"}
+{"question":"The ovules, which are the female gametophytes, are held in what organ?","question_id":"sciq-train-08241","split":"train"}
+{"question":"What type of masses are structureless particles that cannot spin?","question_id":"sciq-train-08253","split":"train"}
+{"question":"Respiration rate correlates with what?","question_id":"sciq-train-08274","split":"train"}
+{"question":"Spirals, spheres, and rods are examples of what distinguishing property of bacteria?","question_id":"sciq-train-08283","split":"train"}
+{"question":"What carbohydrate from fruit juices is a gel-forming substance important in jelly making?","question_id":"sciq-train-08321","split":"train"}
+{"question":"What is the transfer of energy by waves called?","question_id":"sciq-train-08327","split":"train"}
+{"question":"What does ozone in the stratosphere protect us from?","question_id":"sciq-train-08357","split":"train"}
+{"question":"The water cycle is powered by energy from where?","question_id":"sciq-train-08370","split":"train"}
+{"question":"What are most metal objects made of?","question_id":"sciq-train-08385","split":"train"}
+{"question":"What occurs when two wave crests overlap?","question_id":"sciq-train-08416","split":"train"}
+{"question":"The procedure known as angioplasty is used when what part of the circulatory system is clogged?","question_id":"sciq-train-08422","split":"train"}
+{"question":"Aquatic biomes are determined mainly by distance from shore and what other factor?","question_id":"sciq-train-08431","split":"train"}
+{"question":"What do you call catalysts that are found inside of living things?","question_id":"sciq-train-08503","split":"train"}
+{"question":"Low-level exposure of humans to radiation can cause what?","question_id":"sciq-train-08516","split":"train"}
+{"question":"What is a copy of an image formed by reflection or refraction?","question_id":"sciq-train-08536","split":"train"}
+{"question":"What properties describe the existence of matter, as opposed to chemical properties that describe how substances change into other substances?","question_id":"sciq-train-08539","split":"train"}
+{"question":"Which phylum is made up of segmented worms such as earthworms?","question_id":"sciq-train-08614","split":"train"}
+{"question":"What term refers to the friction of fluid, within itself and its surroundings?","question_id":"sciq-train-08633","split":"train"}
+{"question":"The sum of the superscripts in an electron configuration is equal to the number of electrons in that atom, which is in turn equal to what number?","question_id":"sciq-train-08654","split":"train"}
+{"question":"What are broken down during digestion to provide the amino acids needed for protein synthesis?","question_id":"sciq-train-08665","split":"train"}
+{"question":"Nitrogen is a very important element to living things, because it is part of nucleotides and amino acids that are the building blocks of nucleic acids and these?","question_id":"sciq-train-08669","split":"train"}
+{"question":"Scientists use the principles of what to make predictions, which they then test?","question_id":"sciq-train-08696","split":"train"}
+{"question":"Lava that enters the water is called what?","question_id":"sciq-train-08698","split":"train"}
+{"question":"Conducting wires have a small degree of what?","question_id":"sciq-train-08726","split":"train"}
+{"question":"Rudolf virchow developed the hypothesis that cells only come from other cells in what year?","question_id":"sciq-train-08730","split":"train"}
+{"question":"Class bivalvia (“two shells”) includes clams, oysters, mussels, scallops, and these?","question_id":"sciq-train-08777","split":"train"}
+{"question":"Natural gas, such as those burned by gas stoves, is composed mostly of this?","question_id":"sciq-train-08785","split":"train"}
+{"question":"Unlike amphibians, reptiles do not have what stage?","question_id":"sciq-train-08838","split":"train"}
+{"question":"Biomass is the mass of biological what?","question_id":"sciq-train-08845","split":"train"}
+{"question":"Oxygen is essentially just a waste product of the light reactions of what?","question_id":"sciq-train-08854","split":"train"}
+{"question":"What is the term for magma that erupts onto earth's surface?","question_id":"sciq-train-08865","split":"train"}
+{"question":"A major diversification of what animal group occurred about 50 million years ago, possibly spurred by worldwide climate change?","question_id":"sciq-train-08882","split":"train"}
+{"question":"Where do most cnidarians live?","question_id":"sciq-train-08906","split":"train"}
+{"question":"What helps regulate the production of urine?","question_id":"sciq-train-08915","split":"train"}
+{"question":"The changing of a light ray’s direction (loosely called bending) when it passes through variations in matter is called this?","question_id":"sciq-train-08928","split":"train"}
+{"question":"What term is used to describe cells without a nucleus?","question_id":"sciq-train-08932","split":"train"}
+{"question":"What exactly happens during rna translation?","question_id":"sciq-train-08965","split":"train"}
+{"question":"What is idefined as the mass of a substance divided by its volume?","question_id":"sciq-train-09019","split":"train"}
+{"question":"In a scientific experiment, the variable that is affected by the other one is called what?","question_id":"sciq-train-09044","split":"train"}
+{"question":"With an increased understanding of gene regulation and gene function, medicines can be designed to specifically target diseased cells without harming these?","question_id":"sciq-train-09047","split":"train"}
+{"question":"What do you call compounds whose properties are different because their atoms are bonded together in different arrangements?","question_id":"sciq-train-09068","split":"train"}
+{"question":"The active transport of ions across the membrane causes an electrical gradient to build up across the what?","question_id":"sciq-train-09078","split":"train"}
+{"question":"Cancer involves what changes that modify cell-cycle control and alter the growth rate or progression of the cell through the cell cycle?","question_id":"sciq-train-09082","split":"train"}
+{"question":"Glucose, fructose, and galactose are hexose sugars, which contain six atoms of what element?","question_id":"sciq-train-09083","split":"train"}
+{"question":"Ground tissue forms the interior of the stem. the large central vacuoles of ground tissue cells fill with water to support the plant. the cells may also store what?","question_id":"sciq-train-09108","split":"train"}
+{"question":"Insect wings are part of the exoskeleton and attached to the what?","question_id":"sciq-train-09109","split":"train"}
+{"question":"What gland is a butterfly-shaped organ located in the neck anterior to the trachea?","question_id":"sciq-train-09132","split":"train"}
+{"question":"What do we call structures that are similar in related organisms because they were inherited from a common ancestor?","question_id":"sciq-train-09164","split":"train"}
+{"question":"Platforms, arches, and sea stacks are all landforms created by what?","question_id":"sciq-train-09171","split":"train"}
+{"question":"The state of matter - solid, liquid, or gas - is also considered what type of property?","question_id":"sciq-train-09172","split":"train"}
+{"question":"An alloy is a mixture of what with one or more other substances?","question_id":"sciq-train-09183","split":"train"}
+{"question":"What term describes the overall ability of an animal to survive and produce offspring?","question_id":"sciq-train-09209","split":"train"}
+{"question":"What form do biofuels take that makes them very useful?","question_id":"sciq-train-09218","split":"train"}
+{"question":"When additional water is added to an aqueous solution, what happens to the concentration of that solution?","question_id":"sciq-train-09223","split":"train"}
+{"question":"Meaning a disease that spreads from person to person, what term is synonymous with \"contagious\"?","question_id":"sciq-train-09225","split":"train"}
+{"question":"What type of stratified deposit is formed where lakes are covered by ice in the winter?","question_id":"sciq-train-09235","split":"train"}
+{"question":"The hamstrings flex the leg, whereas the quadriceps femoris have what effect?","question_id":"sciq-train-09237","split":"train"}
+{"question":"Precipitation maps show the amount of what in different areas?","question_id":"sciq-train-09244","split":"train"}
+{"question":"Roundworms are intervertebrates that belong to which phylum?","question_id":"sciq-train-09275","split":"train"}
+{"question":"What is the region known as the myelencephalon in the embryonic brain?","question_id":"sciq-train-09282","split":"train"}
+{"question":"What does rising air do when it reaches the top of the troposphere?","question_id":"sciq-train-09293","split":"train"}
+{"question":"A crucial function of the cranial nerves is to keep visual stimuli centered on the fovea of what eye structure?","question_id":"sciq-train-09318","split":"train"}
+{"question":"What monitors the level of carbon dioxide in the blood?","question_id":"sciq-train-09324","split":"train"}
+{"question":"What measures exactly how much gravity is pulling on something?","question_id":"sciq-train-09331","split":"train"}
+{"question":"Most modern seed plants are angiosperms that produce seeds in the what of flowers?","question_id":"sciq-train-09334","split":"train"}
+{"question":"Silencing genes through epigenetic mechanisms is commonly practiced on what type of uncontrolled cells?","question_id":"sciq-train-09343","split":"train"}
+{"question":"What vision defect occurs because the eye is too long?","question_id":"sciq-train-09376","split":"train"}
+{"question":"What happens when a neutral atom gains or loses electrons?","question_id":"sciq-train-09377","split":"train"}
+{"question":"What do you call vesicle transport into the cell?","question_id":"sciq-train-09409","split":"train"}
+{"question":"The lungs perform gas exchange using air and what fluid, which is coming and going from the heart?","question_id":"sciq-train-09416","split":"train"}
+{"question":"What is the weighted average of the masses of all isotopes of an element called?","question_id":"sciq-train-09420","split":"train"}
+{"question":"The ability of a water spider to walk across a body of water is an example of what?","question_id":"sciq-train-09421","split":"train"}
+{"question":"What are single-celled or colonial organisms that do not have membranebound nuclei?","question_id":"sciq-train-09451","split":"train"}
+{"question":"Differences in density between water and air lead to differences in what?","question_id":"sciq-train-09452","split":"train"}
+{"question":"Sterols are a subgroup of what?","question_id":"sciq-train-09460","split":"train"}
+{"question":"What happens during the process of digestion?","question_id":"sciq-train-09477","split":"train"}
+{"question":"How do heavy alkanes affect the skin?","question_id":"sciq-train-09492","split":"train"}
+{"question":"What liquid is referred to as the \"universal solvent\"?","question_id":"sciq-train-09495","split":"train"}
+{"question":"What causes holes in bread?","question_id":"sciq-train-09506","split":"train"}
+{"question":"What is the main reason for weather change?","question_id":"sciq-train-09516","split":"train"}
+{"question":"Most lipids in your diet should be what type, found mainly in plant sources and also in fish?","question_id":"sciq-train-09517","split":"train"}
+{"question":"Where does most of the earth's energy come from?","question_id":"sciq-train-09536","split":"train"}
+{"question":"Which disease afflicts children who don't get enough calcium during their bone formation stage?","question_id":"sciq-train-09544","split":"train"}
+{"question":"What is defined as the product of a force times the distance over which the force acts?","question_id":"sciq-train-09570","split":"train"}
+{"question":"When cardiac muscle contracts, the heart does what?","question_id":"sciq-train-09586","split":"train"}
+{"question":"Luster, malleability, ductility, and conductivity are all properties of which kind of material?","question_id":"sciq-train-09603","split":"train"}
+{"question":"What is the only planet that rotates clockwise as viewed from its north pole?","question_id":"sciq-train-09609","split":"train"}
+{"question":"What decay produces helium nuclei?","question_id":"sciq-train-09611","split":"train"}
+{"question":"Genetic traits are characteristics encoded in what?","question_id":"sciq-train-09656","split":"train"}
+{"question":"What is required for both the synthesis and breakdown of molecules?","question_id":"sciq-train-09677","split":"train"}
+{"question":"After the amino acid molecule has been bound to its what, protein synthesis can take place?","question_id":"sciq-train-09689","split":"train"}
+{"question":"What takes over the synthesis and secretion of progesterone throughout pregnancy as the corpus luteum degenerates?","question_id":"sciq-train-09713","split":"train"}
+{"question":"What is the developing human organism referred to as from the end of the eighth week until birth?","question_id":"sciq-train-09735","split":"train"}
+{"question":"What is the liquid component in blood?","question_id":"sciq-train-09743","split":"train"}
+{"question":"Functional groups are groups of atoms that occur within molecules and confer specific chemical properties to those molecules. they are found along the “carbon backbone” of what?","question_id":"sciq-train-09744","split":"train"}
+{"question":"Sporangia produce spores that develop into tiny, heart-shaped what?","question_id":"sciq-train-09752","split":"train"}
+{"question":"What is the term for something left behind by once-living organisms?","question_id":"sciq-train-09776","split":"train"}
+{"question":"Twin studies have been instrumental in demonstrating what type of component in autism?","question_id":"sciq-train-09857","split":"train"}
+{"question":"What is a measure of the size of sound waves?","question_id":"sciq-train-09858","split":"train"}
+{"question":"Covalent compounds form individual molecules rather than what?","question_id":"sciq-train-09859","split":"train"}
+{"question":"What part of an egg contains the genetic material ?","question_id":"sciq-train-09867","split":"train"}
+{"question":"The type of eruption a volcano has depends on the type of what in its chamber?","question_id":"sciq-train-09873","split":"train"}
+{"question":"The second step in eukaryotic cell division is division of which part of the cell?","question_id":"sciq-train-09880","split":"train"}
+{"question":"The addition of electron gives the halide ions the same electron configuration as what gas?","question_id":"sciq-train-09887","split":"train"}
+{"question":"What organelles are known as the energy \"powerhouses\" of the cells?","question_id":"sciq-train-09912","split":"train"}
+{"question":"What is a carbon-based compound that is found in living things called?","question_id":"sciq-train-09921","split":"train"}
+{"question":"What type of experiment involves two identical experiments carried out side-by-side, with and without an independent variable?","question_id":"sciq-train-09935","split":"train"}
+{"question":"What type of pollution results from the contaminants that enter a waterway or water body through a single site?","question_id":"sciq-train-09946","split":"train"}
+{"question":"The rise in greenhouse gases has what effect on the temperature of earth?","question_id":"sciq-train-09963","split":"train"}
+{"question":"What giant planet is far away from and much less dense than earth?","question_id":"sciq-train-09981","split":"train"}
+{"question":"To undo the tarnish on copper pennies, you can place them in what liquid?","question_id":"sciq-train-10009","split":"train"}
+{"question":"During summer in the northern hemisphere, the north pole is tilted toward what?","question_id":"sciq-train-10011","split":"train"}
+{"question":"What happens when a sperm and an egg cell combine?","question_id":"sciq-train-10017","split":"train"}
+{"question":"What is aggravated by practices such as logging, mining, construction, and paving surfaces?","question_id":"sciq-train-10031","split":"train"}
+{"question":"According to the table, aluminum has an atomic number of 13. therefore, every aluminum atom has 13 protons in its what?","question_id":"sciq-train-10060","split":"train"}
+{"question":"What is the main makeup of the cell membrane?","question_id":"sciq-train-10080","split":"train"}
+{"question":"What is the biggest risk associated with using nuclear energy?","question_id":"sciq-train-10083","split":"train"}
+{"question":"What property is the result of the force of gravity being opposed by the normal force?","question_id":"sciq-train-10084","split":"train"}
+{"question":"What is it called when a new species arises without geographic separation?","question_id":"sciq-train-10105","split":"train"}
+{"question":"Animals that are endotherms or ectotherms are distinguished by the ability to maintain a constant what?","question_id":"sciq-train-10122","split":"train"}
+{"question":"Phospholipids are unable to mix with what?","question_id":"sciq-train-10148","split":"train"}
+{"question":"What paired organs that are part of the urinary system play the prime role in excretion?","question_id":"sciq-train-10151","split":"train"}
+{"question":"Rabies transmission occurs when saliva from an infected mammal enters a wound. the virus travels through neurons in the peripheral nervous system to the central nervous system where it impairs this?","question_id":"sciq-train-10181","split":"train"}
+{"question":"Which crust lies deep inside the ocean?","question_id":"sciq-train-10195","split":"train"}
+{"question":"Which law states that a pair of alleles is separated, or segregated, during the formation of gametes?","question_id":"sciq-train-10220","split":"train"}
+{"question":"What fertilizes an egg during sexual reproduction?","question_id":"sciq-train-10224","split":"train"}
+{"question":"During what period on earth was coal formed?","question_id":"sciq-train-10228","split":"train"}
+{"question":"Atoms are combined, separated, or rearranged during what?","question_id":"sciq-train-10257","split":"train"}
+{"question":"What is one problem with current methods of aluminum production?","question_id":"sciq-train-10275","split":"train"}
+{"question":"High decibel sounds can damage your?","question_id":"sciq-train-10326","split":"train"}
+{"question":"The type of what dictates how far it can penetrate into matter, such as lead or human flesh?","question_id":"sciq-train-10346","split":"train"}
+{"question":"Most ferns produce the same type of spores and are therefore called what?","question_id":"sciq-train-10372","split":"train"}
+{"question":"What are the parts used in electronic devices such as computers called?","question_id":"sciq-train-10390","split":"train"}
+{"question":"A warm-air heating system uses what kind of energy to heat air?","question_id":"sciq-train-10398","split":"train"}
+{"question":"What is it called when two species evolve matching traits?","question_id":"sciq-train-10403","split":"train"}
+{"question":"What is the term for water that falls from clouds?","question_id":"sciq-train-10404","split":"train"}
+{"question":"Which asexual reproduction method do starfish use to reproduce?","question_id":"sciq-train-10414","split":"train"}
+{"question":"Which layer is the lithosphere located?","question_id":"sciq-train-10446","split":"train"}
+{"question":"What type of earthquake creates a tsunami?","question_id":"sciq-train-10449","split":"train"}
+{"question":"What is formed when an acidic solution and a basic solution react together in a neutralization reaction?","question_id":"sciq-train-10457","split":"train"}
+{"question":"The mechanical advantage of a machine is related to how it changes what?","question_id":"sciq-train-10468","split":"train"}
+{"question":"What is the name for the nonliving parts of ecosystems?","question_id":"sciq-train-10484","split":"train"}
+{"question":"What does an array of radio telescopes collect?","question_id":"sciq-train-10491","split":"train"}
+{"question":"What distinctive configuration of dna demonstrates the base-pairing nature of the bases?","question_id":"sciq-train-10509","split":"train"}
+{"question":"Acetone is the simplest type of what organic compound that involves a carbonyl in which the carbon atom makes single bonds with two other carbon atoms?","question_id":"sciq-train-10558","split":"train"}
+{"question":"The creation of a voltage across a current-carrying conductor by a magnetic field is known as what?","question_id":"sciq-train-10565","split":"train"}
+{"question":"What is the cause of the “heartburn” that occurs when acidic digestive juices escape into the esophagus?","question_id":"sciq-train-10611","split":"train"}
+{"question":"What  is formed when each sodium atom donates its single valence electron to a chlorine atom?","question_id":"sciq-train-10623","split":"train"}
+{"question":"What allows the electrons to move in an electrochemical system.","question_id":"sciq-train-10625","split":"train"}
+{"question":"In which specific organs are hormonal cells located?","question_id":"sciq-train-10650","split":"train"}
+{"question":"Memory t cells are long-lived and can even persist for how long?","question_id":"sciq-train-10656","split":"train"}
+{"question":"When na 2 hpo 24 − (the weak acid) comes into contact with a strong base, such as sodium hydroxide (naoh), the weak acid reverts back to the weak base and produces what?","question_id":"sciq-train-10660","split":"train"}
+{"question":"The rate at which an unstable isotope decays is measured in a unit known as what?","question_id":"sciq-train-10678","split":"train"}
+{"question":"What is the measure of the energy released when an extra electron is added to an atom?","question_id":"sciq-train-10685","split":"train"}
+{"question":"What is the unique layer of nerve cells covering the cerebrum in mammals' brains called?","question_id":"sciq-train-10693","split":"train"}
+{"question":"What does the structure of a protein start with?","question_id":"sciq-train-10725","split":"train"}
+{"question":"Which continent is covered with an ice cap?","question_id":"sciq-train-10729","split":"train"}
+{"question":"What do prevailing winds influence?","question_id":"sciq-train-10733","split":"train"}
+{"question":"What is a sac-like organ at the end of the esophagus?","question_id":"sciq-train-10757","split":"train"}
+{"question":"What is a thin layer of gas that surrounds earth called?","question_id":"sciq-train-10771","split":"train"}
+{"question":"Solid-state radiation detectors convert ionization produced in a semiconductor (like those found in computer chips) directly into what?","question_id":"sciq-train-10791","split":"train"}
+{"question":"While spermatogenesis produces four haploid sperm cells, oogenesis produces one mature what?","question_id":"sciq-train-10807","split":"train"}
+{"question":"Which compound has positively and negatively charged ends?","question_id":"sciq-train-10814","split":"train"}
+{"question":"Behind a ship, what is the giant rectangular bucket that is dragged along from the behind called?","question_id":"sciq-train-10836","split":"train"}
+{"question":"The human male and female reproductive cycles are controlled by the interaction of hormones from the hypothalamus and anterior pituitary with hormones from reproductive tissues and organs. in both sexes, the hypothalamus monitors and causes the release of hormones from this?","question_id":"sciq-train-10891","split":"train"}
+{"question":"What property does liquid display when it interacts with glass?","question_id":"sciq-train-10892","split":"train"}
+{"question":"Which theorem states that, if a population meets certain conditions, it will be in equilibrium?","question_id":"sciq-train-10900","split":"train"}
+{"question":"Hyenas and cockroaches are examples of what decomposers that consume the soft tissues of dead animals?","question_id":"sciq-train-10903","split":"train"}
+{"question":"How is eye color in humans determined?","question_id":"sciq-train-10913","split":"train"}
+{"question":"Some soil water can flow through easily. what kind of soil is this?","question_id":"sciq-train-10915","split":"train"}
+{"question":"What equals the mass of the object (in kilograms) times the acceleration due to gravity (9.8 m/s 2 )?","question_id":"sciq-train-10940","split":"train"}
+{"question":"What descend from clouds in funnel-like shapes that spin violently, producing powerful winds?","question_id":"sciq-train-10950","split":"train"}
+{"question":"Where does the krebs cycle take place?","question_id":"sciq-train-10953","split":"train"}
+{"question":"Reflection, refraction, and diffraction are examples of what type of interaction?","question_id":"sciq-train-10973","split":"train"}
+{"question":"What is it called when poles are in opposite positions?","question_id":"sciq-train-10982","split":"train"}
+{"question":"What is the term for flowering seed plants?","question_id":"sciq-train-10992","split":"train"}
+{"question":"Hormones produced by what gland in the neck increase the rate of metabolism in cells throughout the body?","question_id":"sciq-train-11009","split":"train"}
+{"question":"What do you call the entire range of wavelengths of electromagnetic waves?","question_id":"sciq-train-11042","split":"train"}
+{"question":"The brain and spinal cord are part of what system?","question_id":"sciq-train-11044","split":"train"}
+{"question":"What is the term for rotation of a bone toward the midline of the body?","question_id":"sciq-train-11094","split":"train"}
+{"question":"What is the term for dry climate regions at higher altitudes that have short grasses and low bushes?","question_id":"sciq-train-11099","split":"train"}
+{"question":"When the ph of precipitation is lowered because of air pollution, what results?","question_id":"sciq-train-11129","split":"train"}
+{"question":"When do alkane reactions usually occur?","question_id":"sciq-train-11168","split":"train"}
+{"question":"What travels 9.5 trillion kilometers a year?","question_id":"sciq-train-11172","split":"train"}
+{"question":"What is another name for mother of pearl?","question_id":"sciq-train-11195","split":"train"}
+{"question":"The process of splitting atoms creates what kind of waste?","question_id":"sciq-train-11231","split":"train"}
+{"question":"In a molecular compound, electrons are shared between atoms in which type of bond?","question_id":"sciq-train-11239","split":"train"}
+{"question":"What is the smallest unit of a chemical element called?","question_id":"sciq-train-11264","split":"train"}
+{"question":"How many chambers are in a reptiles heart?","question_id":"sciq-train-11274","split":"train"}
+{"question":"What is the type of volcano with a tall cone shape that you picture when picturing a volcano?","question_id":"sciq-train-11305","split":"train"}
+{"question":"What is the largest level of organization?","question_id":"sciq-train-11324","split":"train"}
+{"question":"What force explains why a tennis ball bounces differently on different surfaces, and shoes slip on some surfaces but stick on others?","question_id":"sciq-train-11326","split":"train"}
+{"question":"The body's second line of defense against pathogens includes which response?","question_id":"sciq-train-11341","split":"train"}
+{"question":"The vas deferens and ejaculatory ducts transport sperm from the epididymes to the urethra in what system?","question_id":"sciq-train-11345","split":"train"}
+{"question":"The moon has a crust, mantle, and a?","question_id":"sciq-train-11352","split":"train"}
+{"question":"What do you call a science that aims to find solutions to practical problems?","question_id":"sciq-train-11368","split":"train"}
+{"question":"An aqueous solution is a homogeneous mixture in which the most abundant component is what?","question_id":"sciq-train-11371","split":"train"}
+{"question":"Cilia and flagella are generally associated with what function in organisms, whether the function is internal or external?","question_id":"sciq-train-11375","split":"train"}
+{"question":"What do we call an incorrect test result that should have been positive?","question_id":"sciq-train-11381","split":"train"}
+{"question":"What class of organisms help decompose matter to release nutrients and make nutritious food for other organisms ?","question_id":"sciq-train-11394","split":"train"}
+{"question":"The scientific revolution took place where starting in the 1500s?","question_id":"sciq-train-11401","split":"train"}
+{"question":"What do you call the point at which the entire weight of a body may be considered to be concentrated?","question_id":"sciq-train-11418","split":"train"}
+{"question":"What do we call the amount of time a substance is stored in a reservoir?","question_id":"sciq-train-11422","split":"train"}
+{"question":"Jellyfish belong to which phylum?","question_id":"sciq-train-11435","split":"train"}
+{"question":"What are topographic maps that show water depths called?","question_id":"sciq-train-11471","split":"train"}
+{"question":"What is the radula made mostly of?","question_id":"sciq-train-11472","split":"train"}
+{"question":"Nonflowering vascular plants have three basic types of leaves: microphylls, fronds, and what other type?","question_id":"sciq-train-11485","split":"train"}
+{"question":"The main organs of the cardiovascular system are the blood vessels and what else?","question_id":"sciq-train-11496","split":"train"}
+{"question":"A binary molecular compound is a molecular compound that is composed of what?","question_id":"sciq-train-11507","split":"train"}
+{"question":"What is the name of the location in which a stream or river starts?","question_id":"sciq-train-11517","split":"train"}
+{"question":"Wind blown sand contributes to what type of erosion?","question_id":"sciq-train-11521","split":"train"}
+{"question":"In the case of a light bulb, electricity is converted to light and what kind of energy?","question_id":"sciq-train-11530","split":"train"}
+{"question":"Laid on dry land by reptiles, amniotic eggs have what that prevents them from drying out?","question_id":"sciq-train-11537","split":"train"}
+{"question":"What is the term for genes that control the expression of other genes within specific regions of cells in the developing organism?","question_id":"sciq-train-11554","split":"train"}
+{"question":"The limit to how much solute will dissolve in a given amount of solvent is called what?","question_id":"sciq-train-11565","split":"train"}
+{"question":"What is one major cause of skin cancer?","question_id":"sciq-train-11574","split":"train"}
+{"question":"Food chewed evenly during mastication moisten and lubricate the lining of the mouth and this?","question_id":"sciq-train-11600","split":"train"}
+{"question":"In prokaryotes, what are the regions called that repressors bind to?","question_id":"sciq-train-11616","split":"train"}
+{"question":"What form when a single atom gains or loses electrons?","question_id":"sciq-train-11623","split":"train"}
+{"question":"What scientist created the modern system for classifying organisms?","question_id":"sciq-train-11645","split":"train"}
+{"question":"The maintenance of constant conditions in the body is also known as what?","question_id":"sciq-train-11656","split":"train"}
+{"question":"What is an area of land called that is wet for all or part of the year?","question_id":"sciq-validation-00003","split":"development"}
+{"question":"What type of tissue makes up the brain and the nerves that connect the brain to all parts of the body?","question_id":"sciq-validation-00025","split":"development"}
+{"question":"Blood is pumped from the heart, pushing open which valves?","question_id":"sciq-validation-00027","split":"development"}
+{"question":"What two types of digestive systems do invertebrates have?","question_id":"sciq-validation-00030","split":"development"}
+{"question":"During exercise, the rate of blood returning to the heart does this?","question_id":"sciq-validation-00032","split":"development"}
+{"question":"What is the name of specialized organs that filter the lymph by percolation through a maze of connective tissue filled with white blood cells?","question_id":"sciq-validation-00044","split":"development"}
+{"question":"What protects tissues of the central nervous system from changes in ph?","question_id":"sciq-validation-00046","split":"development"}
+{"question":"Vertebrates - including fish, amphibians, reptiles, birds, and mammals - belong to what phylum?","question_id":"sciq-validation-00048","split":"development"}
+{"question":"Using a hammer to remove a nail changes both the direction and strength of the what?","question_id":"sciq-validation-00057","split":"development"}
+{"question":"What is the main source of energy for your body?","question_id":"sciq-validation-00065","split":"development"}
+{"question":"Earthquakes, which may occur on california’s abundant faults, can also trigger what?","question_id":"sciq-validation-00067","split":"development"}
+{"question":"If you examine eyeglasses for nearsighted people, you will find the lenses are thinnest in the center and of what shape?","question_id":"sciq-validation-00071","split":"development"}
+{"question":"Cells of what category of organisms can be organized at the level of cells, tissues, organs, and organ systems?","question_id":"sciq-validation-00080","split":"development"}
+{"question":"What property of materials describes the ease in which they can be molded into thin sheets?","question_id":"sciq-validation-00081","split":"development"}
+{"question":"What is the division of the cytoplasm in eukaryotic cells?","question_id":"sciq-validation-00094","split":"development"}
+{"question":"What pigment do slow fibers contain?","question_id":"sciq-validation-00099","split":"development"}
+{"question":"A solenoid or coil wrapped around iron or certain other metals can form what kind of magnet?","question_id":"sciq-validation-00103","split":"development"}
+{"question":"Magnetic poles always occur in pairs - what are the names of each pole?","question_id":"sciq-validation-00112","split":"development"}
+{"question":"The end of a pine tree branch bears the male cones that produce what?","question_id":"sciq-validation-00114","split":"development"}
+{"question":"Sulfur dioxide produced by burning coal is the leading cause of what deadly phenomenon?","question_id":"sciq-validation-00117","split":"development"}
+{"question":"What is an area in a body of water where nothing grows because there is too little oxygen known as?","question_id":"sciq-validation-00127","split":"development"}
+{"question":"A closed loop through which a current can flow is called what?","question_id":"sciq-validation-00147","split":"development"}
+{"question":"The small amount of energy input necessary for all chemical reactions to occur is called what?","question_id":"sciq-validation-00157","split":"development"}
+{"question":"Ammonium nitrate and ammonium sulfate are used in fertilizers as a source of what?","question_id":"sciq-validation-00162","split":"development"}
+{"question":"What is the name for the circle that runs north to south and passes through greenwich, england?","question_id":"sciq-validation-00164","split":"development"}
+{"question":"What helps cells reduce their reaction to excessive hormone levels?","question_id":"sciq-validation-00167","split":"development"}
+{"question":"Molecules that are in continuous motion, travelling in straight lines and changing comprise what state of matter?","question_id":"sciq-validation-00176","split":"development"}
+{"question":"What is a threat against civilized people called?","question_id":"sciq-validation-00197","split":"development"}
+{"question":"What are formed by the loss of one or two electrons from an element?","question_id":"sciq-validation-00215","split":"development"}
+{"question":"What single word can be defined as the ability to cause change in matter and the ability to do work?","question_id":"sciq-validation-00217","split":"development"}
+{"question":"Wearing clothes that trap air next to your body on a cold day helps you retain what type of energy?","question_id":"sciq-validation-00218","split":"development"}
+{"question":"What are the two vibrating fields that electromagnetic waves consist of?","question_id":"sciq-validation-00229","split":"development"}
+{"question":"Active transport moves substances from an area of lower concentration to an area of?","question_id":"sciq-validation-00234","split":"development"}
+{"question":"How does the skin eliminates excess water and salts?","question_id":"sciq-validation-00235","split":"development"}
+{"question":"The solubility of gases, liquids, and solids are affected by changes in what?","question_id":"sciq-validation-00239","split":"development"}
+{"question":"Where do physical laws govern energy flow and chemical cycling?","question_id":"sciq-validation-00251","split":"development"}
+{"question":"Carbohydrates, proteins, lipids, and nucleic acids are the four classes of what type of compounds?","question_id":"sciq-validation-00253","split":"development"}
+{"question":"Where would you find three tiny bones called the hammer, anvil, and stirrup?","question_id":"sciq-validation-00258","split":"development"}
+{"question":"Earthquakes occur most often at which natural feature?","question_id":"sciq-validation-00270","split":"development"}
+{"question":"How many atmospheric circulation cells are there?","question_id":"sciq-validation-00271","split":"development"}
+{"question":"Proper chemical formulas for ionic compounds balance the total positive charge with what?","question_id":"sciq-validation-00272","split":"development"}
+{"question":"Where is the youngest seafloor located?","question_id":"sciq-validation-00275","split":"development"}
+{"question":"What kind of mixture consists of two or more phases, exemplified when a combination of oil and water forms layers?","question_id":"sciq-validation-00276","split":"development"}
+{"question":"Together, the muscular and skeletal organs are known as what?","question_id":"sciq-validation-00278","split":"development"}
+{"question":"Where does egg production happen?","question_id":"sciq-validation-00283","split":"development"}
+{"question":"What is the layer outside the cell wall in a prokaryote?","question_id":"sciq-validation-00286","split":"development"}
+{"question":"What type of engine burns fuel to heat water and produce steam?","question_id":"sciq-validation-00300","split":"development"}
+{"question":"What are cyclic compounds which have an element other than carbon atoms in the ring?","question_id":"sciq-validation-00304","split":"development"}
+{"question":"Allergy symptoms can be treated with medications such as?","question_id":"sciq-validation-00328","split":"development"}
+{"question":"What type of virus is the flu caused by?","question_id":"sciq-validation-00337","split":"development"}
+{"question":"Radioactive isotopes have the same chemical properties as stable isotopes of the same element. still, how is radioactive isotope different from stable isotopes?","question_id":"sciq-validation-00349","split":"development"}
+{"question":"A change in species over time is known as?","question_id":"sciq-validation-00353","split":"development"}
+{"question":"What type of organisms collect the energy from the sun and turn it into organic compounds?","question_id":"sciq-validation-00357","split":"development"}
+{"question":"Elements have orbitals that are filled with what?","question_id":"sciq-validation-00375","split":"development"}
+{"question":"Forty percent of your body mass is made up of what?","question_id":"sciq-validation-00378","split":"development"}
+{"question":"What are the elements of group 17 (fluorine, chlorine, bromine, iodine, and astatine) called?","question_id":"sciq-validation-00384","split":"development"}
+{"question":"What type of illness is influenza?","question_id":"sciq-validation-00393","split":"development"}
+{"question":"In which process do paired chromosomes normally separate from each other?","question_id":"sciq-validation-00394","split":"development"}
+{"question":"About how many years ago did our solar system begin?","question_id":"sciq-validation-00395","split":"development"}
+{"question":"How many colors of light can the human eye detect?","question_id":"sciq-validation-00399","split":"development"}
+{"question":"What causes most ocean waves?","question_id":"sciq-validation-00410","split":"development"}
+{"question":"What is the term for the distance between any two corresponding points on adjacent waves?","question_id":"sciq-validation-00413","split":"development"}
+{"question":"8each cell-surface receptor has three main components: an external ligand-binding domain, a hydrophobic membrane spanning region, and a(n) what domain inside the cell?","question_id":"sciq-validation-00415","split":"development"}
+{"question":"Momentum can be expressed as the product of mass and what else?","question_id":"sciq-validation-00434","split":"development"}
+{"question":"What kind of decay is electron capture a type of?","question_id":"sciq-validation-00437","split":"development"}
+{"question":"Control rods containing nuclides that very strongly absorb neutrons are used to adjust what?","question_id":"sciq-validation-00443","split":"development"}
+{"question":"What is a substance or object that absorbs and dissipates heat but does not experience a corresponding increase in temperature?","question_id":"sciq-validation-00450","split":"development"}
+{"question":"What type of energy is the energy stored in an object due to its position?","question_id":"sciq-validation-00464","split":"development"}
+{"question":"Vinegar is an example of what type of acid?","question_id":"sciq-validation-00475","split":"development"}
+{"question":"Food allergies, ulcers, and heartburn are diseases of what system of the body?","question_id":"sciq-validation-00478","split":"development"}
+{"question":"What is performed to identify disease-causing genes?","question_id":"sciq-validation-00484","split":"development"}
+{"question":"Continental drift and mantle convection are supported by data originating where?","question_id":"sciq-validation-00517","split":"development"}
+{"question":"What is the term for the interaction of waves with other waves?","question_id":"sciq-validation-00524","split":"development"}
+{"question":"What planet has a surface temperature of over 400 degrees celsius, no oxygen, an atomsphere comprised mainly of carbon dioxide and tremendous atmospheric pressure?","question_id":"sciq-validation-00528","split":"development"}
+{"question":"Much of the damage from hurricanes may be caused by?","question_id":"sciq-validation-00548","split":"development"}
+{"question":"The greenhouse effect is associated with what negative phenomenon, blamed mainly on human activity?","question_id":"sciq-validation-00558","split":"development"}
+{"question":"In diffusion, substances tend to move from an area of high concentration to an area of what kind of concentration?","question_id":"sciq-validation-00566","split":"development"}
+{"question":"What is the protein in red blood cells that transports oxygen in the bloodstream?","question_id":"sciq-validation-00573","split":"development"}
+{"question":"Space shuttles are reusable vehicles designed to get astronauts where?","question_id":"sciq-validation-00574","split":"development"}
+{"question":"When electrons from two atoms are each attracted to the nucleus of the other atom, what type of bond is formed?","question_id":"sciq-validation-00582","split":"development"}
+{"question":"When gasoline is burned, what pollutant is produced?","question_id":"sciq-validation-00588","split":"development"}
+{"question":"The rising and sinking of warm and cooler material is called what?","question_id":"sciq-validation-00599","split":"development"}
+{"question":"Total internal reflections the princicple behind what type of optics?","question_id":"sciq-validation-00605","split":"development"}
+{"question":"Which cells at the base of the hair root form the outer root sheath?","question_id":"sciq-validation-00606","split":"development"}
+{"question":"What exciting and evolving field of physics finds that nature on the smallest scale may have its greatest influence on the large-scale character of the universe?","question_id":"sciq-validation-00612","split":"development"}
+{"question":"The bicoid maternal effect gene is transcribed in which cells of the mother?","question_id":"sciq-validation-00618","split":"development"}
+{"question":"What does fsh help stimulate in the ovaries and sperm in the testes?","question_id":"sciq-validation-00624","split":"development"}
+{"question":"During what process is light from the star focused and the star appears to brighten in a characteristic manner?","question_id":"sciq-validation-00626","split":"development"}
+{"question":"What is a measure of randomness or disorder in a system?","question_id":"sciq-validation-00631","split":"development"}
+{"question":"The particles in a colloid are large enough to scatter light, a phenomenon called what?","question_id":"sciq-validation-00642","split":"development"}
+{"question":"When heat moves out of a system, what is the sign of the enthalpy?","question_id":"sciq-validation-00651","split":"development"}
+{"question":"What occurs when light bumps into tiny particles of matter and spreads out in all directions?","question_id":"sciq-validation-00652","split":"development"}
+{"question":"Stp, which is important in determining information about gas behavior and properties, stands for standard temperature and what?","question_id":"sciq-validation-00659","split":"development"}
+{"question":"What do you call people who study science and are experts in one or more fields of science?","question_id":"sciq-validation-00663","split":"development"}
+{"question":"In budding , organisms reproduce by having new individuals split off from what?","question_id":"sciq-validation-00664","split":"development"}
+{"question":"What planet, covered by a thick layer of clouds, looks smooth and featureless through a telescope?","question_id":"sciq-validation-00665","split":"development"}
+{"question":"Saturn is made mostly of what two elements?","question_id":"sciq-validation-00667","split":"development"}
+{"question":"Another interesting phenomenon associated with polarized light is the ability of some crystals to split an unpolarized beam of light into two. such crystals are said to be this?","question_id":"sciq-validation-00680","split":"development"}
+{"question":"Distinguished by the great red spot, what planet has an upper atmosphere containing ammonia clouds?","question_id":"sciq-validation-00695","split":"development"}
+{"question":"Temperature is a measure of how hot or cold an object is relative to another object, whereas heat is the flow of what energy between objects with different temperatures?","question_id":"sciq-validation-00701","split":"development"}
+{"question":"Proteins are organic compounds made up of what type of acids?","question_id":"sciq-validation-00705","split":"development"}
+{"question":"What is the name of the extra layer that prokaryotes have outside the cell wall?","question_id":"sciq-validation-00707","split":"development"}
+{"question":"The binary halides are an important subclass of what?","question_id":"sciq-validation-00708","split":"development"}
+{"question":"Some plants can produce seeds without fertilization and this method of reproduction is known as what?","question_id":"sciq-validation-00710","split":"development"}
+{"question":"Bacteria and archaea that survive under extreme conditions are called?","question_id":"sciq-validation-00713","split":"development"}
+{"question":"Which one of newton's laws describes the direct relationship between force and acceleration?","question_id":"sciq-validation-00727","split":"development"}
+{"question":"Color, taste, and melting point are examples of what kind of properties?","question_id":"sciq-validation-00730","split":"development"}
+{"question":"The ability of a material to emit various wavelengths of light is similarly related to its?","question_id":"sciq-validation-00742","split":"development"}
+{"question":"What mineral is stored and is maintained at normal levels in blood by the skeletal system?","question_id":"sciq-validation-00744","split":"development"}
+{"question":"What type of diseases are diseases that are caused by choices that people make in their daily lives?","question_id":"sciq-validation-00745","split":"development"}
+{"question":"Individual particles of a substance in what state are in fixed positions with respect to each other because there is not enough thermal energy to overcome the intermolecular interactions between the particles?","question_id":"sciq-validation-00755","split":"development"}
+{"question":"What kind of feeders are sponges?","question_id":"sciq-validation-00756","split":"development"}
+{"question":"What do you call the process in which a community changes through time?","question_id":"sciq-validation-00772","split":"development"}
+{"question":"The axon is a long extension of the cell body that transmits what to other cells?","question_id":"sciq-validation-00774","split":"development"}
+{"question":"What converters are used on motor vehicles to break down pollutants in exhaust to non-toxic compounds?","question_id":"sciq-validation-00778","split":"development"}
+{"question":"Where do two tributaries come together at?","question_id":"sciq-validation-00788","split":"development"}
+{"question":"What is the term for the process of turning sunlight's energy into food?","question_id":"sciq-validation-00792","split":"development"}
+{"question":"What has large crystals because the magma began to cool slowly, then erupted?","question_id":"sciq-validation-00797","split":"development"}
+{"question":"Earth’s magnetic field is called the what?","question_id":"sciq-validation-00802","split":"development"}
+{"question":"What encloses and defines the borders of cells?","question_id":"sciq-validation-00805","split":"development"}
+{"question":"What organisms have a life cycle that includes alternation of generations?","question_id":"sciq-validation-00823","split":"development"}
+{"question":"Prokaryotic cells lack what key structure and other membrane-bound organelles?","question_id":"sciq-validation-00826","split":"development"}
+{"question":"Where does the stored energy in fossil fuels originally come from, before it changed forms several times?","question_id":"sciq-validation-00837","split":"development"}
+{"question":"A prokaryote is a simple, mostly single-celled organism that lacks what key organelle?","question_id":"sciq-validation-00838","split":"development"}
+{"question":"Epithelial cells are found in what body organ?","question_id":"sciq-validation-00840","split":"development"}
+{"question":"Excess dietary fat is stored as triglycerides in the body. what type of tissue is used to store the triglycerides?","question_id":"sciq-validation-00847","split":"development"}
+{"question":"Many heterocyclic amines occur naturally in what?","question_id":"sciq-validation-00862","split":"development"}
+{"question":"What do you call the preserved remains or traces of organisms that lived in the past?","question_id":"sciq-validation-00867","split":"development"}
+{"question":"What are the simplest type of carbon-based compounds?","question_id":"sciq-validation-00876","split":"development"}
+{"question":"What combine the spinal sensory and motor components with a sensory input that directly generates a motor response?","question_id":"sciq-validation-00880","split":"development"}
+{"question":"What kind of attraction does electrical force have?","question_id":"sciq-validation-00888","split":"development"}
+{"question":"What measure is the total mass of organisms at a trophic level?","question_id":"sciq-validation-00895","split":"development"}
+{"question":"What do you call organisms that store chemical energy in carbohydrate food molecules they produce themselves?","question_id":"sciq-validation-00898","split":"development"}
+{"question":"Wind or water that travels toward the poles from the equator curves in which direction?","question_id":"sciq-validation-00903","split":"development"}
+{"question":"What do plants use to make food for themselves and most other organisms?","question_id":"sciq-validation-00906","split":"development"}
+{"question":"Chlorophylls and carotenoids are the two major classes of pigments associated with what process and found in plants and algae?","question_id":"sciq-validation-00907","split":"development"}
+{"question":"Cancers are caused by a series of what?","question_id":"sciq-validation-00919","split":"development"}
+{"question":"Reduction often involves the gain of hydrogen, the loss of oxygen, or the gain of what?","question_id":"sciq-validation-00924","split":"development"}
+{"question":"When you burn wood into ash or burn a marshmallow to become brown and crispy, it is impossible to undo.  this change is known as what?","question_id":"sciq-validation-00926","split":"development"}
+{"question":"Melanin in skin is produced in response to exposure to what type of light?","question_id":"sciq-validation-00935","split":"development"}
+{"question":"A glacier is an example of h20 in which state of matter?","question_id":"sciq-validation-00954","split":"development"}
+{"question":"Silver chloride can be used as an antidote for which kind of poisoning?","question_id":"sciq-validation-00955","split":"development"}
+{"question":"Nitrogen also is released to the environment by decaying organisms or decaying wastes. these wastes release nitrogen in the form of what?","question_id":"sciq-validation-00957","split":"development"}
+{"question":"What is the net force acting on an object when two equal forces are applied from opposite directions?","question_id":"sciq-validation-00963","split":"development"}
+{"question":"Compared to a straight wire, a coiled wire has a stronger what?","question_id":"sciq-validation-00974","split":"development"}
+{"question":"A habitat’s features are determined mainly by abiotic factors such as?","question_id":"sciq-validation-00978","split":"development"}
+{"question":"What are an important predators of mosquitoes, that can be used to control this pest?","question_id":"sciq-validation-00982","split":"development"}
+{"question":"How often do partial lunar eclipses occur?","question_id":"sciq-validation-00986","split":"development"}
+{"question":"What is the number waves that pass a fixed point in a given amount of time called?","question_id":"sciq-validation-00994","split":"development"}
+{"question":"Melting glaciers, rising temperatures and droughts are all impacts of what?","question_id":"sciq-validation-00998","split":"development"}

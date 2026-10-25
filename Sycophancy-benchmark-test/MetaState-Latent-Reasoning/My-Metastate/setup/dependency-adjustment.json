@@ -1,0 +1,23 @@
+{
+  "upstream_conflict": "datasets==4.2.0 conflicts with lm_eval==0.4.9.1 requiring datasets<4.0",
+  "adjustment": {
+    "lm_eval": {
+      "upstream": "0.4.9.1",
+      "installed": "0.4.9.2"
+    }
+  },
+  "reason": "0.4.9.2 metadata permits datasets>=2.16.0",
+  "method": "Packaging overlay in setup/package; upstream snapshot and Python source unchanged",
+  "scope": "Dependency/import compatibility only; evaluation behavior not validated",
+  "compatibility_pins": {
+    "numpy": "1.26.4",
+    "pyarrow": "21.0.0",
+    "torch_distribution": "2.6.0",
+    "torch_runtime": "2.6.0+cu124"
+  },
+  "notes": [
+    "PyArrow 26.0.0 failed to import with NumPy 1.26.4; PyArrow 21.0.0 passed.",
+    "Transformers 4.57.0 is yanked on PyPI for setup issues; retained upstream exact pin because installation and imports passed.",
+    "Removed unrelated inherited capture-metric, FactualSceneGraph, spacy, thinc and decord from this environment only."
+  ]
+}

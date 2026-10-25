@@ -1,0 +1,41 @@
+{
+  "counts": {
+    "development": 64,
+    "test": 64,
+    "train": 256
+  },
+  "files": {
+    "processed/development.jsonl": "e547fef581ecbcd96be4826f122fb59fdf46cc19e795ce88118bbde29e69f487",
+    "processed/test.jsonl": "2ef4e265d20f90b8eba82cac43b4b65387f26d20ac1bacd7b0e9ba82fb90ba58",
+    "processed/train.jsonl": "6a6ab11e8c554f2188ef252b5b367b6bc5388befa454edca5730e5a41c799dbc",
+    "tiny/development.jsonl": "b6fa3b5efff68c0a7a7f0ba832f628a0aab9a5a718017dd22d3cfb3fc913c8f7",
+    "tiny/train.jsonl": "7970afeb04b1d4de1d94c4897b94af7236f3d81d419848ab214c8c963c8264f0",
+    "token_arrays/development.jsonl": "6fe2e2efb9c8886c903fcd492aa401ee4b988b44fb017794ac6c6302e526c36b",
+    "token_arrays/test.jsonl": "ced58b1461f6d127a3588dc968849a85a2ab3985314619d26b05485882f48ae4",
+    "token_arrays/train.jsonl": "ff647795291b495b928aecb7ab6651596f97709fa3243994d63e5c5e2dfb894d"
+  },
+  "hf_split_mapping": {
+    "test": "held-out test; do not use for tuning",
+    "train": "training",
+    "validation": "development"
+  },
+  "packages": {
+    "datasets": "4.2.0",
+    "tokenizers": "0.22.2",
+    "transformers": "4.57.0"
+  },
+  "schema_version": 1,
+  "scope": "Neutral arithmetic pilot. Belief variants and TruthfulQA excluded.",
+  "script_sha256": "00fea762cb0eeaaa79588c9ade0be716872114bb0e5dec7fd59fdd8b253d3ec3",
+  "seed": 42,
+  "source": "Deterministically generated locally; no external dataset",
+  "split_policy": "Canonical base problems deduplicated before stratified seeded splitting. Templates and operand ranges shared across splits; not a test of unseen task families.",
+  "tokenizer": {
+    "backbone_name_or_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+    "freeze_backbone": true,
+    "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+    "model_name_or_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+    "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07"
+  },
+  "training_policy": "Only target_answer and end-of-turn supervised; verification_steps metadata never tokenized. Fixed masked internal updates require a new trainer; do not pass this unchanged to old phase3 trainer."
+}

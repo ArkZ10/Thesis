@@ -1,0 +1,169 @@
+{
+  "created_at_utc": "2026-10-20T15:11:48.978870+00:00",
+  "stage": "part_1_setup",
+  "source": {
+    "original": "/root/Thesis/Sycophancy-benchmark-test/MetaState-Latent-Reasoning/MetaState",
+    "commit": "307549ef9b62a8a371c5c8e59cfeacfe537630c1",
+    "snapshot": "/root/Thesis/Sycophancy-benchmark-test/MetaState-Latent-Reasoning/My-Metastate/vendor/MetaState",
+    "file_sha256": {
+      ".gitignore": "8c7d15738c2b95e192765c78fc02555215d54b1b2655c3a938ceea86af1a3222",
+      "LICENSE": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "README.md": "a26368f1d84f54ccf5cd242af6d1d0a5139b16df0750c7e99071147a3ebea581",
+      "dllm/__init__.py": "d832a533ca45e670273e5a5115463cdd44fd2bee9d2cd5eceeda19178b6d3c08",
+      "dllm/core/__init__.py": "193eb441e662ac1546bedb15dbad69f1e3e742f551c0519e6c8300817ffc2f4c",
+      "dllm/core/modules/__init__.py": "a68a0cf338026c55783e96947596fee936c2c8cbdaa591b9cbbff3fe310081de",
+      "dllm/core/modules/recurrent.py": "7e60e9c8f0c681ffd5fe7b067651d744e0703add2f3d8b3122ddaa9ca273701c",
+      "dllm/core/samplers/__init__.py": "fa071e79561ba5e968b217d14b9523939edaefeb0e5d035cee21229122f0d995",
+      "dllm/core/samplers/base.py": "d0cb1ab0f1567da213bf7bb3bf898f3c798f8b1ef04c6ba27dda8224d7767192",
+      "dllm/core/samplers/recurrent_mdlm.py": "5be0febadd46fe560c700ca7a80e94d8d79f0cc9f3855c29678d419f5c4dfb23",
+      "dllm/core/samplers/utils.py": "8f10aee065f51fcbcd2de1e97e5842aacc664127ca708eb017d3a8e4a708bb09",
+      "dllm/core/schedulers/__init__.py": "c69023bc8a93260a727d690fb1477a712c670bc6163f4e12c4af89649eaf2b9e",
+      "dllm/core/schedulers/alpha.py": "e7b7cb571b00b853adda89e3d4d5fc29c4083b28c07153f54c4512a02a959819",
+      "dllm/core/trainers/__init__.py": "7df354f1fc0c0ffe3fec0acdc4157f8c21fefa657e5267a4f0067686dd24f5fa",
+      "dllm/core/trainers/mdlm.py": "e56d8bc8851359587dbb8cd4579883b42b2313b0ee7fa0e5807d1bbee0b4e87d",
+      "dllm/core/trainers/recurrent_mdlm.py": "ca7710215f73d0cd90a38a5b5371e69cbf9314fbf420afce708a3623d6320f10",
+      "dllm/core/trainers/utils/__init__.py": "19a99feac3b5fccda569147d655d541eb6ca120983899e3d22b1eabd6fe9b487",
+      "dllm/core/trainers/utils/meters.py": "72c364aa9018659eebb669e288813f5868a4d42c137df526fab7ebae6db4d618",
+      "dllm/core/trainers/utils/metrics.py": "b2c14c370e707717c1badfd07828c1e23f57c6ee476577f852a990e75569f030",
+      "dllm/data/__init__.py": "a98ee2167def65cd42edd20e0e5a16ba3d7685455820caf9f63c5f95cb96aa37",
+      "dllm/data/utils.py": "5fb109636562f750fdadf44a0281a70cbb63e8a3be7ccd7757fc50e5e167ceb6",
+      "dllm/pipelines/__init__.py": "e0340993f4a415dc6c4da0353937f0c3f38f6d1c72c6f937f77fc1a277d070f9",
+      "dllm/pipelines/deterministic_fewshot.py": "ca8729d82bff328fa4ab9da03d2375bedef58f61cfa4c344c4e58415bbf44d1e",
+      "dllm/pipelines/llada/__init__.py": "7e5e0c8f98560ba12991ae788ed8ce8a7396e78973ac6d0be9cf5afc59e03602",
+      "dllm/pipelines/llada/models/__init__.py": "1d041d304d6be82c977d9b4ad7e9646d765444a705c08a956a8bd7fb06d2b0bc",
+      "dllm/pipelines/llada/models/configuration_llada.py": "a0413bbd04d1c011932ae06234c3e3378907850d2c6f9151c1195538c9672e76",
+      "dllm/pipelines/llada/models/modeling_llada.py": "487770dbdb97bcad2d13dd0432b0939bceed50a70878724a93a3a4cdfff228ef",
+      "dllm/pipelines/recurrent_eval.py": "6d23ad5874d73497f15ecfdbe5904651289f2b9c1e69ebfceaff64a3822b2bc8",
+      "dllm/pipelines/recurrent_llada/__init__.py": "bf242fb8130e8544155ae7c3d816625662d7d663f8d7633061907c39e21cc9fe",
+      "dllm/pipelines/recurrent_llada/configs/__init__.py": "66ce8a0c36055a4053ca82b96d6786301a2fbd3335dbaf645e28ce40fe01e585",
+      "dllm/pipelines/recurrent_llada/configs/recurrent_llada_config.py": "246c063b39ab390b6ff9769b0355ff68f09b5f04657ce29dcc8571656b2361ec",
+      "dllm/pipelines/recurrent_llada/models/__init__.py": "8cdbf78920b64532ea4adb16ed6f0989efea5d528f41f7188035fba0b417fc03",
+      "dllm/pipelines/recurrent_llada/models/modeling_recurrent_llada.py": "57226e30715704552919adf8374552cb812e8b92e30cf3cb706564f7b28c2eb8",
+      "dllm/utils/__init__.py": "a360e7f114db1dc53dd87f763f459a88509835f45e29d7f3e2eb2b4671d27e22",
+      "dllm/utils/configs.py": "6c7c38c294c9e174cffade3005b1efe49b02b54180f12f5062e2d37911340010",
+      "dllm/utils/data.py": "af96b28c537eb527aabd61078d5d4780a2fbd4a4304605fbd148e19f72344f08",
+      "dllm/utils/models.py": "6cbbe16846bf92054bb4c00fbcbdb530d1f26efeae10005eeae44b707520d6ce",
+      "dllm/utils/utils.py": "ca92ddc2301bfabc26aaded2443c24f9868930a4d4160cc2829530a7374c344e",
+      "example_launcher.sh": "2dc07053a9d3d4c06bd287b9fd2a93564a9fe259688a0cab3287617295e5f4f4",
+      "examples/metastate.png": "c001f8b9843246cd50469e59f48140f7b927869e8517cdb8856dbd9833f0d826",
+      "examples/recurrent_llada/eval.py": "1bd93acdd8adc9fda943820a2c5d13023d7f96ba4d080e8474362f01c88a9e19",
+      "examples/recurrent_llada/sft.py": "1de2992831fd5e3c3e406ab8df5e5c53dd88933b66549e4b9aba36b4349df2e4",
+      "pyproject.toml": "860cd15ca258e00a29abb64c039144e863888f46ae886178e40f50a0e208ee05",
+      "scripts/accelerate_configs/zero1.yaml": "7545337533ac0a1501a85314f3d629ac29fa8624f20c90ba33b70867b298cb33",
+      "scripts/collect_results.py": "8443515ef055f2b6dc9a87c101def1996fa78105fa714d334f744a8cc06a0bed",
+      "scripts/eval_checkpoint.sh": "6e7368ff238d693357a2af0f9bc65c9235aeee2d4c8d1590d64f44d80844f0c7"
+    }
+  },
+  "model": {
+    "id": "GSAI-ML/LLaDA-8B-Instruct",
+    "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+    "local_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+    "files": {
+      ".gitattributes": {
+        "bytes": 1519,
+        "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/a6344aac8c09253b3b630fb776ae94478aa0275b"
+      },
+      "README.md": {
+        "bytes": 431,
+        "sha256": "2cfd5f0b03a37974a64657fc3eef4f17f6b968c26ce9c80f00f6be1b5861f22a",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/ee618ef47226bd42d5d4e650e0ddb19004e57793"
+      },
+      "config.json": {
+        "bytes": 1385,
+        "sha256": "5f99fefe855fdb5100bb6cadb57bdb09fae723ad54811f95c00ecacf29d58a6a",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/021f5f1dbc5c4ff994be034f80a68eda43023de6"
+      },
+      "configuration_llada.py": {
+        "bytes": 12000,
+        "sha256": "c947a64d8b735affa69d5adeb416c83ce607c8925270884e4471ae11068e2bfe",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/3556bdac0bc0b06c6ec606830a28e9b3e6aeed56"
+      },
+      "generation_config.json": {
+        "bytes": 128,
+        "sha256": "00b3d1ffda2ca0a45633deb52ca4413dda046e7c94e9b05b73ed4a565b0677b3",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/eb204a82510094c3858dbd5a74ce794d936b73e9"
+      },
+      "model-00001-of-00006.safetensors": {
+        "bytes": 2109747184,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/ff6699df9635a267fb4ac801ea8012d39b21bb22ed290d5a57128521b889c230"
+      },
+      "model-00002-of-00006.safetensors": {
+        "bytes": 2948598128,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/b8ddf571b47f57ce654913877f3625d2c7b9a4c3f81cb6f41f6c3055473b0281"
+      },
+      "model-00003-of-00006.safetensors": {
+        "bytes": 2986883656,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/8347db2fd61a3b5bad2970c2f83ecb84b93632e276a41ca169dcc5efae15462c"
+      },
+      "model-00004-of-00006.safetensors": {
+        "bytes": 2952797224,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/93d8706872e7432d5cd40c9a61f9f9d270c101828cef2adaf27c67743d3dcf1a"
+      },
+      "model-00005-of-00006.safetensors": {
+        "bytes": 2919239128,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/ff5f765eb7ec8bfdbe3b962a9e920d71de43d55e04eb4844710c0efcc8855092"
+      },
+      "model-00006-of-00006.safetensors": {
+        "bytes": 2113931792,
+        "sha256": null,
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/f25d4cc57b24a79a840d49c3b25d9a22dd5caf3a9766f591e4625377901194e2"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 24941,
+        "sha256": "28b4ec27206e42e7ade630450e6ce618bd197acf34d35120e8e86d2bb910a408",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/09d69a72c025a27f33511d39ddfb7c4ad2cff3f0"
+      },
+      "modeling_llada.py": {
+        "bytes": 61443,
+        "sha256": "98bac7e53fef0bb7ca01e3716c11a7f710d183e10dbb9783b88db9dbba2e3766",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/810676f774fa5541030f36fbd7c451be588e8628"
+      },
+      "special_tokens_map.json": {
+        "bytes": 747,
+        "sha256": "e9f1f0f6fa133da3169ae69b1969c51cced047a900050893d7a0711c6bd063aa",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/fc6b5867397d3b8563cfa7f4aa826b10c3f8ffee"
+      },
+      "tokenizer.json": {
+        "bytes": 6098988,
+        "sha256": "071eb20fe7bd601550b1b7838ff696d6c93b88f51257f753303d3df23163c381",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/cad7554367f38d7cf0234b8bc7ed098053e12714"
+      },
+      "tokenizer_config.json": {
+        "bytes": 51692,
+        "sha256": "b9a6102c39a4f42f47f0d63fc6cee58a2381199d90f2a4f39b3f6871f32b4119",
+        "resolved_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/blobs/3d3e45476f407f76fdb89dd78c543a990e3e664b"
+      }
+    },
+    "weight_check": "Index-listed shards exist; large weight files not rehashed or loaded"
+  },
+  "environment": {
+    "prefix": "/root/Thesis/Sycophancy-benchmark-test/MetaState-Latent-Reasoning/My-Metastate/.env",
+    "cloned_from": "/opt/miniforge3/envs/diffuguard",
+    "independent_copy": true,
+    "freeze": "setup/environment.freeze.txt",
+    "conda_explicit": "setup/conda-explicit.txt"
+  },
+  "scope": {
+    "training_started": false,
+    "inference_started": false,
+    "data_prepared": false
+  },
+  "status": "setup_verified",
+  "verification": "setup/verification.json",
+  "dependency_adjustments": "setup/dependency-adjustment.json",
+  "setup_files_sha256": {
+    "scripts/activate.sh": "e83b9590282a5a67e4de76346e8294b0e9246e9be6f5b73daa708a7ceb1d91a1",
+    "scripts/capture_environment.sh": "463323a8475fcb202b5096606342ee4d97ae285aba93be32fc8d475d04a08dda",
+    "scripts/create_environment.sh": "3abfb753fc078d92dc4fd9a44b5cb30d1c364b595915d728da856d690adfb5cb",
+    "scripts/freeze_setup.py": "846a786bf130c194b8824d8f9f27ed31d8552d69a8043ef692183f89b513e610",
+    "scripts/install_environment.sh": "24cf0402fb2b43d7133d1527e9e1ec4600a1a66cd9ffc1a1be3c3e7e78db0f9a",
+    "scripts/verify_setup.py": "7d2cfe9d7d08f0ed990137643ee07f07530ecec002606e125c6b89928241f8f4"
+  },
+  "verification_completed_at_utc": "2026-10-20T15:15:58.111540+00:00"
+}

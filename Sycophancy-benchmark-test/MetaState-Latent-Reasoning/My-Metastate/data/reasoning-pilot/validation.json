@@ -1,0 +1,16 @@
+{
+  "assistant_boundary_and_prompt_masking": true,
+  "counts": {
+    "development": 64,
+    "test": 64,
+    "train": 256
+  },
+  "hf_arrays_match_jsonl": true,
+  "independent_arithmetic_checks": true,
+  "max_sequence_tokens": 68,
+  "min_sequence_tokens": 53,
+  "rebuild_jsonl_byte_identical": true,
+  "split_disjointness": true,
+  "status": "passed",
+  "unique_questions": 384
+}

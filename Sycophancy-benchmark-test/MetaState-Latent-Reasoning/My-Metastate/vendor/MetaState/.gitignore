@@ -1,0 +1,45 @@
+logs/
+results/
+results*/
+checkpoints/
+wandb/
+tests/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.hypothesis/
+
+# Build and package outputs
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments and local env files
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Generated model, checkpoint, and result artifacts
+*.out
+*.csv
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.log
+*.err

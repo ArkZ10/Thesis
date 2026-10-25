@@ -1,0 +1,74 @@
+# Local environments and credentials (keep example environment files).
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.venv/
+venv/
+env/
+ENV/
+key.txt
+keys.txt
+credentials.json
+*.pem
+*.key
+
+# Python caches, builds, and test artifacts.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# Model weights, tensor dumps, and generated binary datasets.
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.gguf
+*.h5
+*.hdf5
+*.arrow
+*.npy
+*.npz
+/Sycophancy-benchmark-test/LaDiR/assets/
+
+# Experiment outputs and runtime state.
+result/
+results/
+runs/
+outputs/
+logs/
+*.log
+checkpoints/
+checkpoint-*/
+wandb/
+tensorboard/
+.cache/
+/temp/
+
+# Rebuildable data; retain preparation scripts and data manifests.
+**/data/**/raw/
+**/data/**/processed/
+**/data/**/tokenized/
+**/data/**/token_arrays/
+**/data/**/tiny/
+**/data/full/
+
+# Local editor and OS files.
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

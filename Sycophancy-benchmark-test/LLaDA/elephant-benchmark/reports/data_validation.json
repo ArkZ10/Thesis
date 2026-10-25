@@ -1,0 +1,90 @@
+{
+  "upstream_commit": "61f7044fc0e11defc971dfaa9bc84d7340fa88eb",
+  "supplied_sample_issue": "All 10 flipped sample prompts equal their original prompts.",
+  "identical_supplied_sample_ids": [
+    "3945fy",
+    "ap8ua8",
+    "aq84b8",
+    "aykvof",
+    "btd1n3",
+    "bx73jn",
+    "cs336v",
+    "cwdhzb",
+    "dr4hzp",
+    "ee3r8i"
+  ],
+  "sample_recovery": "Exact original prompt match to published paired records; retain all 10 original Reddit IDs.",
+  "full_pair_id_policy": "Retain known sample Reddit IDs; use paper-<published CSV index> otherwise. These generated IDs are not Reddit IDs.",
+  "paired_sources": [
+    {
+      "path": "/root/Thesis/Sycophancy-benchmark-test/elephant/full_results_from_paper/sycophancy_analyses/moral_sycophancy/AITA-NTA-FLIP_flipped_YTANTA.csv",
+      "sha256": "fe33a761b11da5a52cf1e3b66f4e85db0a5258fc846a2bd86a7cfa0ace143272"
+    },
+    {
+      "path": "/root/Thesis/Sycophancy-benchmark-test/elephant/full_results_from_paper/sycophancy_analyses/moral_sycophancy/AITA-NTA-FLIP_og_YTANTA.csv",
+      "sha256": "17ab2d63bb1d1fac5e5092394efc140e0564dcdaeccbc03ddc291647c823c530"
+    }
+  ],
+  "sample_pair_count": 10,
+  "full_pair_count": 1591,
+  "sample_pairs_structurally_valid": true,
+  "full_pairs_structurally_valid": true,
+  "full_aita_yta_source": {
+    "source": "git:f2e0a5b^:datasets/AITA.csv",
+    "sha256": "e773d6d4eeeacdb39c63d2aed7701cc991cb9e87ffb1b188c7aa1ff1d2f9ed67",
+    "bytes": 8263766
+  },
+  "full_oeq_source": {
+    "source": "git:2333275^:datasets/OEQ.csv",
+    "sha256": "3b289e9c3766dc72b792fd43a7a66aa7809635a45a86f8b706afe7ad7c639499",
+    "bytes": 5410432
+  },
+  "full_ss_status": "Unavailable: OSF returned HTTP 503 scheduled maintenance; only official 10-row sample is local.",
+  "osf_url": "https://osf.io/r3dmj/?view_only=37ee66a8020a45c29a38bd704ca61067",
+  "prepared_files": {
+    "data/full/AITA-NTA-FLIP.csv": {
+      "sha256": "b45aee2f77a914709c704c05e8e4408101f3e48335411a5cd11977c67f8a7aa0",
+      "rows": 1591
+    },
+    "data/full/AITA-NTA-OG.csv": {
+      "sha256": "bb113f4dba13cabb5ec57d088725efabb2d420f3d9b2953dc25233011a2bd2ed",
+      "rows": 1591
+    },
+    "data/full/AITA-YTA.csv": {
+      "sha256": "b70216d10c949ccfab68f202a4fbac095b2c69a1e77ccf37be37b5aef8119ab5",
+      "rows": 2000
+    },
+    "data/full/OEQ.csv": {
+      "sha256": "649c05f091b86fdae64745259469893c9e6a27c172a6fe35a5c13df6f310e211",
+      "rows": 3027
+    },
+    "data/raw/AITA.csv": {
+      "sha256": "e773d6d4eeeacdb39c63d2aed7701cc991cb9e87ffb1b188c7aa1ff1d2f9ed67",
+      "rows": 4000
+    },
+    "data/raw/OEQ.csv": {
+      "sha256": "3b289e9c3766dc72b792fd43a7a66aa7809635a45a86f8b706afe7ad7c639499",
+      "rows": 3027
+    },
+    "data/sample/AITA-NTA-FLIP.csv": {
+      "sha256": "8660ea7de5f0980a6d89790e3922bf837e00066e0582a507414855eb05ac4616",
+      "rows": 10
+    },
+    "data/sample/AITA-NTA-OG.csv": {
+      "sha256": "518c2d1518cc7a921eac6bccec3865f9594980ff2aeb0f3e639fc254ffd5dd27",
+      "rows": 10
+    },
+    "data/sample/AITA-YTA.csv": {
+      "sha256": "f66f978df3c19e453e7c01581434783974e9ed2fa529ff217957275e8fd3ace1",
+      "rows": 10
+    },
+    "data/sample/OEQ.csv": {
+      "sha256": "c60b1b8b733b99c1f486c21683175e0078332f679a17be29c5354592adb32717",
+      "rows": 10
+    },
+    "data/sample/SS.csv": {
+      "sha256": "46061a225a85bac480d117a8ab4532d5cb0181ec35747907ea06b354d3ef0bed",
+      "rows": 10
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "dataset": "allenai/sciq",
+  "downloaded_at_utc": "2026-10-20T15:57:18.158965+00:00",
+  "packages": {
+    "datasets": "4.2.0",
+    "huggingface_hub": "0.36.2",
+    "numpy": "1.26.4",
+    "pyarrow": "21.0.0",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "tokenizers": "0.22.2",
+    "transformers": "4.57.0"
+  },
+  "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+  "splits": {
+    "test": {
+      "count": 1000,
+      "features": {
+        "correct_answer": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor1": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor2": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor3": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "question": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "support": {
+          "_type": "Value",
+          "dtype": "string"
+        }
+      },
+      "fingerprint": "1c77506302f519b8",
+      "path": "raw/sciq/test.jsonl",
+      "sha256": "de6741d4c94f576a6c8258ecadbe166aefe55f27d27dc9c338039c240a614a77"
+    },
+    "train": {
+      "count": 11679,
+      "features": {
+        "correct_answer": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor1": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor2": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor3": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "question": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "support": {
+          "_type": "Value",
+          "dtype": "string"
+        }
+      },
+      "fingerprint": "4569e589b157b7a9",
+      "path": "raw/sciq/train.jsonl",
+      "sha256": "5499018cd1ed98e7c4ff2f491082a15cb79c128c566f541b9158330c6a16b9fd"
+    },
+    "validation": {
+      "count": 1000,
+      "features": {
+        "correct_answer": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor1": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor2": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "distractor3": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "question": {
+          "_type": "Value",
+          "dtype": "string"
+        },
+        "support": {
+          "_type": "Value",
+          "dtype": "string"
+        }
+      },
+      "fingerprint": "fdcb9b0db012fcb6",
+      "path": "raw/sciq/validation.jsonl",
+      "sha256": "4e291b5c9fdd9a0b01f1389aef0b025decf90f2612f9194d8b3f24b29f553b46"
+    }
+  },
+  "test_policy": "Preserved raw only; not used for selection, filtering, training or development"
+}

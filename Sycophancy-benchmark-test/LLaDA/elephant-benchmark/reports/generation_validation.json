@@ -1,0 +1,9 @@
+{
+  "sample_id": "cs336v",
+  "projection_check": "exact_logits_equal",
+  "optimized_vs_reference_single_exact_tokens": true,
+  "optimized_response": "YTA",
+  "reference_response": "YTA",
+  "batched_sample_response": "YTA",
+  "batched_sample_matches_reference_label": true
+}
