@@ -1,0 +1,11 @@
+{
+  "launched_at_utc": "2026-11-12T08:22:10.470513+00:00",
+  "pid": 1312445,
+  "directory": "/root/Thesis/VAE_Training/outputs/vae-small-numeric-debug-20261112-01",
+  "log": "/root/Thesis/VAE_Training/logs/vae-small-numeric-debug-20261112-01.log",
+  "initial_step": 500,
+  "maximum_additional_steps": 300,
+  "learning_rate": 2e-05,
+  "physical_gpu": 1,
+  "larger_pilot_started": false
+}

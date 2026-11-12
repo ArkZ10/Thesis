@@ -2,7 +2,9 @@
 
 Main workspace: `/root/Thesis/VAE_Training`.
 
-Preparation status: LaDiR VAE code copied; raw datasets downloaded and verified; sentence-level preprocessing completed with 5,478,995 unique reconstruction targets; isolated `.venv` installed and verified on both RTX 3090 GPUs. DART-Math-Hard has 585,392 raw training rows; GSM8K main has 7,473 raw training rows and 1,319 raw test rows. Every downloaded file passed its upstream checksum, and every parquet row was read successfully. See `DATASET.md`, `ENVIRONMENT.md`, and the manifests. Training and pretrained model downloads have not been started.
+Status: code, datasets and isolated `.venv` are prepared. The Qwen3-0.6B-Base VAE reached 16/16 exact training reconstruction after a lower-LR continuation to step 525, with 0/16 development reconstruction and 0/16 zero/shuffled-code controls. Gradient, frozen-decoder and checkpoint reload checks passed. The small overfit gate is now met; generalization remains unestablished. See `NUMERIC_DEBUG.md` for the latest run and monitoring commands, and `SMALL_MODEL_TEST.md` for the preserved step-500 result. The larger pilot and full-size run have not started.
+
+Sentence preprocessing produced 5,478,995 unique reconstruction targets. DART-Math-Hard has 585,392 raw training rows; GSM8K main has 7,473 raw training rows and 1,319 raw test rows. Downloaded dataset/model files passed upstream checksums. See `DATASET.md`, `ENVIRONMENT.md`, and the manifests.
 
 Activate the installed environment with `source /root/Thesis/VAE_Training/.venv/bin/activate`. Exact package versions and checks are recorded in `manifests/environment.json` and `requirements-venv.lock.txt`.
 
@@ -18,10 +20,10 @@ Activate the installed environment with `source /root/Thesis/VAE_Training/.venv/
 - `data/processed/math-sentences-v1/`: prepared sentence-level datasets and question-level train/dev/test splits; see `DATASET.md` and `validation.json`.
 - `manifests/`: source provenance, dataset revisions, file checksums, schemas, row counts, and status.
 - `configs/`: reserved for experiment configurations.
-- `outputs/`, `logs/`: reserved for later experiments.
+- `outputs/`, `logs/`: experiment artifacts and execution logs, including the completed small-model diagnostic.
 - `PLAN.md`: the implementation plan created before this preparation step. Its original suggested workspace path is superseded by this directory.
 
-The initial copied source files came from `/root/LaDiR` at commit `5eaa5968393e5e93262bb53b867683704dd1da3a`; `manifests/source.json` retains their original hashes. The local `vae/data.py` has subsequently been extended to preserve short mathematical steps and load explicit prepared splits. New preparation/validation modules and tests are local additions. The original checkout is preserved. `UPSTREAM_README.md` and `manifests/upstream_pyproject.toml` retain upstream documentation and dependency declarations.
+The initial copied source files came from `/root/LaDiR` at commit `5eaa5968393e5e93262bb53b867683704dd1da3a`; `manifests/source.json` retains their original hashes. Local changes include explicit-split/short-math support in `vae/data.py`, an optional diagnostic step callback in `vae/train.py`, preparation/validation/reconstruction modules, test runners and tests. The original checkout is preserved. `UPSTREAM_README.md` and `manifests/upstream_pyproject.toml` retain upstream documentation and dependency declarations.
 
 ## Dataset download
 
@@ -45,6 +47,6 @@ Dataset cards are kept alongside the raw files. Multiple DART-Math responses to 
 
 The upstream `vae/configs/vae_4b_8b_64.yaml` is a reference, not the proposed experiment config: it freezes the encoder, trains the decoder, and filters for Python. The upstream launcher also defaults to eight GPUs. A sentence-math config must reverse the encoder/decoder backbone training flags, configure the latent count, and use the measured GPU allocation.
 
-Sentence-level math data and explicit parent-question splits are prepared; see `DATASET.md`, the saved validation/review reports, and `TODO.md`. The isolated training environment is installed and has passed import, unit-test, GPU and synthetic VAE checks. Next work: select/download model checkpoints, tokenize and audit lengths, implement encoder-input corruption and standalone reconstruction checks, create experiment configs, and run one real-data forward/backward update. See `ENVIRONMENT.md` for the remaining optional DeepSpeed/multi-process setup.
+Sentence-level math data and explicit parent-question splits are prepared; see `DATASET.md`, the saved validation/review reports, and `TODO.md`. The isolated training environment is verified. The small-model checkpoint, tokenized diagnostic subset, encoder-training configuration, reconstruction controls, one-update checks and 16/16 overfit check are complete. Next work is to prepare and evaluate the larger pilot, then assess the full-size memory strategy. Encoder-input corruption remains a later experiment. See `ENVIRONMENT.md` for optional DeepSpeed/multi-process setup.
 
 The copied VAE itself needs only `vae/`; `ladir/` and `sft/` retain the code needed for the planned downstream encoder loading and latent export. Code-generation scorers and RL training packages were intentionally left out. DeepSpeed is an optional additional installation if the later memory strategy needs it.

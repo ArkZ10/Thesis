@@ -1,0 +1,73 @@
+{
+  "repository": "Qwen/Qwen3-0.6B-Base",
+  "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+  "directory": "/root/Thesis/VAE_Training/models/Qwen3-0.6B-Base",
+  "verified_at_utc": "2026-11-12T07:50:31.506518+00:00",
+  "files": [
+    {
+      "path": "models/Qwen3-0.6B-Base/config.json",
+      "bytes": 727,
+      "sha256": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59",
+      "upstream_checksum": "43c79dcb3766612b23cbed17d0a56ce63efe4e74",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/generation_config.json",
+      "bytes": 138,
+      "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8",
+      "upstream_checksum": "cbbb3133034e192527e5321b4c679154e4819ab8",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "upstream_checksum": "443909a61d429dff23010e5bddd28ff530edda00",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/tokenizer_config.json",
+      "bytes": 9678,
+      "sha256": "3c04ed3ca964ea2f6b2b5faf0dc4d31aec1cb1e8b4bcf63f402d295046b422b5",
+      "upstream_checksum": "6a3829ee9491f36113e64df37573be81df0366f5",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "upstream_checksum": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "upstream_checksum": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/model.safetensors",
+      "bytes": 1192135096,
+      "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+      "upstream_checksum": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/README.md",
+      "bytes": 2973,
+      "sha256": "910d9be25c648ab1cb5a7b1d20d67ca6d43d43559a705010198886f9af68e8f1",
+      "upstream_checksum": "36876348676f6ec4efed9edccdf2cd1ea01e365f",
+      "checksum_verified": true
+    },
+    {
+      "path": "models/Qwen3-0.6B-Base/LICENSE",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "upstream_checksum": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+      "checksum_verified": true
+    }
+  ],
+  "all_checksums_verified": true,
+  "purpose": "Small-model VAE diagnostic only"
+}

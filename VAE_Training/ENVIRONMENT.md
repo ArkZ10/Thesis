@@ -36,7 +36,7 @@ Verified package versions:
 - A tiny randomly initialized Qwen3 VAE passed a forward/backward check with hybrid masks, padding, six latent slots, gradient checkpointing, posterior sampling, and FP32 reconstruction CE.
 - Gradients reached the encoder, queries, posterior heads and decoder interface; the decoder backbone remained frozen.
 
-The synthetic check used no pretrained model weights, no dataset examples, and no optimizer updates. Dataset training has not started. Full-size model memory usage and multi-process training are not yet validated.
+The initial synthetic environment check used no pretrained model weights, dataset examples, or optimizer updates. Subsequently, the authorized pretrained small-model diagnostic completed; see `SMALL_MODEL_TEST.md`. Full-size model memory usage and multi-process training are not yet validated.
 
 Detailed results: `manifests/environment.json`. Installation metadata: `manifests/torch-install.json` and `manifests/environment-install.json`. Logs are under `logs/environment-*.log`.
 
@@ -62,4 +62,4 @@ python -m unittest discover -s tests -v
 python scripts/check_environment.py
 ```
 
-GPU checks require an execution context with access to the GPU devices. Model checkpoint selection/download, tokenization, experiment configs, and actual training remain separate tasks.
+GPU checks require an execution context with access to the GPU devices. The later small-model checkpoint, subset tokenization, config and training diagnostic are documented separately in `SMALL_MODEL_TEST.md`; full-size memory and training remain unvalidated.

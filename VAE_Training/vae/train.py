@@ -38,7 +38,7 @@ DEFAULTS = {
               "lr_scheduler": "cosine", "warmup_steps": 500, "min_lr_ratio": 0.0, "max_grad_norm": 1.0,
               "kl_weight": 1e-6, "mixed_precision": "bf16", "dtype": "bfloat16", "eval_every": 500,
               "eval_batches": 100, "save_every": 5000, "keep_last": 2, "export_weights": True,
-              "resume_from": "latest", "init_from": None, "log_every": 10, "num_workers": 2, "cpu": False},
+              "resume_from": "latest", "resume_lr_override": None, "init_from": None, "log_every": 10, "num_workers": 2, "cpu": False},
     "wandb": {"enabled": True, "project": "vae-reasoning-compressor", "run_name": None},
 }
 
@@ -87,6 +87,19 @@ def lr_lambda(kind: str, warmup: int, total: int, min_ratio: float):
 def checkpoint_dirs(output_dir: str):
     dirs = glob.glob(os.path.join(output_dir, "checkpoints", "step_*"))
     return sorted(dirs, key=lambda d: int(re.findall(r"step_(\d+)$", d)[0]))
+
+
+def override_resume_lr(optimizer, scheduler, learning_rate):
+    """Rebase LambdaLR after restoring an optimizer's old learning rate."""
+    rate = float(learning_rate)
+    if not math.isfinite(rate) or rate <= 0:
+        raise ValueError("resume_lr_override must be positive and finite")
+    scheduler.base_lrs = [rate] * len(optimizer.param_groups)
+    current = [rate * fn(scheduler.last_epoch) for fn in scheduler.lr_lambdas]
+    for group, value in zip(optimizer.param_groups, current):
+        group["initial_lr"] = rate
+        group["lr"] = value
+    scheduler._last_lr = current
 
 
 def _ds_zero3(accelerator) -> bool:
@@ -162,9 +175,11 @@ def make_accelerator(cfg):
 
 
 def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None, pad_token_id: Optional[int] = None,
-          accelerator=None, stop_after_steps: Optional[int] = None):
+          accelerator=None, stop_after_steps: Optional[int] = None, step_callback=None):
     """Run training. model/datasets/pad id may be passed in; otherwise built from cfg.
-    stop_after_steps: return after this many optimizer steps in this call."""
+    stop_after_steps: return after this many optimizer steps in this call.
+    step_callback: observe a completed update; return True for a graceful early
+                   stop that saves the final checkpoint and exported weights."""
     from accelerate.utils import set_seed
     tc = cfg.train
     os.makedirs(tc.output_dir, exist_ok=True)
@@ -217,6 +232,11 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
     if resume:
         accelerator.load_state(resume)
         accelerator.print(f"resumed from {resume}: {state.state_dict()}")
+    if tc.resume_lr_override is not None:
+        if not resume:
+            raise ValueError("resume_lr_override requires a resumed checkpoint")
+        override_resume_lr(optimizer, scheduler, tc.resume_lr_override)
+        accelerator.print(f"resumed learning rates overridden: {scheduler.get_last_lr()}")
     if use_wandb:
         accelerator.init_trackers(os.environ.get("WANDB_PROJECT", cfg.wandb.project),
                                   config=OmegaConf.to_container(cfg, resolve=True),
@@ -228,6 +248,7 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
     run = {"ce": 0.0, "kl": 0.0, "n": 0, "correct": 0, "micro": 0}
     history = []
     done = state.global_step >= total_steps
+    stop_requested = False
     while not done and state.epoch < tc.epochs:
         train_loader.set_epoch(state.epoch)
         loader = train_loader
@@ -255,6 +276,8 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
                 continue
             state.global_step += 1
             step = state.global_step
+            if step_callback is not None:
+                stop_requested = bool(step_callback(model, optimizer, accelerator, state, out))
             if step % tc.log_every == 0 or step == total_steps:
                 m = max(run["micro"], 1)
                 logs = {"train/ce_loss": run["ce"] / m, "train/kl_loss": run["kl"] / m,
@@ -273,13 +296,13 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
                 history.append({"step": step, **ev})
             if tc.save_every and step % tc.save_every == 0:
                 save_checkpoint(accelerator, model, cfg, state)
-            if step >= total_steps or (stop_after_steps and step - start_step >= stop_after_steps):
+            if stop_requested or step >= total_steps or (stop_after_steps and step - start_step >= stop_after_steps):
                 done = True
                 break
         else:
             state.epoch += 1
             state.batches_in_epoch = 0
-    finished = state.global_step >= total_steps or state.epoch >= tc.epochs
+    finished = stop_requested or state.global_step >= total_steps or state.epoch >= tc.epochs
     if finished and not (tc.save_every and state.global_step % tc.save_every == 0):
         save_checkpoint(accelerator, model, cfg, state)
     accelerator.end_training()

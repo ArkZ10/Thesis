@@ -1,0 +1,45 @@
+{
+  "completed_at_utc": "2026-11-12T08:06:11.118044+00:00",
+  "stage": "small_model_test_completed",
+  "directory": "/root/Thesis/VAE_Training/outputs/vae-small-diagnostic-20261112-01",
+  "summary": "outputs/vae-small-diagnostic-20261112-01/summary.json",
+  "model_manifest": "manifests/qwen3_0_6b_base.json",
+  "train_sentences": 16,
+  "dev_sentences": 16,
+  "optimizer_steps": 500,
+  "train_exact": 15,
+  "dev_exact": 0,
+  "one_update_passed": true,
+  "strict_overfit_gate_passed": false,
+  "full_scale_run_started": false,
+  "larger_pilot_started": false,
+  "source_files": [
+    {
+      "path": "scripts/download_small_model.py",
+      "sha256": "73ba638c3562c263a8c8eb03b0d689083a9ad94d4977d02b13b6ee34deeca54f"
+    },
+    {
+      "path": "scripts/run_small_diagnostic.py",
+      "sha256": "5785e6ced85be60a4d00d1aa5288a54bb4b67e3b6d6913c6db20eecfda951eae"
+    },
+    {
+      "path": "vae/train.py",
+      "sha256": "c24eaf2288f92d49de1f08aa8daa605c45e9232facd7b7afaa04ed96a9a815ad"
+    },
+    {
+      "path": "vae/reconstruction.py",
+      "sha256": "81c9e295220421010b7d353ee9acb33501c2aa6a2237af5d58afaaaa96503684"
+    },
+    {
+      "path": "configs/vae_small_diagnostic.yaml",
+      "sha256": "219fbd251a207bf81752844d55a3c70fe901c840165fd23982b25afde6a8fd37"
+    },
+    {
+      "path": "tests/test_reconstruction.py",
+      "sha256": "74e2cc0e084d68bd760ff27d3d6c4106597cc7ca562776c712a0a036286aabeb"
+    }
+  ],
+  "fresh_export_reload_report": "outputs/vae-small-diagnostic-20261112-01/export-reload.json",
+  "fresh_reload_all_32_token_sequences_identical": true,
+  "full_size_checkpoint_downloaded": false
+}
