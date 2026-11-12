@@ -1,0 +1,61 @@
+{
+  "completed_at_utc": "2026-11-12T07:19:32.372968+00:00",
+  "stage": "sentence_preprocessing_completed",
+  "output_directory": "/root/Thesis/VAE_Training/data/processed/math-sentences-v1",
+  "modified_upstream_files": [
+    {
+      "path": "vae/data.py",
+      "upstream_sha256": "7152c25c0f343f7d4a9edfc0f6283272c3ab15c7164898204373d6c0be5286bd",
+      "current_sha256": "8bab7d416435663a15cd949f7ff3b6f35f56feb4c2bc948f00583bb2783e66ba"
+    }
+  ],
+  "local_files": [
+    {
+      "path": "vae/prepare_sentences.py",
+      "sha256": "1f4097e623885d6581e433c403af64ecf97c6a11ccc7eb20b31135eb59730f3e"
+    },
+    {
+      "path": "vae/validate_sentences.py",
+      "sha256": "d1974d4b22f4727d836b3bc37a0cd7c5665b595711d41ec511da109f893d9f97"
+    },
+    {
+      "path": "tests/test_math_preparation.py",
+      "sha256": "98532807c37dfbaa2d249432b0186f80dad8e40ee6178ba6bcb25c0f0ec89504"
+    },
+    {
+      "path": "DATASET.md",
+      "sha256": "c9894e3f6cabdc317cb847a74e84a0e850bae43276acaa23b6cfd5bc6156ee38"
+    },
+    {
+      "path": "TODO.md",
+      "sha256": "8601b124b0cd97b8402036da6aad72dde4e6d54403cd7d809cb7fb04560b60d6"
+    }
+  ],
+  "retained_targets": {
+    "gsm8k": {
+      "test": 6131,
+      "dev": 1401,
+      "train": 24321
+    },
+    "dart-math-hard": {
+      "test": 245303,
+      "dev": 283246,
+      "train": 4918593
+    }
+  },
+  "total_targets": 5478995,
+  "question_overlap_counts": {
+    "train/dev": 0,
+    "train/test": 0,
+    "dev/test": 0
+  },
+  "reviewed_examples": 100,
+  "unit_and_integration_tests_passed": 15,
+  "source_fingerprints": "data/processed/math-sentences-v1/summary.json",
+  "validation_report": "data/processed/math-sentences-v1/validation.json",
+  "mathematical_correctness_verified": false,
+  "tokenization_completed": false,
+  "training_started": false,
+  "model_weights_downloaded": false,
+  "training_environment_installed": false
+}

@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-11-12T07:37:44.417111+00:00",
+  "passed": true,
+  "python": "3.11.0",
+  "executable": "/root/Thesis/VAE_Training/.venv/bin/python",
+  "prefix": "/root/Thesis/VAE_Training/.venv",
+  "base_prefix": "/opt/miniforge3/envs/diffuguard",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.5.4",
+    "accelerate": "1.15.0",
+    "huggingface-hub": "1.33.0",
+    "safetensors": "0.8.0",
+    "omegaconf": "2.4.0",
+    "datasets": "5.2.0",
+    "pyarrow": "26.0.1",
+    "laser-vae-training": "0.1.0"
+  },
+  "cuda_build": "12.4",
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3090",
+      "memory_bytes": 25296044032,
+      "bf16_matmul_and_backward": "passed"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 3090",
+      "memory_bytes": 25296044032,
+      "bf16_matmul_and_backward": "passed"
+    }
+  ],
+  "imports_passed": [
+    "vae.data",
+    "vae.model",
+    "vae.train",
+    "vae.prepare_sentences",
+    "vae.validate_sentences",
+    "ladir.checkpoint",
+    "sft.vae_weights",
+    "sft.precompute_latents"
+  ],
+  "synthetic_vae_probe": {
+    "passed": true,
+    "device": "cuda:0",
+    "parameters": 110560,
+    "loss": 4.868442535400391,
+    "ce": 4.868439674377441,
+    "kl": 0.2849540114402771,
+    "latent_shape": [
+      2,
+      6,
+      16
+    ],
+    "gradient_groups_passed": [
+      "encoder",
+      "queries",
+      "posterior_mean",
+      "posterior_variance",
+      "decoder_interface"
+    ],
+    "decoder_backbone_frozen": true,
+    "gradient_checkpointing": true,
+    "dtype": "bfloat16",
+    "optimizer_steps": 0,
+    "pretrained_weights_downloaded": false
+  },
+  "dataset_training_started": false,
+  "scope": "Environment/API verification only; no pretrained weights, optimizer updates, or benchmark generation.",
+  "optional_components_not_installed": [
+    "DeepSpeed",
+    "vLLM",
+    "RL stack"
+  ],
+  "pip_check": "passed: no broken requirements",
+  "unit_and_integration_tests_passed": 15,
+  "vae_training_cli_help": "passed",
+  "requirements_lock": "requirements-venv.lock.txt",
+  "requirements_lock_sha256": "e97e6816bbe65affab4dccbe315f8faf36087b5884988afaaf61768300e81f00",
+  "isolated_from_system_site_packages": true,
+  "verification_script_sha256": "58e15b638a772772724309a2b9926018049adc2552bee37ce67585faf20114bf"
+}

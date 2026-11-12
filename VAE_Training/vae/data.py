@@ -23,7 +23,11 @@ def read_items(path: str) -> list:
         return json.load(f)
 
 
-def reasoning_texts(items: list, language: Optional[str] = "Python", min_chars: int = 10) -> List[str]:
+def reasoning_texts(items: list, language: Optional[str] = "Python", min_chars: Optional[int] = None) -> List[str]:
+    # A complete mathematical step can be as short as "x=3". Preserve these
+    # while retaining the upstream short-text policy for programming data.
+    if min_chars is None:
+        min_chars = 0 if language == "Math" else 10
     out = []
     for it in items:
         if language and it.get("language", language) != language:
@@ -82,6 +86,40 @@ def build_datasets(data_path: str, tokenizer, max_tokens: int = 512, language: O
                    overlength: str = "drop"):
     """Returns (train, val) TokenizedDatasets. split_seed None = last `val_size` examples are validation; otherwise
     shuffle with that seed first."""
+    # A prepared split manifest is authoritative: do not shuffle its sentences
+    # into a new validation split, and never load its reserved test files.
+    if str(data_path).endswith(".vae.json"):
+        if split_seed is not None:
+            raise ValueError("A prepared split manifest cannot be reshuffled; set split_seed=null")
+        with open(data_path, encoding="utf-8") as f:
+            manifest = json.load(f)
+        if manifest.get("format") != "vae_sentence_splits_v1":
+            raise ValueError("Unknown prepared VAE dataset manifest format")
+        if language != manifest["language"]:
+            raise ValueError(f"Prepared corpus requires data.language={manifest['language']}")
+        if cache_path:
+            raise ValueError("Prepared split manifests currently require cache_path=null to avoid stale split caches")
+        base = os.path.dirname(os.path.abspath(data_path))
+
+        def load_split(key):
+            import itertools
+            def rows():
+                for relative in manifest[key]:
+                    with open(os.path.join(base, relative), encoding="utf-8") as stream:
+                        for line in stream:
+                            if line.strip():
+                                yield json.loads(line)
+            # Tokenize in bounded row batches instead of loading full JSONL
+            # strings into RAM at once. The tokenized dataset remains in RAM.
+            iterator = iter(rows())
+            result = []
+            while batch := list(itertools.islice(iterator, 1024)):
+                result.extend(tokenize_texts(reasoning_texts(batch, language), tokenizer, max_tokens,
+                                             overlength=overlength))
+            return TokenizedDataset(result)
+
+        return load_split("train"), load_split("validation")
+
     if cache_path and os.path.exists(cache_path):
         ids = torch.load(cache_path, weights_only=True)["ids"]
     else:
