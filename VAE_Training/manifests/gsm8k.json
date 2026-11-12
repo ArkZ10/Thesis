@@ -1,0 +1,60 @@
+{
+  "name": "gsm8k",
+  "repository": "openai/gsm8k",
+  "revision": "740312add88f781978c0658806c59bc2815b9866",
+  "purpose": "Main subset only. Train for diagnostics; test reserved for evaluation. Source questions overlap DART-Math.",
+  "stage": "completed",
+  "files": [
+    {
+      "path": "data/raw/gsm8k/main/train-00000-of-00001.parquet",
+      "bytes": 2306545,
+      "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+      "upstream_checksum_algorithm": "sha256",
+      "upstream_checksum": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+      "checksum_verified": true,
+      "split": "train",
+      "rows": 7473,
+      "columns": [
+        "question",
+        "answer"
+      ],
+      "all_rows_readable": true,
+      "empty_or_null_fields": {
+        "question": 0,
+        "answer": 0
+      }
+    },
+    {
+      "path": "data/raw/gsm8k/main/test-00000-of-00001.parquet",
+      "bytes": 419088,
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+      "upstream_checksum_algorithm": "sha256",
+      "upstream_checksum": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+      "checksum_verified": true,
+      "split": "test",
+      "rows": 1319,
+      "columns": [
+        "question",
+        "answer"
+      ],
+      "all_rows_readable": true,
+      "empty_or_null_fields": {
+        "question": 0,
+        "answer": 0
+      }
+    },
+    {
+      "path": "data/raw/gsm8k/README.md",
+      "bytes": 7935,
+      "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+      "upstream_checksum_algorithm": "git-blob-sha1",
+      "upstream_checksum": "ad25b2c451d0fcd2793678b2baa917c962acf281",
+      "checksum_verified": true
+    }
+  ],
+  "rows_by_split": {
+    "train": 7473,
+    "test": 1319
+  },
+  "completed_at_utc": "2026-11-11T07:32:01.900994+00:00"
+}

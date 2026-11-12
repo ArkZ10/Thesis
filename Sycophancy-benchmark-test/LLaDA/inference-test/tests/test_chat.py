@@ -68,7 +68,7 @@ class ChatTests(unittest.TestCase):
         self.assertEqual(response, 'Hello')
         self.assertFalse(truncated)
 
-    def fake_reply(self, model, tokenizer, history, user_text, device, length, steps):
+    def fake_reply(self, model, tokenizer, history, user_text, device, length, steps, show_steps=False):
         return {'prompt': user_text, 'response': 'Reply to ' + user_text,
                 'messages': [*history, {'role': 'user', 'content': user_text},
                              {'role': 'assistant', 'content': 'Reply to ' + user_text}],

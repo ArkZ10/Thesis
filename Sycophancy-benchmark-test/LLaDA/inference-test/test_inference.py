@@ -20,7 +20,7 @@ DEFAULT_MODEL = (
 
 
 @torch.inference_mode()
-def generate(model, prompt, length, steps, mask_id):
+def generate(model, prompt, length, steps, mask_id, show_steps=False):
     """Greedily unmask the most confident tokens on a linear schedule."""
     tokens = torch.full(
         (1, prompt.shape[1] + length), mask_id,
@@ -28,7 +28,7 @@ def generate(model, prompt, length, steps, mask_id):
     )
     tokens[:, :prompt.shape[1]] = prompt
     for step in range(steps):
-        started = time.perf_counter()
+        started = time.perf_counter() if show_steps else None
         masked = tokens == mask_id
         logits = model(tokens).logits.float()
         if not torch.isfinite(logits).all().item():
@@ -41,10 +41,11 @@ def generate(model, prompt, length, steps, mask_id):
         count = length // steps + (step < length % steps)
         positions = confidence.topk(count, dim=-1).indices
         tokens.scatter_(1, positions, predictions.gather(1, positions))
-        print(
-            f"Step {step + 1}/{steps}: {time.perf_counter() - started:.2f}s",
-            flush=True,
-        )
+        if show_steps:
+            print(
+                f"Step {step + 1}/{steps}: {time.perf_counter() - started:.2f}s",
+                flush=True,
+            )
     if (tokens[:, prompt.shape[1]:] == mask_id).any().item():
         raise RuntimeError("Generation left unresolved mask tokens")
     if not torch.equal(tokens[:, :prompt.shape[1]], prompt):
@@ -68,7 +69,7 @@ def decode_response(tokenizer, model, token_ids):
     return tokenizer.decode(answer_ids, skip_special_tokens=True).strip(), end is None
 
 
-def reply(model, tokenizer, messages, user_text, device, length, steps):
+def reply(model, tokenizer, messages, user_text, device, length, steps, show_steps=False):
     """Return a completed turn without mutating history if generation fails."""
     next_messages = [*messages, {"role": "user", "content": user_text}]
     text = tokenizer.apply_chat_template(
@@ -87,7 +88,7 @@ def reply(model, tokenizer, messages, user_text, device, length, steps):
             f"{context_limit}. Use /reset to start a new conversation."
         )
     started = time.perf_counter()
-    output = generate(model, prompt, length, steps, mask_id)
+    output = generate(model, prompt, length, steps, mask_id, show_steps=show_steps)
     generation_seconds = time.perf_counter() - started
     token_ids = output[0].tolist()
     response, possibly_truncated = decode_response(tokenizer, model, token_ids)
@@ -125,6 +126,7 @@ def main():
     parser.add_argument("--device", default="auto", help="auto, cpu, cuda, or a CUDA device such as cuda:1")
     parser.add_argument("--length", type=int, default=128)
     parser.add_argument("--steps", type=int, default=128)
+    parser.add_argument("--show-steps", action="store_true", help="Print timing for each diffusion step")
     parser.add_argument("--threads", type=int, default=8)
     parser.add_argument("--output", type=Path, default=Path(__file__).with_name("conversation_result.json"))
     args = parser.parse_args()
@@ -204,7 +206,8 @@ def main():
             else:
                 print(f"You: {user_text}", flush=True)
             try:
-                turn = reply(model, tokenizer, messages, user_text, device, args.length, args.steps)
+                turn = reply(model, tokenizer, messages, user_text, device, args.length, args.steps,
+                             show_steps=args.show_steps)
             except ValueError as error:
                 if scripted:
                     raise

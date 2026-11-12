@@ -1,0 +1,59 @@
+{
+  "name": "dart-math-hard",
+  "repository": "hkust-nlp/dart-math-hard",
+  "revision": "0c2603fba274c2e83ec9121bee3067e286ced194",
+  "purpose": "Primary mathematical reasoning corpus; parent-level splitting still required.",
+  "stage": "completed",
+  "files": [
+    {
+      "path": "data/raw/dart-math-hard/data/train-00000-of-00002.parquet",
+      "bytes": 176372531,
+      "sha256": "3201a508660c34324387d7a162dfec6f33479617ddad0bf544611e98e46cd83e",
+      "upstream_checksum_algorithm": "sha256",
+      "upstream_checksum": "3201a508660c34324387d7a162dfec6f33479617ddad0bf544611e98e46cd83e",
+      "checksum_verified": true,
+      "split": "train",
+      "rows": 292696,
+      "columns": [
+        "query",
+        "response"
+      ],
+      "all_rows_readable": true,
+      "empty_or_null_fields": {
+        "query": 0,
+        "response": 0
+      }
+    },
+    {
+      "path": "data/raw/dart-math-hard/data/train-00001-of-00002.parquet",
+      "bytes": 152108435,
+      "sha256": "edb0325bb750e77797383d3f75a4c1686ceb1245348ccfcf8e98a75b58f31f29",
+      "upstream_checksum_algorithm": "sha256",
+      "upstream_checksum": "edb0325bb750e77797383d3f75a4c1686ceb1245348ccfcf8e98a75b58f31f29",
+      "checksum_verified": true,
+      "split": "train",
+      "rows": 292696,
+      "columns": [
+        "query",
+        "response"
+      ],
+      "all_rows_readable": true,
+      "empty_or_null_fields": {
+        "query": 0,
+        "response": 0
+      }
+    },
+    {
+      "path": "data/raw/dart-math-hard/README.md",
+      "bytes": 12444,
+      "sha256": "e28aa78db379289f7e519b91c6f0cc9603c44b8610a4655b65748912a61c00ab",
+      "upstream_checksum_algorithm": "git-blob-sha1",
+      "upstream_checksum": "f5748139d6ed0a0303284e7e63a3e779c5240773",
+      "checksum_verified": true
+    }
+  ],
+  "rows_by_split": {
+    "train": 585392
+  },
+  "completed_at_utc": "2026-11-11T07:31:59.414981+00:00"
+}

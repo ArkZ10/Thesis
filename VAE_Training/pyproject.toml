@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laser-vae-training"
+version = "0.1.0"
+description = "Isolated LaDiR VAE training workspace for LASER"
+requires-python = ">=3.10"
+dependencies = [
+    "torch==2.6.*",
+    "transformers>=5.5,<5.6",
+    "accelerate>=1.10",
+    "safetensors",
+    "huggingface_hub>=1.0",
+    "omegaconf",
+    "datasets",
+    "pyarrow",
+]
+
+[tool.setuptools.packages.find]
+include = ["vae*", "ladir*", "sft*"]

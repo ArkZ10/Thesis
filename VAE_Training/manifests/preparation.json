@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-11-11T07:32:26.599048+00:00",
+  "workspace": "/root/Thesis/VAE_Training",
+  "stage": "code_and_raw_datasets_ready",
+  "copied_source_files": 30,
+  "python_files_syntax_checked": 24,
+  "raw_dataset_rows": {
+    "dart-math-hard": {
+      "train": 585392
+    },
+    "gsm8k": {
+      "train": 7473,
+      "test": 1319
+    }
+  },
+  "all_dataset_checksums_verified": true,
+  "all_parquet_rows_readable": true,
+  "empty_or_null_required_fields": 0,
+  "training_started": false,
+  "model_weights_downloaded": false,
+  "training_environment_installed": false,
+  "sentence_preprocessing_completed": false
+}

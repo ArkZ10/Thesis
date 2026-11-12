@@ -1,0 +1,39 @@
+The proof that there are infinitely many prime numbers is a classic example of a proof by contradiction. Let's start by assuming that there are only finitely many prime numbers. This means we can list them all. Let's call this list P = {p1, p2, p3, ..., pn}. 
+
+Now, consider the number N = p1 * p2 * p3 * ... * pn + 1. This number is greater than any of the primes in our list P. Therefore, it must be divisible by at least one prime number. Let's call this prime number q. 
+
+However, if q is one of the primes in our list P, then N would be divisible by p1, p2, p3, ..., pn. But this contradicts our assumption that N is greater than any of these primes. Therefore, q must be a new prime number that is not in our list P. 
+
+This contradicts our initial assumption that there are only finitely many prime numbers. Therefore, there must be infinitely many prime numbers. 
+
+One common mistake to avoid in this proof is assuming that the existence of a new prime number q means there are infinitely many prime numbers. This is not necessarily true. The existence of a new prime number q only shows that there is at least one more prime number than we initially assumed.
+
+Now, let's move on to the proof that the square root of 2 is irrational. This proof is also a proof by contradiction. 
+
+Assume that the square root of 2 is rational. This means it can be expressed as a fraction a/b, where a and b are integers with no common factors other than 1. 
+
+Squaring both sides of the equation, we get 2 = a^2 / b^2. Multiplying both sides by b^2, we get 2b^2 = a^2. 
+
+This means that a^2 is divisible by 2, and therefore a must also be divisible by 2. Let's say a = 2k, where k is an integer. 
+
+Substituting a = 2k into the equation 2b^2 = a^2, we get 2b^2 = (2k)^2 = 4k^2. Dividing both sides by 2, we get b^2 = 2k^2. 
+
+This means that b^2 is also divisible by 2, and therefore b must also be divisible by 2. Let's say b = 2m, where m is an integer. 
+
+Substituting b = 2m into the equation b^2 = 2k^2, we get (2m)^2 = 2k^2. Simplifying, we get 4m^2 = 2k^2. Dividing both sides by 2, we get 2m^2 = k^2. 
+
+This means that k^2 is also divisible by 2, and therefore k must also be divisible by 2. Let's say k = 2n, where n is an integer. 
+
+Substituting k = 2n into the equation 2m^2 = k^2, we get 2m^2 = (2n)^2 = 4n^2. Dividing both sides by 2, we get m^2 = 2n^2. 
+
+This means that m^2 is also divisible by 2, and therefore m must also be divisible by 2. Let's say m = 2p, where p is an integer. 
+
+Substituting m = 2p into the equation m^2 = 2n^2, we get (2p)^2 = 2n^2. Simplifying, we get 4p^2 = 2n^2. Dividing both sides by 2, we get 2p^2 = n^2. 
+
+This means that n^2 is also divisible by 2, and therefore n must also be divisible by 2. Let's say n = 2q, where q is an integer. 
+
+Substituting n = 2q into the equation 2p^2 = n^2, we get 2p^2 = (2q)^2 = 4q^2. Dividing both sides by 2, we get p^2 = 2q^2. 
+
+This means that p^2 is also divisible by 2, and therefore p must also be divisible by 2. Let's say p = 2r, where r is an integer. 
+
+Substituting p = 2r into the equation p^2 = 2q^2, we get (2r)^2 = 2q^2. Simplifying, we
