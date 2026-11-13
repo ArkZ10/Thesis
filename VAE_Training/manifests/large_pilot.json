@@ -1,0 +1,61 @@
+{
+  "directory": "/root/Thesis/VAE_Training/outputs/vae-large-pilot-1000q-20261112-140652",
+  "log": "/root/Thesis/VAE_Training/logs/vae-large-pilot-1000q-20261112-140652.log",
+  "launched_at_utc": "2026-11-12T14:06:52.494392+00:00",
+  "stage": "completed",
+  "epochs": 3,
+  "train_questions": 1000,
+  "dev_questions": 100,
+  "train_sentences": 7564,
+  "dev_sentences": 822,
+  "micro_batch_size": 16,
+  "batches_per_epoch": 473,
+  "planned_updates": 1419,
+  "backend": "explicit_model_parallel_streamed_cpu_adam",
+  "encoder_gpu": 1,
+  "decoder_gpu": 0,
+  "initialization": "fresh pretrained weights",
+  "checkpoint_policy": "weights each epoch, full optimizer at final epoch",
+  "pid": 1332868,
+  "recorded_at_utc": "2026-11-12T14:08:31.973871+00:00",
+  "tests_passed": 24,
+  "resume_verification": "manifests/large_resume_verification.json",
+  "status_file": "/root/Thesis/VAE_Training/outputs/vae-large-pilot-1000q-20261112-140652/status.json",
+  "metrics_file": "/root/Thesis/VAE_Training/outputs/vae-large-pilot-1000q-20261112-140652/metrics.csv",
+  "test_used": false,
+  "full_dataset_training_started": false,
+  "source_files": [
+    {
+      "path": "configs/vae_large_pilot.yaml",
+      "sha256": "a2f09589ae078ae5963bd63778feae327f6b1f55f700e187ec518ebeea215c27"
+    },
+    {
+      "path": "scripts/run_large_pilot.py",
+      "sha256": "392c619f28a9daa864277d6ab44c16cd5ad28b321741e6a1247edac5d152d8cf"
+    },
+    {
+      "path": "scripts/launch_large_pilot.py",
+      "sha256": "1849c74a4bcdb7231ed49de5b7b4b521a4f52aa9960b003953a5e49cdc82ec12"
+    },
+    {
+      "path": "scripts/large_runtime.py",
+      "sha256": "0a895b864949efc5c29d0487a2cecb6431539104a627d32a4cbd46724b80c6ca"
+    },
+    {
+      "path": "scripts/large_pilot_status.py",
+      "sha256": "5cc27d0706967f2a63f9fb62a58181bc039b38f1770e0026f2acfc3340d948f7"
+    },
+    {
+      "path": "scripts/large_status.py",
+      "sha256": "27f9de92f2657da420fb9b149a761d6f5267b4c84b015d58e3492908fd19d54f"
+    },
+    {
+      "path": "vae/split_training.py",
+      "sha256": "4b975b26d895e7adb0394cb1c5d5fc6d6915bebacaf500407ac1e46bbeb86793"
+    }
+  ],
+  "finished_at_utc": "2026-11-12T21:11:54.078860+00:00",
+  "summary_file": "outputs/vae-large-pilot-1000q-20261112-140652/summary.json",
+  "best_epoch": 3,
+  "decoder_unchanged": true
+}

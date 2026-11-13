@@ -1,0 +1,86 @@
+{
+  "recorded_at_utc": "2026-11-12T13:53:27.588531+00:00",
+  "stage": "smoke_completed",
+  "directory": "/root/Thesis/VAE_Training/outputs/vae-large-split-smoke-20261112-02",
+  "summary": "/root/Thesis/VAE_Training/outputs/vae-large-split-smoke-20261112-02/summary.json",
+  "documentation": "LARGE_MODEL_TEST.md",
+  "backend": "explicit_model_parallel_streamed_cpu_adam",
+  "tests_passed": 23,
+  "checkpoints_verified": true,
+  "models": [
+    {
+      "repository": "Qwen/Qwen3-4B-Base",
+      "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+      "all_checksums_verified": true
+    },
+    {
+      "repository": "Qwen/Qwen3-8B-Base",
+      "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+      "all_checksums_verified": true
+    }
+  ],
+  "parameter_counts": {
+    "encoder": 4022468096,
+    "decoder": 8190735360,
+    "trainable": 4046089728
+  },
+  "smoke_batch_size": 16,
+  "unique_source_targets": 2,
+  "optimizer_updates": 2,
+  "peak_allocated_gib_by_gpu": {
+    "0": 19.424255847930908,
+    "1": 16.910739421844482
+  },
+  "minimum_available_host_gib": 7.1083831787109375,
+  "decoder_unchanged": true,
+  "checkpoint_saved": true,
+  "checkpoint_tensor_count_verified": 406,
+  "fp32_master_checkpoint_audit": "outputs/vae-large-split-smoke-20261112-02/checkpoint_audit.json",
+  "full_large_checkpoint_resume_verified": true,
+  "large_model_pilot_started": true,
+  "full_training_started": false,
+  "test_used": false,
+  "source_files": [
+    {
+      "path": "scripts/download_large_models.py",
+      "sha256": "0b2476f103fcde6635e65c6c973e8e2228d14e3d190dce7fcde16bbbe6a2547e"
+    },
+    {
+      "path": "scripts/prepare_large_data.py",
+      "sha256": "72238d42dbb667edf034bde71245619723f91fe4c699dce5022c72fcb82a8072"
+    },
+    {
+      "path": "scripts/run_large_split_smoke.py",
+      "sha256": "0db2d6dcfbc14b04cdd9f815b7082e07abcb7ea0292d29c6542d6562804fa241"
+    },
+    {
+      "path": "scripts/guard_large_smoke.py",
+      "sha256": "943bc09bc86649b75700cd8fe7fc2e33f1358b9ea6fc9992256a51ee3f31ca1c"
+    },
+    {
+      "path": "scripts/large_status.py",
+      "sha256": "6f8b2b5c52f5a8522c86574a2dc84bc9af829d92db51e83a5f854fa956f88c2e"
+    },
+    {
+      "path": "vae/split_training.py",
+      "sha256": "4b975b26d895e7adb0394cb1c5d5fc6d6915bebacaf500407ac1e46bbeb86793"
+    },
+    {
+      "path": "vae/model.py",
+      "sha256": "8738103ac64de2630ebfca8e4fea949a12429f50eb5f2eb88b113f3e69867581"
+    },
+    {
+      "path": "vae/reconstruction.py",
+      "sha256": "81c9e295220421010b7d353ee9acb33501c2aa6a2237af5d58afaaaa96503684"
+    },
+    {
+      "path": "configs/vae_large_split_smoke.yaml",
+      "sha256": "87860614ac923ec67c01b2724282c992304571dbb84627bdf02bf256ac4a45bc"
+    },
+    {
+      "path": "tests/test_split_training.py",
+      "sha256": "9a81e6937c0686a41a05ace5aad9d7318aa93e7680ccf87c49fa7134c8360307"
+    }
+  ],
+  "large_pilot_manifest": "manifests/large_pilot.json"
+}

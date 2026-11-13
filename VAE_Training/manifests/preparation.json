@@ -1,7 +1,7 @@
 {
   "verified_at_utc": "2026-11-11T07:32:26.599048+00:00",
   "workspace": "/root/Thesis/VAE_Training",
-  "stage": "small_model_overfit_gate_passed",
+  "stage": "large_pilot_completed",
   "copied_source_files": 30,
   "python_files_syntax_checked": 24,
   "raw_dataset_rows": {
@@ -26,8 +26,20 @@
   "small_model_diagnostic_completed": true,
   "small_model_diagnostic_manifest": "manifests/small_model_diagnostic.json",
   "full_scale_training_started": false,
-  "larger_pilot_started": false,
+  "larger_pilot_started": true,
   "small_model_overfit_gate_passed": true,
   "latest_small_model_run": "outputs/vae-small-numeric-debug-20261112-01",
-  "latest_small_model_manifest": "manifests/numeric_debug.json"
+  "latest_small_model_manifest": "manifests/numeric_debug.json",
+  "pilot_started": true,
+  "pilot_completed": true,
+  "pilot_manifest": "manifests/pilot.json",
+  "pilot_completed_at_utc": "2026-11-12T09:30:50.460859+00:00",
+  "large_model_weights_downloaded": true,
+  "large_model_smoke_completed": true,
+  "large_model_pilot_started": true,
+  "large_model_manifest": "manifests/large_setup.json",
+  "large_pilot_manifest": "manifests/large_pilot.json",
+  "full_dataset_training_started": false,
+  "full_large_checkpoint_resume_verified": true,
+  "large_model_pilot_completed": true
 }

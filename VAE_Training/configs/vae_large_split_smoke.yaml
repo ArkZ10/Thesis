@@ -1,0 +1,28 @@
+model:
+  encoder_name: /root/Thesis/VAE_Training/models/Qwen3-4B-Base
+  decoder_name: /root/Thesis/VAE_Training/models/Qwen3-8B-Base
+  num_latents: 6
+  latent_dim: 2560
+  train_encoder_lm: true
+  train_encoder_queries: true
+  train_encoder_heads: true
+  train_decoder_lm: false
+  train_decoder_adapter: true
+  sample_posterior: true
+  extra_noise_std: 0.0
+  encoder_mask_mode: hybrid
+  decoder_mask_mode: hybrid
+  position_mode: pad_skip
+  gradient_checkpointing: true
+  ce_fp32: false
+  ce_chunk_tokens: 0
+train:
+  lr: 2.0e-5
+  betas: [0.9, 0.95]
+  weight_decay: 0.01
+  kl_weight: 1.0e-5
+  seed: 42
+  updates: 2
+  micro_batch_size: 16
+  max_tokens: 128
+  purpose: Two-device pipeline with streamed FP32 CPU AdamW; bounded smoke test

@@ -1,0 +1,432 @@
+{
+  "version": "1",
+  "pip_version": "26.3",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/63/40/4334946fe41b9ca109746427243e4794a73c123313fbbce4824c037cdfcf/deepspeed-0.19.9.tar.gz",
+        "archive_info": {
+          "hashes": {
+            "sha256": "e14b514e243a92ad80bd92f74c835ef76a5c27eec23fae019807458fc9a8cb95"
+          },
+          "hash": "sha256=e14b514e243a92ad80bd92f74c835ef76a5c27eec23fae019807458fc9a8cb95"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "deepspeed",
+        "version": "0.19.9",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "project-url",
+          "provides-extra",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "DeepSpeed library",
+        "description": "[![License Apache 2.0](https://badgen.net/badge/license/apache2.0/blue)](https://github.com/deepspeedai/DeepSpeed/blob/master/LICENSE)\n[![PyPI version](https://badge.fury.io/py/deepspeed.svg)](https://pypi.org/project/deepspeed/)\n[![Downloads](https://static.pepy.tech/badge/deepspeed)](https://pepy.tech/project/deepspeed)\n[![Build](https://badgen.net/badge/build/check-status/blue)](#build-pipeline-status)\n[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9530/badge)](https://www.bestpractices.dev/projects/9530)\n[![Twitter](https://img.shields.io/twitter/follow/DeepSpeedAI)](https://twitter.com/intent/follow?screen_name=DeepSpeedAI)\n[![Japanese Twitter](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9ETwitter-%40DeepSpeedAI_JP-blue)](https://twitter.com/DeepSpeedAI_JP)\n[![Chinese Zhihu](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%E5%BE%AE%E8%BD%AFDeepSpeed-blue)](https://www.zhihu.com/people/deepspeed)\n[![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/deepspeedworkspace/shared_invite/zt-3a8pjd8dd-PCj2hMvR4Y2syPwVnjEoww)\n\n\n<div align=\"center\">\n <img src=\"docs/assets/images/DeepSpeed_light.svg#gh-light-mode-only\" width=\"400px\">\n <img src=\"docs/assets/images/DeepSpeed_dark_transparent.svg#gh-dark-mode-only\" width=\"400px\">\n</div>\n\n<p align=\"center\">\n  <b>English</b> · <a href=\"README.zh.md\">简体中文</a>\n</p>\n\n\n## Office Hours\n\nDeepSpeed hosts regular office hours on the last Tuesday of each month at 12:00 America/New_York to discuss development plans, features, etc.  This meeting is public for anyone to join and ask questions.\nThe meeting is hosted on Zoom and can be joined [here](https://zoom-lfx.platform.linuxfoundation.org/meeting/93902569995?password=7d9c4fc9-3efa-4715-88f0-df8a6deb008b).\n\n## Latest News\n\n* [2026/05] [Using Muon Optimizer with DeepSpeed](https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/muon-optimizer/README.md)\n\n* [2026/05] [System DMA (SDMA) for ZeRO-3: offload collectives off compute units on AMD GPUs for better overlap](https://github.com/deepspeedai/DeepSpeed/blob/master/examples/sdma_allgather/README.md)\n\n* [2026/03] DeepSpeed Team gave a tutorial at ASPLOS 2026 titled [\"Building Efficient Large-Scale Model Systems with DeepSpeed: From Open-Source Foundations to Emerging Research\" ](https://supercomputing-system-ai-lab.github.io/events/asplos2026-llm-tutorial/index.html)\n\n* [2026/03] [Our SuperOffload work received an Honorable Mention for the ASPLOS 2026 Best Paper Award](https://dl.acm.org/doi/10.1145/3760250.3762217)\n\n* [2025/12] [DeepSpeed Core API updates: PyTorch-style backward and low-precision master states](https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/core_api_update/README.md)\n\n* [2025/11] [DeepSpeed ZeRO++ powers large-scale distillation training of LLMs for Recommendation Systems at LinkedIn](https://aclanthology.org/2025.emnlp-industry.119/)\n\n* [2025/10] We hosted the [Ray x DeepSpeed Meetup](https://luma.com/3wctqteh) at Anyscale. We shared our most recent work on SuperOffload, ZenFlow, Muon Optimizer Support, Arctic Long Sequence Training and DeepCompile. Please find the meetup slides [here](https://docs.google.com/presentation/d/1eM3mY6oW9GYkRy1Xz0iOnbbEr5T1t0JJXOM5BKtR-Ks/edit?slide=id.g38615d6b4c2_0_87#slide=id.g38615d6b4c2_0_87).\n\n* [2025/10] [SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips](https://pytorch.org/blog/superoffload-unleashing-the-power-of-large-scale-llm-training-on-superchips/)\n\n* [2025/10] [Study of ZenFlow and ZeRO offload performance with DeepSpeed CPU core binding](https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/zenflow-corebinding/README.md)\n\n* [2025/08] [ZenFlow: Stall-Free Offloading Engine for LLM Training](https://pytorch.org/blog/zenflow-stall-free-offloading-engine-for-llm-training/)\n\n* [2025/06] [Arctic Long Sequence Training (ALST) with DeepSpeed: Scalable And Efficient Training For Multi-Million Token Sequences](https://www.snowflake.com/en/engineering-blog/arctic-long-sequence-training-multi-million-token-ai/)\n\n* [2025/06] [DeepNVMe: Affordable I/O scaling for Deep Learning Applications](https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/deepnvme/06-2025/README.md)\n\n\n<!-- NOTE: we must use html for news items otherwise links will be broken in the 'more news' section -->\n<details>\n<!-- NOTE: Maintain only three items in 'more news' section -->\n <summary>More news</summary>\n <ul>\n\n   <li>[2025/04] <a href=\"https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/deepcompile/README.md\">DeepCompile: Unlocking Compiler Optimization for Distributed Training</a></li>\n\n   <li>[2025/03] <a href=\"https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/huggingface-tp/README.md\">DeepSpeed AutoTP: Automatic Tensor Parallel Training of Hugging Face models</a></li>\n\n<li>[2024/12] <a href=\"https://github.com/deepspeedai/DeepSpeed/blob/master/blogs/ulysses-offload/README.md\">Ulysses-Offload: Democratizing Long Context LLM Training</a></li>\n\n </ul>\n</details>\n\n---\n\n# Extreme Speed and Scale for DL Training\n\n***[DeepSpeed](https://www.deepspeed.ai/) enabled the world's most powerful language models (at the time of this writing) such as [MT-530B](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/) and [BLOOM](https://huggingface.co/blog/bloom-megatron-deepspeed)***. DeepSpeed offers a confluence of [system innovations](https://www.deepspeed.ai/training/), that has made large scale DL training effective, and efficient, greatly improved ease of use, and redefined the DL training landscape in terms of scale that is possible. These innovations include ZeRO, ZeRO-Infinity, 3D-Parallelism, Ulysses Sequence Parallelism, DeepSpeed-MoE, etc.\n\n---\n\n# DeepSpeed Adoption\n\nDeepSpeed was an important part of Microsoft’s\n[AI at Scale](https://www.microsoft.com/en-us/research/project/ai-at-scale/)\ninitiative to enable next-generation AI capabilities at scale, where you can find more\ninformation [here](https://innovation.microsoft.com/en-us/exploring-ai-at-scale).\n\nDeepSpeed has been used to train many different large-scale models, below is a list of several examples that we are aware of (if you'd like to include your model please submit a PR):\n\n  * [Megatron-Turing NLG (530B)](https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/)\n  * [Jurassic-1 (178B)](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)\n  * [BLOOM (176B)](https://huggingface.co/blog/bloom-megatron-deepspeed)\n  * [GLM (130B)](https://github.com/THUDM/GLM-130B)\n  * [xTrimoPGLM (100B)](https://www.biorxiv.org/content/10.1101/2023.07.05.547496v2)\n  * [YaLM (100B)](https://github.com/yandex/YaLM-100B)\n  * [GPT-NeoX (20B)](https://github.com/EleutherAI/gpt-neox)\n  * [AlexaTM (20B)](https://www.amazon.science/blog/20b-parameter-alexa-model-sets-new-marks-in-few-shot-learning)\n  * [Turing NLG (17B)](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/)\n  * [METRO-LM (5.4B)](https://arxiv.org/pdf/2204.06644.pdf)\n\nDeepSpeed has been integrated with several different popular open-source DL frameworks such as:\n\n|                                                                                                | Documentation                                |\n| ---------------------------------------------------------------------------------------------- | -------------------------------------------- |\n<img src=\"docs/assets/images/transformers-light.png#gh-light-mode-only\" width=\"250px\"><img src=\"docs/assets/images/transformers-dark.png#gh-dark-mode-only\" width=\"250px\"> | [Transformers with DeepSpeed](https://huggingface.co/docs/transformers/deepspeed) |\n| <img src=\"docs/assets/images/accelerate-light.png#gh-light-mode-only\" width=\"250px\"><img src=\"docs/assets/images/accelerate-dark.png#gh-dark-mode-only\" width=\"250px\"> | [Accelerate with DeepSpeed](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) |\n| <img src=\"docs/assets/images/lightning-light.svg#gh-light-mode-only\" width=\"200px\"><img src=\"docs/assets/images/lightning-dark.svg#gh-dark-mode-only\" width=\"200px\"> | [Lightning with DeepSpeed](https://lightning.ai/docs/pytorch/stable/advanced/model_parallel.html#deepspeed) |\n| <img src=\"docs/assets/images/mosaicml.svg\" width=\"200px\"> | [MosaicML with DeepSpeed](https://docs.mosaicml.com/projects/composer/en/latest/trainer/using_the_trainer.html#deepspeed-integration) |\n| <img src=\"docs/assets/images/determined.svg\" width=\"225px\"> | [Determined with DeepSpeed](https://docs.determined.ai/latest/training/apis-howto/deepspeed/overview.html) |\n| <img src=\"https://user-images.githubusercontent.com/58739961/187154444-fce76639-ac8d-429b-9354-c6fac64b7ef8.jpg\" width=150> | [MMEngine with DeepSpeed](https://mmengine.readthedocs.io/en/latest/common_usage/large_model_training.html#deepspeed) |\n\n---\n\n# Build Pipeline Status\n\n| Description | Status |\n| ----------- | ------ |\n| NVIDIA | [![nv-pre-compile-ops](https://github.com/deepspeedai/DeepSpeed/actions/workflows/nv-pre-compile-ops.yml/badge.svg)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/nv-pre-compile-ops.yml) [![modal-torch-latest](https://github.com/deepspeedai/DeepSpeed/actions/workflows/modal-torch-latest.yml/badge.svg)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/modal-torch-latest.yml) |\n| AMD | [![amd-mi200](https://github.com/deepspeedai/DeepSpeed/actions/workflows/amd-mi200.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/amd-mi200.yml) |\n| CPU | [![torch-latest-cpu](https://github.com/deepspeedai/DeepSpeed/actions/workflows/cpu-torch-latest.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/cpu-torch-latest.yml) |\n| Intel Gaudi | [![hpu-gaudi2](https://github.com/deepspeedai/DeepSpeed/actions/workflows/hpu-gaudi2.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/hpu-gaudi2.yml) |\n| Intel XPU | [![xpu-max1100](https://github.com/deepspeedai/DeepSpeed/actions/workflows/xpu-max1100.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/xpu-max1100.yml) |\n| Integrations | [![aws-accelerate](https://github.com/deepspeedai/DeepSpeed/actions/workflows/aws-accelerate.yml/badge.svg)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/aws-accelerate.yml) |\n| Misc | [![Formatting](https://github.com/deepspeedai/DeepSpeed/actions/workflows/formatting.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/formatting.yml) [![pages-build-deployment](https://github.com/deepspeedai/DeepSpeed/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/pages/pages-build-deployment) [![Documentation Status](https://readthedocs.org/projects/deepspeed/badge/?version=latest)](https://deepspeed.readthedocs.io/en/latest/?badge=latest)[![python](https://github.com/deepspeedai/DeepSpeed/actions/workflows/python.yml/badge.svg?branch=master)](https://github.com/deepspeedai/DeepSpeed/actions/workflows/python.yml) |\n| Huawei Ascend NPU | [![Huawei Ascend NPU](https://github.com/Ascend/Ascend-CI/actions/workflows/deepspeed.yaml/badge.svg?branch=main)](https://github.com/Ascend/Ascend-CI/actions/workflows/deepspeed.yaml) |\n\n# Installation\n\nThe quickest way to get started with DeepSpeed is via pip, this will install\nthe latest release of DeepSpeed which is not tied to specific PyTorch or CUDA\nversions. DeepSpeed includes several C++/CUDA extensions that we commonly refer\nto as our 'ops'.  By default, all of these extensions/ops will be built\njust-in-time (JIT) using [torch's JIT C++ extension loader that relies on\nninja](https://pytorch.org/docs/stable/cpp_extension.html) to build and\ndynamically link them at runtime.\n\n## Requirements\n* [PyTorch](https://pytorch.org/) must be installed _before_ installing DeepSpeed.\n* For full feature support we recommend a version of PyTorch that is >= 2.0 and ideally the latest PyTorch stable release.\n* A CUDA or ROCm compiler such as [nvcc](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/#introduction) or [hipcc](https://github.com/ROCm-Developer-Tools/HIPCC) used to compile C++/CUDA/HIP extensions.\n* Specific GPUs we develop and test against are listed below, this doesn't mean your GPU will not work if it doesn't fall into this category it's just DeepSpeed is most well tested on the following:\n  * NVIDIA: Pascal, Volta, Ampere, and Hopper architectures\n  * AMD: MI100 and MI200\n\n## Contributed HW support\n* DeepSpeed now support various HW accelerators.\n\n| Contributor | Hardware                            | Accelerator Name | Contributor validated | Upstream validated |\n|-------------|-------------------------------------|------------------| --------------------- |--------------------|\n| Huawei      | Huawei Ascend NPU                   | npu              | Yes | No                 |\n| Intel       | Intel(R) Gaudi(R) 2 AI accelerator  | hpu              | Yes | Yes                |\n| Intel       | Intel(R) Xeon(R) Processors         | cpu              | Yes | Yes                |\n| Intel       | Intel(R) Data Center GPU Max series | xpu              | Yes | Yes                |\n| Tecorigin   | Scalable Data Analytics Accelerator | sdaa             | Yes | No                 |\n| KUNLUNXIN   | KUNLUNXIN XPU                      | klxpu            | Yes | No                 |\n\n## PyPI\nWe regularly push releases to [PyPI](https://pypi.org/project/deepspeed/) and encourage users to install from there in most cases.\n\n```bash\npip install deepspeed\n```\n\nAfter installation, you can validate your install and see which extensions/ops\nyour machine is compatible with via the DeepSpeed environment report.\n\n```bash\nds_report\n```\n\nIf you would like to pre-install any of the DeepSpeed extensions/ops (instead\nof JIT compiling) or install pre-compiled ops via PyPI please see our [advanced\ninstallation instructions](https://www.deepspeed.ai/tutorials/advanced-install/).\n\n## Windows\nMany DeepSpeed features are supported on Windows for both training and inference. You can read more about this in the original blog post [here](https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/windows/08-2024/README.md). Among features that are currently not supported are async io (AIO) and GDS (which does not support Windows).\n1. Install PyTorch, such as pytorch 2.3+cu121.\n2. Install Visual C++ build tools, such as VS2022 C++ x64/x86 build tools.\n3. Launch Cmd console with Administrator permissions for creating required symlink folders and ensure MSVC tools are added to your PATH or launch the Developer Command Prompt for Visual Studio 2022 with administrator permissions.\n4. Run `build_win.bat` to build wheel in `dist` folder.\n\n\n# Further Reading\n\nAll DeepSpeed documentation, tutorials, and blogs can be found on our website: [deepspeed.ai](https://www.deepspeed.ai/)\n\n\n|                                                                                                | Description                                  |\n| ---------------------------------------------------------------------------------------------- | -------------------------------------------- |\n| [Getting Started](https://www.deepspeed.ai/getting-started/)                                   |  First steps with DeepSpeed                  |\n| [DeepSpeed JSON Configuration](https://www.deepspeed.ai/docs/config-json/)                     |  Configuring DeepSpeed                       |\n| [API Documentation](https://deepspeed.readthedocs.io/en/latest/)                               |  Generated DeepSpeed API documentation       |\n| [Tutorials](https://www.deepspeed.ai/tutorials/)                                               |  Tutorials                                   |\n| [Blogs](https://www.deepspeed.ai/posts/)                                                       |  Blogs                                   |\n\n\n# CI funding\n\nThis being an open source project we rely on others to provide us resources for CI hardware. At this moment Modal is kindly supporting our GPU CI runs by funding the hardware for us. Modal is an AI infrastructure platform for inference, fine-tuning, batch jobs and more. Get started with $30/mo in free credits today at https://modal.com. We have been getting an amazing support from Modal's team and will surely recommend them to your business.\n\n# Contributing\nDeepSpeed welcomes your contributions! Please see our\n[contributing](CONTRIBUTING.md) guide for more details on formatting, testing,\netc.<br/>\nThanks so much to all of our amazing contributors!\n\n<a href=\"https://github.com/deepspeedai/DeepSpeed/graphs/contributors\">\n  <img src=\"https://contrib.rocks/image?repo=microsoft/DeepSpeed&r=\"  width=\"800px\"/>\n</a>\n\n## Developer Certificate of Origin\nThis project welcomes contributions and suggestions. Most contributions require you to\nagree to a Developer Certificate of Origin [DCO](https://wiki.linuxfoundation.org/dco)\nstating that they agree to the terms published at https://developercertificate.org for\nthat *particular* contribution.\n\nDCOs are per-commit, so each commit needs to be signed off.  These can be signed in\nthe commit by adding the `-s` flag.  DCO enforcement can also be signed off in the PR\nitself by clicking on the DCO enforcement check.\n\n## Code of Conduct\nThis project has adopted the [Microsoft Open Source Code of\nConduct](https://opensource.microsoft.com/codeofconduct/). For more information see the\n[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact\n[opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.\n\n# Publications\n1. Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, Yuxiong He. (2019) ZeRO: memory optimizations toward training trillion parameter models. [arXiv:1910.02054](https://arxiv.org/abs/1910.02054) and [In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '20)](https://dl.acm.org/doi/10.5555/3433701.3433727).\n2. Jeff Rasley, Samyam Rajbhandari, Olatunji Ruwase, and Yuxiong He. (2020) DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters. [In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD '20, Tutorial)](https://dl.acm.org/doi/10.1145/3394486.3406703).\n3. Minjia Zhang, Yuxiong He. (2020) Accelerating Training of Transformer-Based Language Models with Progressive Layer Dropping. [arXiv:2010.13369](https://arxiv.org/abs/2010.13369) and [NeurIPS 2020](https://proceedings.neurips.cc/paper/2020/hash/a1140a3d0df1c81e24ae954d935e8926-Abstract.html).\n4. Jie Ren, Samyam Rajbhandari, Reza Yazdani Aminabadi, Olatunji Ruwase, Shuangyan Yang, Minjia Zhang, Dong Li, Yuxiong He. (2021) ZeRO-Offload: Democratizing Billion-Scale Model Training. [arXiv:2101.06840](https://arxiv.org/abs/2101.06840) and [USENIX ATC 2021](https://www.usenix.org/conference/atc21/presentation/ren-jie). [[paper]](https://arxiv.org/abs/2101.06840) [[slides]](https://www.usenix.org/system/files/atc21_slides_ren-jie.pdf) [[blog]](https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/)\n5. Hanlin Tang, Shaoduo Gan, Ammar Ahmad Awan, Samyam Rajbhandari, Conglong Li, Xiangru Lian, Ji Liu, Ce Zhang, Yuxiong He. (2021) 1-bit Adam: Communication Efficient Large-Scale Training with Adam's Convergence Speed. [arXiv:2102.02888](https://arxiv.org/abs/2102.02888) and [ICML 2021](http://proceedings.mlr.press/v139/tang21a.html).\n6. Samyam Rajbhandari, Olatunji Ruwase, Jeff Rasley, Shaden Smith, Yuxiong He. (2021) ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning. [arXiv:2104.07857](https://arxiv.org/abs/2104.07857) and [SC 2021](https://dl.acm.org/doi/abs/10.1145/3458817.3476205). [[paper]](https://arxiv.org/abs/2104.07857) [[slides]](docs/assets/files/SC21-ZeRO-Infinity.pdf) [[blog]](https://www.microsoft.com/en-us/research/blog/zero-infinity-and-deepspeed-unlocking-unprecedented-model-scale-for-deep-learning-training/)\n7. Conglong Li, Ammar Ahmad Awan, Hanlin Tang, Samyam Rajbhandari, Yuxiong He. (2021) 1-bit LAMB: Communication Efficient Large-Scale Large-Batch Training with LAMB's Convergence Speed. [arXiv:2104.06069](https://arxiv.org/abs/2104.06069) and HiPC 2022.\n8. Conglong Li, Minjia Zhang, Yuxiong He. (2021) The Stability-Efficiency Dilemma: Investigating Sequence Length Warmup for Training GPT Models. [arXiv:2108.06084](https://arxiv.org/abs/2108.06084) and [NeurIPS 2022](https://openreview.net/forum?id=JpZ5du_Kdh).\n9. Yucheng Lu, Conglong Li, Minjia Zhang, Christopher De Sa, Yuxiong He. (2022) Maximizing Communication Efficiency for Large-scale Training via 0/1 Adam. [arXiv:2202.06009](https://arxiv.org/abs/2202.06009).\n10. Samyam Rajbhandari, Conglong Li, Zhewei Yao, Minjia Zhang, Reza Yazdani Aminabadi, Ammar Ahmad Awan, Jeff Rasley, Yuxiong He. (2022) DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale [arXiv:2201.05596](https://arxiv.org/abs/2201.05596) and [ICML 2022](https://proceedings.mlr.press/v162/rajbhandari22a.html). [[pdf]](https://arxiv.org/abs/2201.05596) [[slides]](docs/assets/files/ICML-5mins.pdf) [[blog]](https://www.microsoft.com/en-us/research/blog/deepspeed-advancing-moe-inference-and-training-to-power-next-generation-ai-scale/)\n11. Shaden Smith, Mostofa Patwary, Brandon Norick, Patrick LeGresley, Samyam Rajbhandari, Jared Casper, Zhun Liu, Shrimai Prabhumoye, George Zerveas, Vijay Korthikanti, Elton Zhang, Rewon Child, Reza Yazdani Aminabadi, Julie Bernauer, Xia Song, Mohammad Shoeybi, Yuxiong He, Michael Houston, Saurabh Tiwary, Bryan Catanzaro. (2022) Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model [arXiv:2201.11990](https://arxiv.org/abs/2201.11990).\n12. Xiaoxia Wu, Zhewei Yao, Minjia Zhang, Conglong Li, Yuxiong He. (2022) Extreme Compression for Pre-trained Transformers Made Simple and Efficient. [arXiv:2206.01859](https://arxiv.org/abs/2206.01859) and [NeurIPS 2022](https://openreview.net/forum?id=xNeAhc2CNAl).\n13. Zhewei Yao, Reza Yazdani Aminabadi, Minjia Zhang, Xiaoxia Wu, Conglong Li, Yuxiong He. (2022) ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers. [arXiv:2206.01861](https://arxiv.org/abs/2206.01861) and [NeurIPS 2022](https://openreview.net/forum?id=f-fVCElZ-G1) [[slides]](docs/assets/files/zeroquant_series.pdf) [[blog]](https://www.microsoft.com/en-us/research/blog/deepspeed-compression-a-composable-library-for-extreme-compression-and-zero-cost-quantization/)\n14. Reza Yazdani Aminabadi, Samyam Rajbhandari, Minjia Zhang, Ammar Ahmad Awan, Cheng Li, Du Li, Elton Zheng, Jeff Rasley, Shaden Smith, Olatunji Ruwase, Yuxiong He. (2022) DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale. [arXiv:2207.00032](https://arxiv.org/abs/2207.00032) and [SC 2022](https://dl.acm.org/doi/abs/10.5555/3571885.3571946). [[paper]](https://arxiv.org/abs/2207.00032) [[slides]](docs/assets/files/sc22-ds-inference.pdf) [[blog]](https://www.microsoft.com/en-us/research/blog/deepspeed-accelerating-large-scale-model-inference-and-training-via-system-optimizations-and-compression/)\n15. Zhewei Yao, Xiaoxia Wu, Conglong Li, Connor Holmes, Minjia Zhang, Cheng Li, Yuxiong He. (2022) Random-LTD: Random and Layerwise Token Dropping Brings Efficient Training for Large-scale Transformers. [arXiv:2211.11586](https://arxiv.org/abs/2211.11586).\n16. Conglong Li, Zhewei Yao, Xiaoxia Wu, Minjia Zhang, Yuxiong He. (2022) DeepSpeed Data Efficiency: Improving Deep Learning Model Quality and Training Efficiency via Efficient Data Sampling and Routing. [arXiv:2212.03597](https://arxiv.org/abs/2212.03597) [ENLSP2023 Workshop at NeurIPS2023](https://neurips2023-enlsp.github.io/)\n17. Xiaoxia Wu, Cheng Li, Reza Yazdani Aminabadi, Zhewei Yao, Yuxiong He. (2023) Understanding INT4 Quantization for Transformer Models: Latency Speedup, Composability, and Failure Cases. [arXiv:2301.12017](https://arxiv.org/abs/2301.12017) and [ICML2023](https://icml.cc/Conferences/2023).\n18. Syed Zawad, Cheng Li, Zhewei Yao, Elton Zheng, Yuxiong He, Feng Yan. (2023) DySR: Adaptive Super-Resolution via Algorithm and System Co-design. [ICLR:2023](https://openreview.net/forum?id=Pgtn4l6eKjv).\n19. Sheng Shen, Zhewei Yao, Chunyuan Li, Trevor Darrell, Kurt Keutzer, Yuxiong He. (2023) Scaling Vision-Language Models with Sparse Mixture of Experts. [arXiv:2303.07226](https://arxiv.org/abs/2303.07226) and [Finding at EMNLP2023](https://2023.emnlp.org/).\n20. Quentin Anthony, Ammar Ahmad Awan, Jeff Rasley, Yuxiong He, Aamir Shafi, Mustafa Abduljabbar, Hari Subramoni, Dhabaleswar Panda. (2023) MCR-DL: Mix-and-Match Communication Runtime for Deep Learning [arXiv:2303.08374](https://arxiv.org/abs/2303.08374) and will appear at IPDPS 2023.\n21. Siddharth Singh, Olatunji Ruwase, Ammar Ahmad Awan, Samyam Rajbhandari, Yuxiong He, Abhinav Bhatele. (2023) A Hybrid Tensor-Expert-Data Parallelism Approach to Optimize Mixture-of-Experts Training [arXiv:2303.06318](https://arxiv.org/abs/2303.06318) and [ICS 2023](https://dl.acm.org/doi/10.1145/3577193.3593704).\n22. Guanhua Wang, Heyang Qin, Sam Ade Jacobs, Xiaoxia Wu, Connor Holmes, Zhewei Yao, Samyam Rajbhandari, Olatunji Ruwase, Feng Yan, Lei Yang, Yuxiong He. (2023) ZeRO++: Extremely Efficient Collective Communication for Giant Model Training [arXiv:2306.10209](https://arxiv.org/abs/2306.10209) and [ML for Sys Workshop at NeurIPS2023](http://mlforsystems.org/) [[blog]](https://www.microsoft.com/en-us/research/blog/deepspeed-zero-a-leap-in-speed-for-llm-and-chat-model-training-with-4x-less-communication/)\n23. Zhewei Yao, Xiaoxia Wu, Cheng Li, Stephen Youn, Yuxiong He. (2023) ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation [arXiv:2303.08302](https://arxiv.org/abs/2303.08302) and [ENLSP2023 Workshop at NeurIPS2023](https://neurips2023-enlsp.github.io/) [[slides]](docs/assets/files/zeroquant_series.pdf)\n24. Pareesa Ameneh Golnari, Zhewei Yao, Yuxiong He. (2023) Selective Guidance: Are All the Denoising Steps of Guided Diffusion Important? [arXiv:2305.09847](https://arxiv.org/abs/2305.09847)\n25. Zhewei Yao, Reza Yazdani Aminabadi, Olatunji Ruwase, Samyam Rajbhandari, Xiaoxia Wu, Ammar Ahmad Awan, Jeff Rasley, Minjia Zhang, Conglong Li, Connor Holmes, Zhongzhu Zhou, Michael Wyatt, Molly Smith, Lev Kurilenko, Heyang Qin, Masahiro Tanaka, Shuai Che, Shuaiwen Leon Song, Yuxiong He. (2023) DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales [arXiv:2308.01320](https://arxiv.org/abs/2308.01320).\n26. Xiaoxia Wu, Zhewei Yao, Yuxiong He. (2023) ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats [arXiv:2307.09782](https://arxiv.org/abs/2307.09782) and [ENLSP2023 Workshop at NeurIPS2023](https://neurips2023-enlsp.github.io/) [[slides]](docs/assets/files/zeroquant_series.pdf)\n27. Zhewei Yao, Xiaoxia Wu, Conglong Li, Minjia Zhang, Heyang Qin, Olatunji Ruwase, Ammar Ahmad Awan, Samyam Rajbhandari, Yuxiong He. (2023) DeepSpeed-VisualChat: Multi-Round Multi-Image Interleave Chat via Multi-Modal Causal Attention [arXiv:2309.14327](https://arxiv.org/pdf/2309.14327.pdf)\n28. Shuaiwen Leon Song, Bonnie Kruft, Minjia Zhang, Conglong Li, Shiyang Chen, Chengming Zhang, Masahiro Tanaka, Xiaoxia Wu, Jeff Rasley, Ammar Ahmad Awan, Connor Holmes, Martin Cai, Adam Ghanem, Zhongzhu Zhou, Yuxiong He, et al. (2023) DeepSpeed4Science Initiative: Enabling Large-Scale Scientific Discovery through Sophisticated AI System Technologies [arXiv:2310.04610](https://arxiv.org/abs/2310.04610) [[blog]](https://www.microsoft.com/en-us/research/blog/announcing-the-deepspeed4science-initiative-enabling-large-scale-scientific-discovery-through-sophisticated-ai-system-technologies/)\n29. Zhewei Yao, Reza Yazdani Aminabadi, Stephen Youn, Xiaoxia Wu, Elton Zheng, Yuxiong He. (2023) ZeroQuant-HERO: Hardware-Enhanced Robust Optimized Post-Training Quantization Framework for W8A8 Transformers [arXiv:2310.17723](https://arxiv.org/abs/2310.17723)\n\n30. Xiaoxia Wu, Haojun Xia, Stephen Youn, Zhen Zheng, Shiyang Chen, Arash Bakhtiari, Michael Wyatt, Reza Yazdani Aminabadi, Yuxiong He, Olatunji Ruwase, Leon Song, Zhewei Yao (2023) ZeroQuant(4+2): Redefining LLMs Quantization with a New FP6-Centric Strategy for Diverse Generative Tasks [arXiv:2312.08583](https://arxiv.org/abs/2312.08583)\n\n31. Haojun Xia, Zhen Zheng, Xiaoxia Wu, Shiyang Chen, Zhewei Yao, Stephen Youn, Arash Bakhtiari, Michael Wyatt, Donglin Zhuang, Zhongzhu Zhou, Olatunji Ruwase, Yuxiong He, Shuaiwen Leon Song. (2024) FP6-LLM: Efficiently Serving Large Language Models Through FP6-Centric Algorithm-System Co-Design  [arXiv:2401.14112](https://arxiv.org/abs/2401.14112)\n32. Sam Ade Jacobs, Masahiro Tanaka, Chengming Zhang, Minjia Zhang, Reza Yazdani Aminadabi, Shuaiwen Leon Song, Samyam Rajbhandari, Yuxiong He. (2024) [System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models](https://dl.acm.org/doi/10.1145/3662158.3662806)\n33. Xinyu Lian, Sam Ade Jacobs, Lev Kurilenko, Masahiro Tanaka, Stas Bekman, Olatunji Ruwase, Minjia Zhang. (2024) Universal Checkpointing: Efficient and Flexible Checkpointing for Large Scale Distributed Training [arXiv:2406.18820](https://arxiv.org/abs/2406.18820)\n34. Stas Bekman, Samyam Rajbhandari, Michael Wyatt, Jeff Rasley, Tunji Ruwase, Zhewei Yao, Aurick Qiao, Yuxiong He. (2025) Arctic Long Sequence Training: Scalable And Efficient Training For Multi-Million Token Sequences [arXiv:2506.13996](https://arxiv.org/abs/2506.13996)\n35. Tingfeng Lan, Yusen Wu, Bin Ma, Zhaoyuan Su, Rui Yang, Tekin Bicer, Masahiro Tanaka, Olatunji Ruwase, Dong Li, Yue Cheng. (2025) ZenFlow: Enabling Stall-Free Offloading Training via Asynchronous Updates [arXiv:2505.12242](https://arxiv.org/abs/2505.12242)\n36. Kayhan Behdin, Ata Fatahibaarzi, Qingquan Song, Yun Dai, Aman Gupta, Zhipeng Wang, Hejian Sang, Shao Tang, Gregory Dexter, Sirou Zhu, Siyu Zhu, Tejas Dharamsi, Vignesh Kothapalli, Zhoutong Fu, Yihan Cao, Pin-Lun Hsu, Fedor Borisyuk, Natesh S. Pillai, Luke Simon, Rahul Mazumder.(2025) Scaling Down, Serving Fast: Compressing and Deploying Efficient LLMs for Recommendation Systems [EMNLP 2025](https://aclanthology.org/2025.emnlp-industry.119/)\n37. Xinyu Lian, Masahiro Tanaka, Olatunji Ruwase, Minjia Zhang. (2026) SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips [arxiv](https://arxiv.org/abs/2509.21271), [ASPLOS 2026](https://www.asplos-conference.org/asplos2026)\n\n# Videos\n1. DeepSpeed KDD 2020 Tutorial\n    1. [Overview](https://www.youtube.com/watch?v=CaseqC45DNc&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=29)\n    2. [ZeRO + large model training](https://www.youtube.com/watch?v=y4_bCiAsIAk&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=28)\n    3. [17B T-NLG demo](https://www.youtube.com/watch?v=9V-ZbP92drg&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=27)\n    4. [Fastest BERT training + RScan tuning](https://www.youtube.com/watch?v=o1K-ZG9F6u0&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=26)\n    5. DeepSpeed hands on deep dive: [part 1](https://www.youtube.com/watch?v=_NOk-mBwDYg&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=92), [part 2](https://www.youtube.com/watch?v=sG6_c4VXLww&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=94), [part 3](https://www.youtube.com/watch?v=k9yPkBTayos&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=93)\n    6. [FAQ](https://www.youtube.com/watch?v=nsHu6vEgPew&list=PLa85ZdUjfWS21mgibJ2vCvLziprjpKoW0&index=24)\n2. Microsoft Research Webinar\n    * Registration is free and all videos are available on-demand.\n    * [ZeRO & Fastest BERT: Increasing the scale and speed of deep learning training in DeepSpeed](https://note.microsoft.com/MSR-Webinar-DeepSpeed-Registration-On-Demand.html).\n3. [DeepSpeed on AzureML](https://youtu.be/yBVXR8G8Bg8)\n4. [Large Model Training and Inference with DeepSpeed // Samyam Rajbhandari // LLMs in Prod Conference](https://www.youtube.com/watch?v=cntxC3g22oU) [[slides]](docs/assets/files/presentation-mlops.pdf)\n5. Community Tutorials\n    * [DeepSpeed: All the tricks to scale to gigantic models (Mark Saroufim)](https://www.youtube.com/watch?v=pDGI668pNg0)\n    * [Turing-NLG, DeepSpeed and the ZeRO optimizer (Yannic Kilcher)](https://www.youtube.com/watch?v=tC01FRB0M7w)\n    * [Ultimate Guide To Scaling ML Models (The AI Epiphany)](https://www.youtube.com/watch?v=hc0u4avAkuM)\n",
+        "description_content_type": "text/markdown",
+        "home_page": "http://deepspeed.ai",
+        "author": "DeepSpeed Team",
+        "author_email": "info@deepspeedai.com",
+        "license": "Apache Software License 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "einops",
+          "hjson",
+          "msgpack",
+          "ninja",
+          "numpy",
+          "packaging>=20.0",
+          "psutil",
+          "py-cpuinfo",
+          "pydantic>=2.0.0",
+          "torch>=2.0.0",
+          "tqdm",
+          "autodoc_pydantic>=2.0.0; extra == \"readthedocs\"",
+          "docutils<0.18; extra == \"readthedocs\"",
+          "hjson; extra == \"readthedocs\"",
+          "packaging; extra == \"readthedocs\"",
+          "psutil; extra == \"readthedocs\"",
+          "py-cpuinfo; extra == \"readthedocs\"",
+          "pydantic>=2.0.0; extra == \"readthedocs\"",
+          "recommonmark; extra == \"readthedocs\"",
+          "sphinx_rtd_theme; extra == \"readthedocs\"",
+          "torch>=2.0.0; extra == \"readthedocs\"",
+          "tqdm; extra == \"readthedocs\"",
+          "accelerate; extra == \"dev\"",
+          "clang-format==18.1.3; extra == \"dev\"",
+          "comet_ml>=3.41.0; extra == \"dev\"",
+          "deepspeed-kernels; sys_platform == \"linux\" and extra == \"dev\"",
+          "docutils<0.18; extra == \"dev\"",
+          "future; extra == \"dev\"",
+          "importlib-metadata>=4; extra == \"dev\"",
+          "liger-kernel>=0.8.1; extra == \"dev\"",
+          "mup; extra == \"dev\"",
+          "pre-commit>=3.2.0; extra == \"dev\"",
+          "pytest<8.4.0,>=7.2.0; extra == \"dev\"",
+          "pytest-forked; extra == \"dev\"",
+          "pytest-randomly; extra == \"dev\"",
+          "pytest-xdist; extra == \"dev\"",
+          "qtorch==0.3.0; extra == \"dev\"",
+          "recommonmark; extra == \"dev\"",
+          "sphinx; extra == \"dev\"",
+          "sphinx-rtd-theme; extra == \"dev\"",
+          "tensorboard; extra == \"dev\"",
+          "torchvision; extra == \"dev\"",
+          "transformers>=4.51.3; extra == \"dev\"",
+          "wandb; extra == \"dev\"",
+          "tabulate; extra == \"autotuning\"",
+          "hjson; extra == \"autotuning-ml\"",
+          "tabulate; extra == \"autotuning-ml\"",
+          "xgboost; extra == \"autotuning-ml\"",
+          "google; extra == \"inf\"",
+          "lm-eval==0.3.0; extra == \"inf\"",
+          "protobuf; extra == \"inf\"",
+          "qtorch; extra == \"inf\"",
+          "safetensors; extra == \"inf\"",
+          "sentencepiece; extra == \"inf\"",
+          "transformers>=4.32.1; extra == \"inf\"",
+          "diffusers>=0.25.0; extra == \"sd\"",
+          "triton>=2.1.0; extra == \"sd\"",
+          "scipy; extra == \"deepcompile\"",
+          "torchembed>=0.3.1; extra == \"torchembed\"",
+          "psutil; extra == \"all\"",
+          "tqdm; extra == \"all\"",
+          "recommonmark; extra == \"all\"",
+          "comet_ml>=3.41.0; extra == \"all\"",
+          "safetensors; extra == \"all\"",
+          "pydantic>=2.0.0; extra == \"all\"",
+          "torch>=2.0.0; extra == \"all\"",
+          "sphinx; extra == \"all\"",
+          "sphinx-rtd-theme; extra == \"all\"",
+          "pre-commit>=3.2.0; extra == \"all\"",
+          "importlib-metadata>=4; extra == \"all\"",
+          "autodoc_pydantic>=2.0.0; extra == \"all\"",
+          "docutils<0.18; extra == \"all\"",
+          "transformers>=4.51.3; extra == \"all\"",
+          "pytest-randomly; extra == \"all\"",
+          "tabulate; extra == \"all\"",
+          "lm-eval==0.3.0; extra == \"all\"",
+          "tensorboard; extra == \"all\"",
+          "scipy; extra == \"all\"",
+          "wandb; extra == \"all\"",
+          "liger-kernel>=0.8.1; extra == \"all\"",
+          "hjson; extra == \"all\"",
+          "protobuf; extra == \"all\"",
+          "packaging; extra == \"all\"",
+          "xgboost; extra == \"all\"",
+          "google; extra == \"all\"",
+          "future; extra == \"all\"",
+          "transformers>=4.32.1; extra == \"all\"",
+          "sentencepiece; extra == \"all\"",
+          "torchvision; extra == \"all\"",
+          "accelerate; extra == \"all\"",
+          "py-cpuinfo; extra == \"all\"",
+          "sphinx_rtd_theme; extra == \"all\"",
+          "pytest-forked; extra == \"all\"",
+          "mup; extra == \"all\"",
+          "torchembed>=0.3.1; extra == \"all\"",
+          "triton>=2.1.0; extra == \"all\"",
+          "pytest-xdist; extra == \"all\"",
+          "diffusers>=0.25.0; extra == \"all\"",
+          "pytest<8.4.0,>=7.2.0; extra == \"all\"",
+          "clang-format==18.1.3; extra == \"all\"",
+          "qtorch; extra == \"all\"",
+          "deepspeed-kernels; sys_platform == \"linux\" and extra == \"all\"",
+          "qtorch==0.3.0; extra == \"all\""
+        ],
+        "project_url": [
+          "Documentation, https://deepspeed.readthedocs.io",
+          "Source, https://github.com/deepspeedai/DeepSpeed"
+        ],
+        "provides_extra": [
+          "readthedocs",
+          "dev",
+          "autotuning",
+          "autotuning-ml",
+          "inf",
+          "sd",
+          "triton",
+          "deepcompile",
+          "torchembed",
+          "all"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6e/53/ebfed7b689c338dd8ebeec9c0730c8d56821292f14e2536e5f3ef1a05744/ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "65a24341b5ac09fcadcc37082660be40a94174e51a937fabf6e2cae26225fa2c"
+          },
+          "hash": "sha256=65a24341b5ac09fcadcc37082660be40a94174e51a937fabf6e2cae26225fa2c"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "ninja",
+        "version": "1.13.2",
+        "summary": "Ninja is a small build system with a focus on speed",
+        "description": "==========================\nNinja Python Distributions\n==========================\n\n`Ninja <http://www.ninja-build.org>`_ is a small build system with a focus on speed.\n\nThe latest Ninja python wheels provide `ninja 1.13.2.g7659b.kitware.jobserver-pipe-1 <https://ninja-build.org/manual.html>`_ executable\nand `ninja_syntax.py` for generating `.ninja` files.\n\nThe classes in ninja_syntax are in the ninja namespace, so are accesable via ``import ninja``, e.g. ::\n\n    import ninja\n    writer = ninja.Writer(sys.stdout)\n\nThis package also installs a front-end to the nijnja executable, so that::\n\n    python -m ninja\n\nwill call the executable.\n\n.. image:: https://raw.githubusercontent.com/scikit-build/ninja-python-distributions/master/ninja-python-distributions-logo.png\n\nLatest Release\n--------------\n\n.. table::\n\n  +----------------------------------------------------------------------+---------------------------------------------------------------------------+\n  | Versions                                                             | Downloads                                                                 |\n  +======================================================================+===========================================================================+\n  | .. image:: https://img.shields.io/pypi/v/ninja.svg                   | .. image:: https://img.shields.io/badge/downloads-2535k%20total-green.svg |\n  |     :target: https://pypi.python.org/pypi/ninja                      |     :target: https://pypi.python.org/pypi/ninja                           |\n  +----------------------------------------------------------------------+---------------------------------------------------------------------------+\n\nBuild Status\n------------\n\n.. table::\n\n  +---------------+-------------------------------------------------------------------------------------------------------------+\n  |               | GitHub Actions (Windows, macOS, Linux)                                                                      |\n  +===============+=============================================================================================================+\n  | PyPI          | .. image:: https://github.com/scikit-build/ninja-python-distributions/actions/workflows/build.yml/badge.svg |\n  |               |     :target: https://github.com/scikit-build/ninja-python-distributions/actions/workflows/build.yml         |\n  +---------------+-------------------------------------------------------------------------------------------------------------+\n\nMaintainers\n-----------\n\n* `How to update ninja version ? <https://github.com/scikit-build/ninja-python-distributions/blob/master/docs/update_ninja_version.rst>`_\n\n* `How to make a release ? <https://github.com/scikit-build/ninja-python-distributions/blob/master/docs/make_a_release.rst>`_\n\n\nMiscellaneous\n-------------\n\n* Documentation: https://github.com/scikit-build/ninja-python-distributions#readme\n* Source code: https://github.com/scikit-build/ninja-python-distributions\n* Mailing list: https://groups.google.com/forum/#!forum/scikit-build\n\nPython Version Support\n----------------------\n\nVersions after 1.11.1.1 no longer support Python 2-3.6, and require manylinux2010+ on linux.\nVersions after 1.13 no longer support Python 3.7, and require manylinux2014+/musllinux_1_2+ on linux.\n\nLicense\n-------\n\nThis project is maintained by Jean-Christophe Fillion-Robin from Kitware Inc.\nIt is covered by the `Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.\n\nNinja is also distributed under the `Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.\nFor more information about Ninja, visit https://ninja-build.org\n\nLogo was originally created by Libby Rose from Kitware Inc.\nIt is covered by `CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_.\n\n\nHistory\n-------\n\nninja-python-distributions was initially developed in November 2016 by\nJean-Christophe Fillion-Robin to facilitate the distribution of project using\n`scikit-build <http://scikit-build.readthedocs.io/>`_ and depending on CMake\nand Ninja.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "build",
+          "c++",
+          "cross-compilation",
+          "cross-platform",
+          "fortran",
+          "ninja"
+        ],
+        "author_email": "Jean-Christophe Fillion-Robin <scikit-build@googlegroups.com>, Henry Schreiner <henryfs@princeton.edu>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE_Apache_20"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: C",
+          "Programming Language :: C++",
+          "Programming Language :: Fortran",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Build Tools",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Bug Tracker, https://github.com/scikit-build/ninja-python-distributions/issues",
+          "Documentation, https://github.com/scikit-build/ninja-python-distributions#readme",
+          "Download, https://github.com/ninja-build/ninja/releases",
+          "Homepage, http://ninja-build.org/",
+          "Mailing list, https://groups.google.com/forum/#!forum/scikit-build",
+          "Source Code, https://github.com/scikit-build/ninja-python-distributions"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193"
+          },
+          "hash": "sha256=54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "einops",
+        "version": "0.8.2",
+        "summary": "A new flavour of deep learning operations",
+        "description": "\n<!--\n<a href='http://arogozhnikov.github.io/images/einops/einops_video.mp4' >\n<div align=\"center\">\n  <img src=\"http://arogozhnikov.github.io/images/einops/einops_video.gif\" alt=\"einops package examples\" />\n  <br>\n  <small><a href='http://arogozhnikov.github.io/images/einops/einops_video.mp4'>This video in high quality (mp4)</a></small>\n  <br><br>\n</div>\n</a>\n-->\n\n<!-- this link magically rendered as video on github readme, unfortunately not in docs -->\n\nhttps://user-images.githubusercontent.com/6318811/177030658-66f0eb5d-e136-44d8-99c9-86ae298ead5b.mp4\n\n\n\n\n# einops \n[![Run tests](https://github.com/arogozhnikov/einops/actions/workflows/run_tests.yml/badge.svg)](https://github.com/arogozhnikov/einops/actions/workflows/run_tests.yml)\n[![PyPI version](https://badge.fury.io/py/einops.svg)](https://badge.fury.io/py/einops)\n[![Documentation](https://img.shields.io/badge/documentation-link-blue.svg)](https://einops.rocks/)\n![Supported python versions](https://raw.githubusercontent.com/arogozhnikov/einops/main/docs/resources/python_badge.svg)\n\n\nFlexible and powerful tensor operations for readable and reliable code. <br />\nSupports numpy, pytorch, tensorflow, jax, and [others](#supported-frameworks).\n\n## Recent updates:\n\n- 0.8.0: tinygrad backend added, small fixes\n- 0.7.0: no-hassle `torch.compile`, support of [array api standard](https://data-apis.org/array-api/latest/API_specification/index.html) and more\n- 10'000🎉: github reports that more than 10k project use einops\n- einops 0.6.1: paddle backend added\n- einops 0.6 introduces [packing and unpacking](https://github.com/arogozhnikov/einops/blob/main/docs/4-pack-and-unpack.ipynb)\n- einops 0.5: einsum is now a part of einops\n- [Einops paper](https://openreview.net/pdf?id=oapKSVM2bcj) is accepted for oral presentation at ICLR 2022 (yes, it worth reading).\n  Talk recordings are [available](https://iclr.cc/virtual/2022/oral/6603)\n\n\n<details markdown=\"1\">\n<summary>Previous updates</summary>\n- flax and oneflow backend added\n- torch.jit.script is supported for pytorch layers\n- powerful EinMix added to einops. [Einmix tutorial notebook](https://github.com/arogozhnikov/einops/blob/main/docs/3-einmix-layer.ipynb) \n</details>\n\n<!--<div align=\"center\">\n  <img src=\"http://arogozhnikov.github.io/images/einops/einops_logo_350x350.png\" \n  alt=\"einops package logo\" width=\"250\" height=\"250\" />\n  <br><br>\n</div> -->\n\n\n## Tweets \n\n> In case you need convincing arguments for setting aside time to learn about einsum and einops...\n[Tim Rocktäschel](https://twitter.com/_rockt/status/1230818967205425152)\n\n> Writing better code with PyTorch and einops 👌\n[Andrej Karpathy](https://twitter.com/karpathy/status/1290826075916779520)\n\n> Slowly but surely, einops is seeping in to every nook and cranny of my code. If you find yourself shuffling around bazillion dimensional tensors, this might change your life\n[Nasim Rahaman](https://twitter.com/nasim_rahaman/status/1216022614755463169)\n\n[More testimonials](https://einops.rocks/pages/testimonials/)\n\n\n## Contents\n\n- [Installation](#Installation)\n- [Documentation](https://einops.rocks/)\n- [Tutorial](#Tutorials)\n- [API micro-reference](#API)\n- [Why use einops](#Why-use-einops-notation)\n- [Supported frameworks](#Supported-frameworks)\n- [Citing](#Citing)\n- [Repository](https://github.com/arogozhnikov/einops) and [discussions](https://github.com/arogozhnikov/einops/discussions)\n\n## Installation  <a name=\"Installation\"></a>\n\nPlain and simple:\n```bash\npip install einops\n```\n\n(`uv pip install einops` works as well)\n\n## Tutorials <a name=\"Tutorials\"></a>\n\nTutorials are the most convenient way to see `einops` in action\n\n- part 1: [einops fundamentals](https://github.com/arogozhnikov/einops/blob/main/docs/1-einops-basics.ipynb)\n- part 2: [einops for deep learning](https://github.com/arogozhnikov/einops/blob/main/docs/2-einops-for-deep-learning.ipynb)\n- part 3: [packing and unpacking](https://github.com/arogozhnikov/einops/blob/main/docs/4-pack-and-unpack.ipynb)\n- part 4: [improve pytorch code with einops](http://einops.rocks/pytorch-examples.html)\n\nKapil Sachdeva recorded a small [intro to einops](https://www.youtube.com/watch?v=xGy75Pjsqzo).\n\n## API <a name=\"API\"></a>\n\n`einops` has a minimalistic yet powerful API.\n\nThree core operations provided ([einops tutorial](https://github.com/arogozhnikov/einops/blob/main/docs/)\nshows those cover stacking, reshape, transposition, squeeze/unsqueeze, repeat, tile, concatenate, view and numerous reductions)\n\n```python\nfrom einops import rearrange, reduce, repeat\n# rearrange elements according to the pattern\noutput_tensor = rearrange(input_tensor, 't b c -> b c t')\n# combine rearrangement and reduction\noutput_tensor = reduce(input_tensor, 'b c (h h2) (w w2) -> b h w c', 'mean', h2=2, w2=2)\n# copy along a new axis\noutput_tensor = repeat(input_tensor, 'h w -> h w c', c=3)\n```\n\nLater additions to the family are `pack` and `unpack` functions (better than stack/split/concatenate):\n\n```python\nfrom einops import pack, unpack\n# pack and unpack allow reversibly 'packing' multiple tensors into one.\n# Packed tensors may be of different dimensionality:\npacked,  ps = pack([class_token_bc, image_tokens_bhwc, text_tokens_btc], 'b * c')\nclass_emb_bc, image_emb_bhwc, text_emb_btc = unpack(transformer(packed), ps, 'b * c')\n```\n\nFinally, einops provides einsum with a support of multi-lettered names:\n\n```python\nfrom einops import einsum, pack, unpack\n# einsum is like ... einsum, generic and flexible dot-product\n# but 1) axes can be multi-lettered  2) pattern goes last 3) works with multiple frameworks\nC = einsum(A, B, 'b t1 head c, b t2 head c -> b head t1 t2')\n```\n\n### EinMix\n\n`EinMix` is a generic linear layer, perfect for MLP Mixers and similar architectures.\n\n### Layers\n\nEinops provides layers (`einops` keeps a separate version for each framework) that reflect corresponding functions\n\n```python\nfrom einops.layers.torch      import Rearrange, Reduce\nfrom einops.layers.tensorflow import Rearrange, Reduce\nfrom einops.layers.flax       import Rearrange, Reduce\nfrom einops.layers.paddle     import Rearrange, Reduce\n```\n\n<details markdown=\"1\">\n<summary>Example of using layers within a pytorch model</summary>\nExample given for pytorch, but code in other frameworks is almost identical\n\n```python \nfrom torch.nn import Sequential, Conv2d, MaxPool2d, Linear, ReLU\nfrom einops.layers.torch import Rearrange\n\nmodel = Sequential(\n    ...,\n    Conv2d(6, 16, kernel_size=5),\n    MaxPool2d(kernel_size=2),\n    # flattening without need to write forward\n    Rearrange('b c h w -> b (c h w)'),\n    Linear(16*5*5, 120),\n    ReLU(),\n    Linear(120, 10),\n)\n```\n\nNo more flatten needed!\n\nAdditionally, torch layers as those are script-able and compile-able.\nOperations [are torch.compile-able](https://github.com/arogozhnikov/einops/wiki/Using-torch.compile-with-einops),\n but not script-able due to limitations of torch.jit.script.\n</details>\n\n\n\n\n## Naming <a name=\"Naming\"></a>\n\n`einops` stands for Einstein-Inspired Notation for operations \n(though \"Einstein operations\" is more attractive and easier to remember).\n\nNotation was loosely inspired by Einstein summation (in particular by `numpy.einsum` operation).\n\n## Why use `einops` notation?! <a name=\"Why-use-einops-notation\"></a>\n\n\n### Semantic information (being verbose in expectations)\n\n```python\ny = x.view(x.shape[0], -1)\ny = rearrange(x, 'b c h w -> b (c h w)')\n```\nWhile these two lines are doing the same job in *some* context,\nthe second one provides information about the input and output.\nIn other words, `einops` focuses on interface: *what is the input and output*, not *how* the output is computed.\n\nThe next operation looks similar:\n\n```python\ny = rearrange(x, 'time c h w -> time (c h w)')\n```\nbut it gives the reader a hint:\nthis is not an independent batch of images we are processing,\nbut rather a sequence (video).\n\nSemantic information makes the code easier to read and maintain.\n\n### Convenient checks\n\nReconsider the same example:\n\n```python\ny = x.view(x.shape[0], -1) # x: (batch, 256, 19, 19)\ny = rearrange(x, 'b c h w -> b (c h w)')\n```\nThe second line checks that the input has four dimensions,\nbut you can also specify particular dimensions.\nThat's opposed to just writing comments about shapes since comments don't prevent mistakes,\nnot tested, and without code review tend to be outdated\n```python\ny = x.view(x.shape[0], -1) # x: (batch, 256, 19, 19)\ny = rearrange(x, 'b c h w -> b (c h w)', c=256, h=19, w=19)\n```\n\n### Result is strictly determined\n\nBelow we have at least two ways to define the depth-to-space operation\n```python\n# depth-to-space\nrearrange(x, 'b c (h h2) (w w2) -> b (c h2 w2) h w', h2=2, w2=2)\nrearrange(x, 'b c (h h2) (w w2) -> b (h2 w2 c) h w', h2=2, w2=2)\n```\nThere are at least four more ways to do it. Which one is used by the framework?\n\nThese details are ignored, since *usually* it makes no difference,\nbut it can make a big difference (e.g. if you use grouped convolutions in the next stage),\nand you'd like to specify this in your code.\n\n\n### Uniformity\n\n```python\nreduce(x, 'b c (x dx) -> b c x', 'max', dx=2)\nreduce(x, 'b c (x dx) (y dy) -> b c x y', 'max', dx=2, dy=3)\nreduce(x, 'b c (x dx) (y dy) (z dz) -> b c x y z', 'max', dx=2, dy=3, dz=4)\n```\nThese examples demonstrated that we don't use separate operations for 1d/2d/3d pooling,\nthose are all defined in a uniform way.\n\nSpace-to-depth and depth-to space are defined in many frameworks but how about width-to-height? Here you go:\n\n```python\nrearrange(x, 'b c h (w w2) -> b c (h w2) w', w2=2)\n```\n\n\n### Framework independent behavior\n\nEven simple functions are defined differently by different frameworks\n\n```python\ny = x.flatten() # or flatten(x)\n```\n\nSuppose `x`'s shape was `(3, 4, 5)`, then `y` has shape ...\n\n- numpy, pytorch, cupy, chainer, jax: `(60,)`\n- keras, tensorflow.layers, gluon: `(3, 20)`\n\n`einops` works the same way in all frameworks.\n\n\n### Independence of framework terminology\n\nExample: `tile` vs `repeat` causes lots of confusion. To copy image along width:\n```python\nnp.tile(image, (1, 2))    # in numpy\nimage.repeat(1, 2)        # pytorch's repeat ~ numpy's tile\n```\n\nWith einops you don't need to decipher which axis was repeated:\n```python\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in numpy\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in pytorch\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in tf\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in jax\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in cupy\n... (etc.)\n```\n\n[Testimonials](https://einops.rocks/pages/testimonials/) provide users' perspective on the same question.\n\n\n## Supported frameworks <a name=\"Supported-frameworks\"></a>\n\nEinops works with ...\n\n- [numpy](http://www.numpy.org/)\n- [pytorch](https://pytorch.org/)\n- [tensorflow](https://www.tensorflow.org/)\n- [jax](https://github.com/google/jax)\n- [cupy](https://github.com/cupy/cupy)\n- [flax](https://github.com/google/flax) (community)\n- [paddle](https://github.com/PaddlePaddle/Paddle) (community)\n- [oneflow](https://github.com/Oneflow-Inc/oneflow) (community)\n- [tinygrad](https://github.com/tinygrad/tinygrad) (community)\n- [pytensor](https://github.com/pymc-devs/pytensor) (community)\n\n\n\n```python\nfrom einops import rearrange  \n=> from einops.array_api import rearrange\n```\n\nBut actually it is even better: einops can be used with *any* framework that supports\n[Python array API standard](https://data-apis.org/array-api/latest/API_specification/index.html),\nto name a few:\n\n- numpy >= 2.0\n- [MLX](https://github.com/ml-explore/mlx)  # yes, einops works with apple's framework\n- [pydata/sparse](https://github.com/pydata/sparse) >= 0.15 # and works with sparse tensors\n- [cubed](https://github.com/cubed-dev/cubed) # and with distributed tensors too\n- [quantco/ndonnx](https://github.com/Quantco/ndonnx)\n- jax\n- cupy\n- dask is supported via [array-api-compat](https://github.com/data-apis/array-api-compat)\n\n\n## Development\n\nDevcontainer is provided, this environment can be used locally, or on your server,\nor within github codespaces. \nTo start with devcontainers in vs code, clone repo, and click 'Reopen in Devcontainer'. \n\nStarting from einops 0.8.1, einops distributes tests as a part of package.\n\n```bash\n# pip install einops pytest\npython -m einops.tests.run_tests numpy pytorch jax --pip-install\n```\n\n`numpy pytorch jax` is an _example_, any subset of testable frameworks can be provided.\nEvery framework is tested against numpy, so it is a requirement for tests.\n\nSpecifying `--pip-install` will install requirements in current virtualenv,\nand should be omitted if dependencies are installed locally.\n\nTo build/test docs:\n\n```bash\nhatch run docs:serve  # Serving on http://localhost:8000/\n```\n\n\n## Citing einops <a name=\"Citing\"></a>\n\nPlease use the following bibtex record\n\n```text\n@inproceedings{\n    rogozhnikov2022einops,\n    title={Einops: Clear and Reliable Tensor Manipulations with Einstein-like Notation},\n    author={Alex Rogozhnikov},\n    booktitle={International Conference on Learning Representations},\n    year={2022},\n    url={https://openreview.net/forum?id=oapKSVM2bcj}\n}\n```\n\n\n## Supported python versions\n\n`einops` works with python 3.9 or later.\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "deep learning",
+          "einops",
+          "machine learning",
+          "neural networks",
+          "scientific computations",
+          "tensor manipulation"
+        ],
+        "author": "Alex Rogozhnikov",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/arogozhnikov/einops"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1f/7f/13cd798d180af4bf4c0ceddeefba2b864a63c71645abc0308b768d67bb81/hjson-3.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "65713cdcf13214fb554eb8b4ef803419733f4f5e551047c9b711098ab7186b89"
+          },
+          "hash": "sha256=65713cdcf13214fb554eb8b4ef803419733f4f5e551047c9b711098ab7186b89"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "hjson",
+        "version": "3.1.0",
+        "platform": [
+          "any"
+        ],
+        "summary": "Hjson, a user interface for JSON.",
+        "description": "hjson-py\n========\n\n`Hjson`_, a user interface for JSON\n\nHjson works with Python 2.5+ and Python 3.3+ (based on `simplejson`_)\n\nInstallation\n============\n\n-  ``pip install hjson``\n\n-  or download from https://pypi.python.org/pypi/hjson\n\nCommandline\n-----------\n\n::\n\n    Usage:\n      hjson [options]\n      hjson [options] <input>\n      hjson (-h | --help)\n      hjson (-V | --version)\n\n    Options:\n      -h --help     Show this screen.\n      -j            Output as formatted JSON.\n      -c            Output as JSON.\n      -V --version  Show version.\n\nE.g. ``echo '{\"json\":\"obj\"}' | hjson``\n\n\nUsage\n=====\n\n.. code-block:: python\n\n    import hjson\n\nDecoding Hjson\n--------------\n\n.. code-block:: python\n\n    text = \"\"\"{\n      foo: a\n      bar: 1\n    }\"\"\"\n\n    hjson.loads(text)\n\nResult:\n\n.. code-block:: python\n\n    OrderedDict([('foo', 'a'), ('bar', 1)])\n\nEncoding Python object hierarchies\n----------------------------------\n\n.. code-block:: python\n\n    hjson.dumps({'foo': 'text', 'bar': (1, 2)})\n\nResult:\n\n::\n\n    {\n      foo: text\n      bar:\n      [\n        1\n        2\n      ]\n    }\n\nEncoding as JSON\n----------------\n\nNote that this is probably not as performant as the simplejson version.\n\n.. code-block:: python\n\n    hjson.dumpsJSON(['foo', {'bar': ('baz', None, 1.0, 2)}])\n\nResult: ``'[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'``\n\nAPI\n===\n\n`hjson-py`_\n\n.. _Hjson: https://hjson.github.io\n.. _simplejson: https://github.com/simplejson/simplejson\n.. _hjson-py: http://hjson.github.io/hjson-py/\n",
+        "keywords": [
+          "json",
+          "comments",
+          "configuration"
+        ],
+        "home_page": "http://github.com/hjson/hjson-py",
+        "author": "Christian Zangl",
+        "author_email": "laktak@cdak.net",
+        "license": "MIT License",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "License :: OSI Approved :: Academic Free License (AFL)",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/03/41/ed5517a107628f6f7f3a1f46f19de3aca979bd1fc95861cb56ce0e4bcc02/msgpack-1.2.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "a45ceb5f199d5e388f28b550ba881096a3740d4bda10e661d77f59d9a2e8187a"
+          },
+          "hash": "sha256=a45ceb5f199d5e388f28b550ba881096a3740d4bda10e661d77f59d9a2e8187a"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "msgpack",
+        "version": "1.2.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "MessagePack serializer",
+        "description": "# MessagePack for Python\n\n[![Build Status](https://github.com/msgpack/msgpack-python/actions/workflows/wheel.yml/badge.svg)](https://github.com/msgpack/msgpack-python/actions/workflows/wheel.yml)\n[![Documentation Status](https://readthedocs.org/projects/msgpack-python/badge/?version=latest)](https://msgpack-python.readthedocs.io/en/latest/?badge=latest)\n\n## What is this?\n\n[MessagePack](https://msgpack.org/) is an efficient binary serialization format.\nIt lets you exchange data among multiple languages like JSON.\nBut it's faster and smaller.\nThis package provides CPython bindings for reading and writing MessagePack data.\n\n## Install\n\n```\n$ pip install msgpack\n```\n\n### Pure Python implementation\n\nThe extension module in msgpack (`msgpack._cmsgpack`) does not support PyPy.\n\nBut msgpack provides a pure Python implementation (`msgpack.fallback`) for PyPy.\n\n\n### Windows\n\nIf you can't use a binary distribution, you need to install Visual Studio\nor the Windows SDK on Windows.\nWithout the extension, the pure Python implementation on CPython runs slowly.\n\n\n## How to use\n\n### One-shot pack & unpack\n\nUse `packb` for packing and `unpackb` for unpacking.\nmsgpack provides `dumps` and `loads` as aliases for compatibility with\n`json` and `pickle`.\n\n`pack` and `dump` pack to a file-like object.\n`unpack` and `load` unpack from a file-like object.\n\n```pycon\n>>> import msgpack\n>>> msgpack.packb([1, 2, 3])\n'\\x93\\x01\\x02\\x03'\n>>> msgpack.unpackb(_)\n[1, 2, 3]\n```\n\nRead the docstring for options.\n\n\n### Streaming unpacking\n\n`Unpacker` is a \"streaming unpacker\". It unpacks multiple objects from one\nstream (or from bytes provided through its `feed` method).\n\n```py\nimport msgpack\nfrom io import BytesIO\n\nbuf = BytesIO()\nfor i in range(100):\n   buf.write(msgpack.packb(i))\n\nbuf.seek(0)\n\nunpacker = msgpack.Unpacker(buf)\nfor unpacked in unpacker:\n    print(unpacked)\n```\n\n> [!IMPORTANT]\n> If `Unpacker.unpack()` stops with an exception other than `OutOfData`, that `Unpacker` cannot be reused.\n> Create a new `Unpacker` when reading another stream.\n\n\n### Packing/unpacking of custom data types\n\nIt is also possible to pack/unpack custom data types. Here is an example for\n`datetime.datetime`.\n\n```py\nimport datetime\nimport msgpack\n\nuseful_dict = {\n    \"id\": 1,\n    \"created\": datetime.datetime.now(),\n}\n\ndef decode_datetime(obj):\n    if '__datetime__' in obj:\n        obj = datetime.datetime.strptime(obj[\"as_str\"], \"%Y%m%dT%H:%M:%S.%f\")\n    return obj\n\ndef encode_datetime(obj):\n    if isinstance(obj, datetime.datetime):\n        return {'__datetime__': True, 'as_str': obj.strftime(\"%Y%m%dT%H:%M:%S.%f\")}\n    return obj\n\n\npacked_dict = msgpack.packb(useful_dict, default=encode_datetime)\nthis_dict_again = msgpack.unpackb(packed_dict, object_hook=decode_datetime)\n```\n\n`Unpacker`'s `object_hook` callback receives a dict; the\n`object_pairs_hook` callback may instead be used to receive a list of\nkey-value pairs.\n\nNOTE: msgpack can encode datetime with tzinfo into standard ext type for now.\nSee `datetime` option in `Packer` docstring.\n\n\n### Extended types\n\nIt is also possible to pack/unpack custom data types using the **ext** type.\n\n```pycon\n>>> import msgpack\n>>> import array\n>>> def default(obj):\n...     if isinstance(obj, array.array) and obj.typecode == 'd':\n...         return msgpack.ExtType(42, obj.tobytes())\n...     raise TypeError(\"Unknown type: %r\" % (obj,))\n...\n>>> def ext_hook(code, data):\n...     if code == 42:\n...         a = array.array('d')\n...         a.frombytes(data)\n...         return a\n...     return msgpack.ExtType(code, data)\n...\n>>> data = array.array('d', [1.2, 3.4])\n>>> packed = msgpack.packb(data, default=default)\n>>> unpacked = msgpack.unpackb(packed, ext_hook=ext_hook)\n>>> data == unpacked\nTrue\n```\n\n\n### Advanced unpacking control\n\nAs an alternative to iteration, `Unpacker` objects provide `unpack`,\n`skip`, `read_array_header`, and `read_map_header` methods. The former two\nread an entire message from the stream, respectively deserializing and returning\nthe result, or ignoring it. The latter two methods return the number of elements\nin the upcoming container, so that each element in an array, or key-value pair\nin a map, can be unpacked or skipped individually.\n\n\n## Notes\n\n### String and binary types in the old MessagePack spec\n\nEarly versions of msgpack didn't distinguish string and binary types.\nThe type for representing both string and binary types was named **raw**.\n\nYou can pack into and unpack from this old spec using `use_bin_type=False`\nand `raw=True` options.\n\n```pycon\n>>> import msgpack\n>>> msgpack.unpackb(msgpack.packb([b'spam', 'eggs'], use_bin_type=False), raw=True)\n[b'spam', b'eggs']\n>>> msgpack.unpackb(msgpack.packb([b'spam', 'eggs'], use_bin_type=True), raw=False)\n[b'spam', 'eggs']\n```\n\n### ext type\n\nTo use the **ext** type, pass a `msgpack.ExtType` object to the packer.\n\n```pycon\n>>> import msgpack\n>>> packed = msgpack.packb(msgpack.ExtType(42, b'xyzzy'))\n>>> msgpack.unpackb(packed)\nExtType(code=42, data='xyzzy')\n```\n\nYou can use it with `default` and `ext_hook`. See below.\n\n\n### Security\n\nWhen unpacking data received from an unreliable source, msgpack provides\ntwo security options.\n\n`max_buffer_size` (default: `100*1024*1024`) limits the internal buffer size.\nIt is also used to limit preallocated list sizes.\n\n`strict_map_key` (default: `True`) limits the type of map keys to bytes and str.\nWhile the MessagePack spec doesn't limit map key types,\nthere is a risk of a hash DoS.\nIf you need to support other types for map keys, use `strict_map_key=False`.\n\n\n### Performance tips\n\nCPython's GC starts when the number of allocated objects grows.\nThis means unpacking may trigger unnecessary GC.\nYou can use `gc.disable()` when unpacking a large message.\n\nA list is the default sequence type in Python.\nHowever, a tuple is lighter than a list.\nYou can use `use_list=False` while unpacking when performance is important.\n\n\n## Major breaking changes in the history\n\n### msgpack 0.5\n\nThe package name on PyPI was changed from `msgpack-python` to `msgpack` in 0.5.\n\nWhen upgrading from msgpack-0.4 or earlier, do `pip uninstall msgpack-python` before\n`pip install -U msgpack`.\n\n\n### msgpack 1.0\n\n* Python 2 support\n\n  * The extension module no longer supports Python 2.\n    The pure Python implementation (`msgpack.fallback`) is used for Python 2.\n\n  * msgpack 1.0.6 drops official support of Python 2.7, as pip and\n    GitHub Action \"setup-python\" no longer supports Python 2.7.\n\n* Packer\n\n  * Packer uses `use_bin_type=True` by default.\n    Bytes are encoded in the bin type in MessagePack.\n  * The `encoding` option is removed. UTF-8 is always used.\n\n* Unpacker\n\n  * Unpacker uses `raw=False` by default. It assumes str values are valid UTF-8 strings\n    and decodes them to Python str (Unicode) objects.\n  * `encoding` option is removed.  You can use `raw=True` to support old format (e.g. unpack into bytes, not str).\n  * The default value of `max_buffer_size` is changed from 0 to 100 MiB to avoid DoS attacks.\n    You need to pass `max_buffer_size=0` if you have large but safe data.\n  * The default value of `strict_map_key` is changed to True to avoid hash DoS.\n    You need to pass `strict_map_key=False` if you have data that contain map keys\n    whose type is neither bytes nor str.\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "msgpack",
+          "messagepack",
+          "serializer",
+          "serialization",
+          "binary"
+        ],
+        "author_email": "Inada Naoki <songofacandy@gmail.com>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: OS Independent",
+          "Topic :: File Formats",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://msgpack.org/",
+          "Documentation, https://msgpack-python.readthedocs.io/",
+          "Repository, https://github.com/msgpack/msgpack-python/",
+          "Tracker, https://github.com/msgpack/msgpack-python/issues",
+          "Changelog, https://github.com/msgpack/msgpack-python/blob/main/CHANGELOG.md"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e0/a9/023730ba63db1e494a271cb018dcd361bd2c917ba7004c3e49d5daf795a2/py_cpuinfo-9.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "859625bc251f64e21f077d099d4162689c762b5d6a4c3c97553d56241c9674d5"
+          },
+          "hash": "sha256=859625bc251f64e21f077d099d4162689c762b5d6a4c3c97553d56241c9674d5"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "py-cpuinfo",
+        "version": "9.0.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Get CPU info with pure Python",
+        "description": "py-cpuinfo\n==========\n\n\nPy-cpuinfo gets CPU info with pure Python. Py-cpuinfo should work\nwithout any extra programs or libraries, beyond what your OS provides.\nIt does not require any compilation(C/C++, assembly, et cetera) to use.\nIt works with Python 3.\n\nDocumentation can be viewed here: https://github.com/workhorsy/py-cpuinfo\n\n\n",
+        "home_page": "https://github.com/workhorsy/py-cpuinfo",
+        "author": "Matthew Brennan Jones",
+        "author_email": "matthew.brennan.jones@gmail.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Topic :: Utilities",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.11.0",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "7.0.0-30-generic",
+    "platform_system": "Linux",
+    "platform_version": "#30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2",
+    "python_full_version": "3.11.0",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.11",
+    "sys_platform": "linux"
+  }
+}

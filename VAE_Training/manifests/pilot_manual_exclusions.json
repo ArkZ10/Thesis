@@ -1,0 +1,16 @@
+[
+  {
+    "parent_id": "dart-math-hard:train-00000-of-00002:223121",
+    "problem_id": "aef9cebeeff3b3f95d489da6fb546065be8e03f7ccb51b66be8118f250780886",
+    "sentence_index": 2,
+    "reason": "Contradictory stated equality: the given y=1/2 and z=1/2 do not satisfy y=1/z.",
+    "inspected_text": "Equality occurs when $x = 1/y$ and $y = 1/z,$ or $x = 2,$ $y = 1/2,$ and $z = 1/2.$"
+  },
+  {
+    "parent_id": "dart-math-hard:train-00001-of-00002:229037",
+    "problem_id": "ba7e2ac8ea931fbf50b46e282485471242a9962c0ef12e50cd0e5e4bf3b75019",
+    "sentence_index": 5,
+    "reason": "Garbled units/prose and malformed mathematical expression in inspected source response.",
+    "inspected_text": "The value of $Volume = 20$ ${\\text{cubic feet}}$ is the same as the thickness multiplied with the length and either of the two quantities(width$\\times$(depth))=$\\frac12 \\dot {20} \\times 2=20$cubic feet.So Kimogi is correct.$"
+  }
+]

@@ -175,7 +175,8 @@ def make_accelerator(cfg):
 
 
 def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None, pad_token_id: Optional[int] = None,
-          accelerator=None, stop_after_steps: Optional[int] = None, step_callback=None):
+          accelerator=None, stop_after_steps: Optional[int] = None, step_callback=None,
+          batch_callback=None, epoch_callback=None):
     """Run training. model/datasets/pad id may be passed in; otherwise built from cfg.
     stop_after_steps: return after this many optimizer steps in this call.
     step_callback: observe a completed update; return True for a graceful early
@@ -208,7 +209,7 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
 
     collate = VAECollator(pad_token_id)
     train_loader = DataLoader(train_ds, batch_size=tc.micro_batch_size, shuffle=True, collate_fn=collate,
-                              num_workers=tc.num_workers, drop_last=True)
+                              num_workers=tc.num_workers, drop_last=tc.get("drop_last", True))
     val_loader = DataLoader(val_ds, batch_size=tc.micro_batch_size, shuffle=False, collate_fn=collate,
                             num_workers=tc.num_workers)
     params = [p for p in model.parameters() if p.requires_grad]
@@ -272,6 +273,8 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
             run["n"] += out["n_tokens"]
             run["correct"] += out["n_correct"]
             run["micro"] += 1
+            if batch_callback is not None:
+                batch_callback(model, optimizer, accelerator, state, out, batch)
             if not accelerator.sync_gradients:
                 continue
             state.global_step += 1
@@ -296,6 +299,8 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
                 history.append({"step": step, **ev})
             if tc.save_every and step % tc.save_every == 0:
                 save_checkpoint(accelerator, model, cfg, state)
+            if epoch_callback is not None and state.batches_in_epoch == len(train_loader):
+                epoch_callback(model, optimizer, accelerator, state)
             if stop_requested or step >= total_steps or (stop_after_steps and step - start_step >= stop_after_steps):
                 done = True
                 break
@@ -303,7 +308,7 @@ def train(cfg, model: Optional[ReasoningVAE] = None, train_ds=None, val_ds=None,
             state.epoch += 1
             state.batches_in_epoch = 0
     finished = stop_requested or state.global_step >= total_steps or state.epoch >= tc.epochs
-    if finished and not (tc.save_every and state.global_step % tc.save_every == 0):
+    if finished and tc.get("save_at_end", True) and not (tc.save_every and state.global_step % tc.save_every == 0):
         save_checkpoint(accelerator, model, cfg, state)
     accelerator.end_training()
     return {"model": model, "optimizer": optimizer, "scheduler": scheduler, "state": state,

@@ -1,0 +1,19 @@
+{
+  "started_at_utc": "2026-11-12T13:42:50.680748+00:00",
+  "pid": 1328601,
+  "command": [
+    "/root/Thesis/VAE_Training/.venv/bin/python",
+    "-u",
+    "-m",
+    "scripts.run_large_split_smoke",
+    "--directory",
+    "/root/Thesis/VAE_Training/outputs/vae-large-split-smoke-20261112-01"
+  ],
+  "directory": "/root/Thesis/VAE_Training/outputs/vae-large-split-smoke-20261112-01",
+  "log": "/root/Thesis/VAE_Training/logs/vae-large-split-smoke-20261112-01.log",
+  "stage": "completed",
+  "host_memory_floor_gib": 2.0,
+  "returncode": 0,
+  "finished_at_utc": "2026-11-12T13:45:00.729221+00:00",
+  "minimum_available_host_gib": 7.971611022949219
+}
