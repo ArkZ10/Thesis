@@ -1,56 +1,66 @@
-# VAE encoder training workspace
+# LaDiR VAE training workspace
 
-Main workspace: `/root/Thesis/VAE_Training`.
+This directory contains VAE encoder-training experiments. The published LaDiR VAE encoder is the current candidate; the full LLaMA DART-MATH run has **not started**.
 
-Status: the authorized three-epoch larger-model pilot completed in `vae-large-pilot-1000q-20261112-140652`, with a trainable Qwen3-4B encoder on GPU 1, frozen Qwen3-8B decoder on GPU 0 and streamed FP32 CPU AdamW. It uses 7,564 training sentences and 822 dev sentences, batch size 16 and 473 batches per epoch. Full checkpoint resumption passed and all 24 tests passed. Monitor: `python scripts/large_status.py`. See `LARGE_PILOT.md` for stage/metric definitions and checkpoint retention. Full-dataset training and test evaluation have not started. Best epoch: 3, with 154/822 exact dev reconstructions (18.73%), 87.15% dev token accuracy and 304/681 numeric matches (44.64%). Correct latent codes achieved 13/64 exact controls versus 0/64 for zero/shuffled codes. See the run summary.
+- [Environment and dependencies](docs/SETUP.md)
+- [Datasets and preparation](docs/DATA.md)
+- [Training configuration and remaining checks](docs/TRAINING.md)
+- [Retained experiment results](docs/RESULTS.md)
 
-The prior small diagnostic reached 16/16 exact training reconstruction at step 525 and 0/16 development reconstruction. Those artifacts are preserved in `NUMERIC_DEBUG.md` and `SMALL_MODEL_TEST.md`. The larger pilot starts from fresh pretrained small-model weights to assess generalization.
+## Current commands
 
-Sentence preprocessing produced 5,478,995 unique reconstruction targets. DART-Math-Hard has 585,392 raw training rows; GSM8K main has 7,473 raw training rows and 1,319 raw test rows. Downloaded dataset/model files passed upstream checksums. See `DATASET.md`, `ENVIRONMENT.md`, and the manifests.
-
-Activate the installed environment with `source /root/Thesis/VAE_Training/.venv/bin/activate`. Exact package versions and checks are recorded in `manifests/environment.json` and `requirements-venv.lock.txt`.
-
-## Layout
-
-- `vae/`: original VAE model, data pipeline, trainer, and upstream configuration.
-- `scripts/train_vae.sh`: upstream Accelerate launcher.
-- `ladir/`: model components, including the frozen VAE encoder used downstream.
-- `sft/`: latent-export, weight-loading, and token-data utilities, with their package dependencies preserved.
-- `scripts/download_datasets.py`: downloads pinned datasets, checks upstream hashes, and reads every parquet row.
-- `data/raw/dart-math-hard/`: main mathematical reasoning dataset, original files.
-- `data/raw/gsm8k/main/`: original GSM8K main train/test files. Test is reserved for evaluation.
-- `data/processed/math-sentences-v1/`: prepared sentence-level datasets and question-level train/dev/test splits; see `DATASET.md` and `validation.json`.
-- `manifests/`: source provenance, dataset revisions, file checksums, schemas, row counts, and status.
-- `configs/`: reserved for experiment configurations.
-- `outputs/`, `logs/`: experiment artifacts and execution logs, including the completed small-model diagnostic.
-- `PLAN.md`: the implementation plan created before this preparation step. Its original suggested workspace path is superseded by this directory.
-
-The initial copied source files came from `/root/LaDiR` at commit `5eaa5968393e5e93262bb53b867683704dd1da3a`; `manifests/source.json` retains their original hashes. Local changes include explicit-split/short-math support in `vae/data.py`, an optional diagnostic step callback in `vae/train.py`, preparation/validation/reconstruction modules, test runners and tests. The original checkout is preserved. `UPSTREAM_README.md` and `manifests/upstream_pyproject.toml` retain upstream documentation and dependency declarations.
-
-## Dataset download
-
-Using the existing Python environment, without installing or modifying packages:
+Run these from `/root/Thesis/VAE_Training`:
 
 ```bash
-cd /root/Thesis/VAE_Training
-/opt/miniforge3/envs/diffuguard/bin/python scripts/download_datasets.py
+source .venv/bin/activate
+python scripts/pretrained_vae.py --status
+python scripts/launch_llama_pilot.py --check
+python scripts/llama_pilot_status.py --paper
+python scripts/llama_pilot_status.py
 ```
 
-This command resumes pinned downloads and verifies their checksums. It requires network access. It does not start training, load a model, call a paid judge, or segment examples.
+The pretrained-VAE status command shows the current download. The small-model experiment was stopped after preserving its latest checkpoint. The LLaMA `--check` command reports data/disk readiness without starting training. `--paper` monitors the intended full-data run; the final command shows the retained completed pilot, including per-epoch accuracy.
 
-Datasets:
+## Retained results
 
-- [hkust-nlp/dart-math-hard](https://huggingface.co/datasets/hkust-nlp/dart-math-hard), revision `0c2603fba274c2e83ec9121bee3067e286ced194`.
-- [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k), revision `740312add88f781978c0658806c59bc2815b9866`, `main` subset only.
+`outputs/vae-llama-mixed-pilot-20261114-181908/` holds the latest completed training, reconstructions, metrics and exact FP32 encoder weights. It used six latents and mixed DART+GSM8K data.
 
-Dataset cards are kept alongside the raw files. Multiple DART-Math responses to the same question must stay in the same split. GSM8K and DART-Math share source questions; they must not be treated as independent unseen datasets without checking overlaps.
+`outputs/llama-execution-profile-20261116-220708/` holds the latest valid execution test of the four-latent paper configuration. It validates two optimizer updates, not a completed training run.
 
-## Before training
+Old experiments, obsolete code and superseded documents were deleted directly. No archive was created. Raw datasets, the current prepared data, cached pretrained models and `.venv` are preserved. The original `/root/LaDiR` checkout is separate and untouched.
 
-The upstream `vae/configs/vae_4b_8b_64.yaml` is a reference, not the proposed experiment config: it freezes the encoder, trains the decoder, and filters for Python. The upstream launcher also defaults to eight GPUs. A sentence-math config must reverse the encoder/decoder backbone training flags, configure the latent count, and use the measured GPU allocation.
+## Small-encoder fallback experiment
 
-Sentence-level math data, the reviewed/tokenized pilot subset, and explicit parent-question splits are prepared; see `DATASET.md`, `PILOT.md`, and `TODO.md`. The isolated training environment, gradient/checkpoint checks and 16/16 overfit check are complete. The three-epoch pilot completed with a fresh baseline, full-development evaluation each epoch, and normal/zero/shuffled-code controls. Epoch 3 achieved 5/822 exact development reconstructions and 20/681 numeric matches; all three 64-example controls had zero exact matches, so the predefined generalization gate remains unmet. See the run summary before further experiments. Encoder-input corruption and the full-size memory strategy remain later work; see `ENVIRONMENT.md` for optional DeepSpeed/multi-process setup.
+`configs/vae_small.json` selects the cached Qwen3-0.6B encoder and frozen Qwen3-4B decoder. `scripts/train_small.py` owns training, launch and monitoring. Encoder weights and Adam state are FP32 with BF16 computation; no optimizer NVMe offload is used.
 
-The copied VAE itself needs only `vae/`; `ladir/` and `sft/` retain the code needed for the planned downstream encoder loading and latent export. Code-generation scorers and RL training packages were intentionally left out. DeepSpeed is an optional additional installation if the later memory strategy needs it.
+```bash
+watch -n 10 '.venv/bin/python scripts/train_small.py --status'
+```
 
-The larger-model pilot now has its own loop, live epoch monitor and disk-retention policy; full checkpoint resumption was verified before launch. The earlier single-GPU launcher remains separate.
+The first phase requires 16/16 training-sentence reconstructions before a 1024-train/128-dev pilot starts. The dev set is question-disjoint; test data are reserved. Engineering targets are at least 95% dev teacher-forced token accuracy, 90% literal numeric preservation and 50% normalized exact reconstruction. Passing these targets still requires equation review, latent-use controls, noise robustness and a separate LLaDA adapter evaluation. These are local debugging criteria, not the authors' published thresholds.
+
+## Current pretrained encoder
+
+The official [LaDiR release](https://huggingface.co/mk322/LaDiR-Code-8B) bundles a trained Qwen3-4B VAE encoder. We extract only its `vae.*` tensor range from revision `aab72a886105d0e53b0c1c5c3a02d55a9228a7c0`: about 8.85 GB, without downloading the 25.5 GB reasoning model. Original BF16 values are preserved.
+
+```bash
+python scripts/pretrained_vae.py --status
+# Resume a partial transfer and run the encoding check:
+python scripts/pretrained_vae.py --download --test
+```
+
+Weights live under `models/LaDiR-Code-VAE/`; provenance is in `manifests/pretrained_vae.json` after completion. The encoding check writes `outputs/pretrained-vae-check/summary.json` and `math-latents.pt`.
+
+This encoder returns 64 latent vectors of width 2560. It is the code-domain release, not the mathematics paper's 4/6 × 512 encoder. Strict loading and finite latent outputs establish technical usability; mathematical information preservation and LLaDA compatibility require separate evaluation. The released `vae.*` component excludes the original VAE decoder bridge, so this encoding check is not a reconstruction-accuracy result.
+
+## Encoder quality evaluation
+
+The frozen arithmetic-information evaluation is complete; see [results and limits](docs/RESULTS.md#frozen-released-encoder-math-quality-probe). It recovered the ordered numbers and operation for 160/160 unseen combinations in familiar notation, versus 13/160 with new wording using the same fitted readout. This establishes some recoverable information, not general math reconstruction quality.
+
+```bash
+python scripts/pretrained_vae.py --quality-status
+# Repeat the complete frozen evaluation:
+python scripts/pretrained_vae.py --quality
+```
+
+The encoder is never updated by this evaluation. Only a small readout is fitted, with separate train/validation/held-out groups and shuffled-label/backbone controls.

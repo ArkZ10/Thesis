@@ -3,6 +3,7 @@
 This prepares data only: no model loading, preprocessing, training, or API judge.
 """
 
+import argparse
 import hashlib
 import json
 import os
@@ -84,6 +85,7 @@ def verify(path, upstream):
 
 
 def main():
+    argparse.ArgumentParser(description=__doc__).parse_args()
     api = HfApi()
     status_path = ROOT / "manifests/download_status.json"
     report = {"started_at_utc": now(), "stage": "downloading", "datasets": []}

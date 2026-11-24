@@ -1,0 +1,147 @@
+{
+  "completed": true,
+  "run_directory": "/root/Thesis/VAE_Training/outputs/llama-execution-profile-20261116-220708",
+  "full_training_started": false,
+  "all_profile_updates_disposable": true,
+  "existing_checkpoints_deleted": false,
+  "hardware_finding": {
+    "gpu_0_pcie_lanes_current_and_max": [
+      16,
+      16
+    ],
+    "gpu_1_pcie_lanes_current_and_max": [
+      1,
+      16
+    ],
+    "old_encoder_gpu": 1,
+    "new_encoder_gpu": 0,
+    "new_decoder_gpu": 1,
+    "note": "Idle PCIe generation downclock is normal; width x1 was observed while GPU 1 was active."
+  },
+  "scientific_settings_unchanged": {
+    "epochs": 2,
+    "effective_batch_size": 128,
+    "num_latents": 4,
+    "latent_dim": 512,
+    "extra_latent_noise_std": 3.0,
+    "input_substitution_probability": 0.3,
+    "kl_weight": 1e-05,
+    "learning_rate": 2e-05
+  },
+  "baseline_physical_batch_1": {
+    "batch_size": 1,
+    "padded_length": 128,
+    "seconds": 161.06127737276256,
+    "encoder_seconds": 10.359542046673596,
+    "decoder_seconds": 0.1540912827476859,
+    "backward_seconds": 35.703609882853925,
+    "loss": 6.298038959503174,
+    "optimizer_seconds": 114.84129344951361,
+    "forward_backward_seconds_per_example": 46.21724321227521,
+    "read_gib": 38.60274887084961,
+    "write_gib": 87.83124923706055,
+    "peak_gpu_allocated_gib": [
+      15.956410884857178,
+      4.862870216369629
+    ],
+    "io_method_timings_inclusive": {
+      "parameter_read_wait": {
+        "calls": 191,
+        "seconds": 1.8118790946900845
+      },
+      "parameter_swap_submit": {
+        "calls": 191,
+        "seconds": 1.8296024296432734
+      },
+      "swap_in_optimizer_state": {
+        "calls": 66,
+        "seconds": 7.356020965613425
+      },
+      "swap_out_optimizer_state": {
+        "calls": 66,
+        "seconds": 96.10026305541396
+      }
+    }
+  },
+  "optimized_physical_batch_32": {
+    "batch_size": 32,
+    "padded_length": 128,
+    "seconds": 9.546637793071568,
+    "encoder_seconds": 0.9566976223140955,
+    "decoder_seconds": 1.0658372212201357,
+    "backward_seconds": 7.519612225703895,
+    "loss": 5.208415985107422,
+    "optimizer_seconds": null,
+    "forward_backward_seconds_per_example": 0.29819209591369145,
+    "read_gib": 0.006298065185546875,
+    "write_gib": 0.0,
+    "peak_gpu_allocated_gib": [
+      17.87748098373413,
+      17.10099458694458
+    ],
+    "io_method_timings_inclusive": {}
+  },
+  "forward_backward_speedup_per_example": 154.99150998842137,
+  "validated_effective_batch_128_updates": [
+    {
+      "effective_batch_size": 128,
+      "physical_batches": [
+        16,
+        32,
+        32,
+        32,
+        16
+      ],
+      "full_update_seconds": 144.7593341320753,
+      "optimizer_updates": 1,
+      "gradient_norm": 37.115379333496094,
+      "finite_gradient_norm": true,
+      "skipped_updates": 0
+    },
+    {
+      "effective_batch_size": 128,
+      "physical_batches": [
+        16,
+        32,
+        32,
+        32,
+        16
+      ],
+      "full_update_seconds": 130.26381063088775,
+      "optimizer_updates": 1,
+      "gradient_norm": 15.84104061126709,
+      "finite_gradient_norm": true,
+      "skipped_updates": 0
+    }
+  ],
+  "two_updates_finite_and_not_skipped": true,
+  "frozen_decoder_unchanged": true,
+  "minimum_available_host_gib": 10.208003997802734,
+  "minimum_free_disk_gib_during_one_generation_profile": 19.937217712402344,
+  "measured_old_pilot_average_full_update_seconds": 5921.08566233638,
+  "warm_update_speedup_vs_old_pilot": 45.454571255513315,
+  "full_run_estimate": {
+    "training_sentences_per_epoch": 4918593,
+    "epochs": 2,
+    "effective_batch_size": 128,
+    "planned_optimizer_updates": 76854,
+    "warm_update_seconds": 130.26381063088775,
+    "training_days_at_warm_rate": 115.87146877576674,
+    "training_days_at_first_rate": 128.76543825678837,
+    "excludes_evaluation_checkpoint_overhead": true,
+    "sample_scope": "Two consecutive updates, first 128 short DART targets. Distribution/long targets and sustained IO can change throughput."
+  },
+  "optimizer_state_gib": 83.94453048706055,
+  "remaining_bottleneck": "FP32 Adam state remains on NVMe; state alone exceeds 62 GiB host RAM. Each update writes about 84 GiB.",
+  "validation": {
+    "cpu_sentence_loss_and_prefix_grad_equivalence": true,
+    "long_target_batch_coverage": true,
+    "tiny_real_zero_weighted_accumulation_finite": true,
+    "new_backend_checkpoint_resume_tested": false,
+    "longest_1608_token_target_gpu_tested": false
+  },
+  "production_config": "configs/vae_llama_paper_math.json",
+  "current_status": "Full training not launched. Earlier experiments removed by repository cleanup.",
+  "code_after_cleanup": "Scientific functions preserved; imports and launch defaults consolidated. Historical source under retained run/source.",
+  "production_config_sha256": "83845084eeddca53ba043305b9e6f6e73f1e96b31a5083c844e685f38648433f"
+}

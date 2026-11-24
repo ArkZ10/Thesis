@@ -1,0 +1,12 @@
+{
+  "user_selected_authority": "mathematics paper; flag unreleased details",
+  "paper": "https://arxiv.org/html/2510.04573v5",
+  "upstream_revision": "5eaa5968393e5e93262bb53b867683704dd1da3a",
+  "historical_llama_revision": "0185d309bf50d2916540e8994f322681aefa1c83",
+  "original_checkout": "/root/LaDiR",
+  "original_checkout_untouched": true,
+  "scientific_settings_and_unreleased_details": "configs/vae_llama_paper_math.json",
+  "local_duplicates_of_upstream_deleted": true,
+  "exact_ladir_reproduction": false,
+  "reason": "Mathematics parser, subset revision and several optimizer details are unreleased; Table 13 selects four latents, conflicting with six in D.1."
+}

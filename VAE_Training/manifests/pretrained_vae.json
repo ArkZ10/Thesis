@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "repository": "mk322/LaDiR-Code-8B",
+  "revision": "aab72a886105d0e53b0c1c5c3a02d55a9228a7c0",
+  "source_file": "model.safetensors",
+  "source_full_file_bytes": 25489979728,
+  "source_full_file_lfs_sha256": "e662fe55720e252a02644f0c6a9b22d90168b5804f39ab5f21e0bb62b2aa4332",
+  "component": "vae.* encoder tensors; prefix stripped",
+  "tensor_count": 404,
+  "tensor_bytes": 8849400832,
+  "encoder_file": "/root/Thesis/VAE_Training/models/LaDiR-Code-VAE/encoder.safetensors",
+  "encoder_file_sha256": "e0a8e2ecbab4e7e2cee3636da34754229c0119b931316a4a651b4d2234eafb81",
+  "num_latents": 64,
+  "latent_dim": 2560,
+  "backbone": "Qwen3-4B-Base",
+  "precision": "BF16 unchanged",
+  "source_header_bytes": 108872,
+  "source_tensor_data_offsets": [
+    16640470016,
+    25489870848
+  ],
+  "transfer_verification": "Pinned revision, exact HTTP Content-Range and tensor shapes; extracted file SHA256 recorded. Full source file was not downloaded, so its whole-file LFS hash was not recomputed.",
+  "original_vae_decoder_and_reconstruction_bridge_included": false,
+  "math_reconstruction_validated": false,
+  "llada_training_started": false,
+  "local_encoding_check": "/root/Thesis/VAE_Training/outputs/pretrained-vae-check/summary.json"
+}

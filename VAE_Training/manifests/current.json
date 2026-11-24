@@ -1,0 +1,23 @@
+{
+  "latest_trained_result": "outputs/vae-llama-mixed-pilot-20261114-181908",
+  "latest_execution_validation": "outputs/llama-execution-profile-20261116-220708",
+  "training_config": "configs/vae_llama_paper_math.json",
+  "data_directory": "data/processed/llama-paper-dart-full-v1",
+  "next_steps": [
+    "Validate a reconstruction/latent-conditioning readout on real held-out reasoning with the released encoder frozen",
+    "Evaluate a latent-to-LLaDA adapter and latent-use controls before larger LLaDA training"
+  ],
+  "checkpoint_note": "Retained pilot weights are FP32 exports; old optimizer state removed, no exact resume.",
+  "full_training_started": false,
+  "active_debugging_workflow": "scripts/pretrained_vae.py",
+  "small_training_index": "manifests/small_training.json",
+  "small_trial_status": "Stopped by user steering; latest checkpoint retained",
+  "pretrained_vae_index": "manifests/pretrained_vae.json",
+  "pretrained_encoder_loaded_and_math_encoding_checked": true,
+  "pretrained_encoder_validation": "outputs/pretrained-vae-check/summary.json",
+  "math_information_preservation_validated": false,
+  "llada_compatibility_validated": false,
+  "math_information_probe_completed": true,
+  "math_quality_probe_summary": "/root/Thesis/VAE_Training/outputs/pretrained-vae-quality-20261118-070113/summary.json",
+  "quality_interpretation": "Arithmetic information recoverable in familiar formats; readout transfer to new wording weak; general math reconstruction unvalidated."
+}

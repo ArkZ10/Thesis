@@ -1,0 +1,12 @@
+{
+  "run_directory": "/root/Thesis/VAE_Training/outputs/pretrained-vae-quality-20261118-070113",
+  "stage": "completed",
+  "encoder_training": false,
+  "total_texts": 1482,
+  "encoded_texts": 1482,
+  "elapsed_seconds": 60.63002796564251,
+  "updated_at_utc": "2026-11-18T07:02:14.579562+00:00",
+  "progress_percent": 100.0,
+  "readout": "shuffled_labels",
+  "summary": "/root/Thesis/VAE_Training/outputs/pretrained-vae-quality-20261118-070113/summary.json"
+}

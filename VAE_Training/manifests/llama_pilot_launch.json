@@ -1,0 +1,21 @@
+{
+  "stage": "completed",
+  "run_directory": "/root/Thesis/VAE_Training/outputs/vae-llama-mixed-pilot-20261114-181908",
+  "log": "/root/Thesis/VAE_Training/logs/vae-llama-mixed-pilot-20261114-181908.log",
+  "started_at_utc": "2026-11-14T18:19:08.625318+00:00",
+  "epochs": 2,
+  "train_sentences": 1024,
+  "dev_sentences": 64,
+  "effective_batch_size": 128,
+  "pilot_training": true,
+  "full_corpus_training_started": false,
+  "initialization": "fresh pretrained LLaMA weights",
+  "guard_ram_gib": 4,
+  "guard_disk_gib": 12,
+  "pid": 1421066,
+  "minimum_available_host_gib": 6.8028411865234375,
+  "minimum_free_disk_gib": 16.263324737548828,
+  "returncode": 0,
+  "finished_at_utc": "2026-11-15T21:06:44.498259+00:00",
+  "private_working_scratch_removed": true
+}

@@ -13,10 +13,11 @@ dependencies = [
     "accelerate>=1.10",
     "safetensors",
     "huggingface_hub>=1.0",
-    "omegaconf",
-    "datasets",
     "pyarrow",
+    "numpy",
+    "psutil",
+    "deepspeed==0.19.9",
 ]
 
 [tool.setuptools.packages.find]
-include = ["vae*", "ladir*", "sft*"]
+include = ["vae*"]

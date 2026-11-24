@@ -1,0 +1,7 @@
+{
+  "run_directory": "/root/Thesis/VAE_Training/outputs/vae-small-encoder-20261118-061012",
+  "log": "/root/Thesis/VAE_Training/logs/vae-small-encoder-20261118-061012.log",
+  "pid": 1533767,
+  "launched_at_utc": "2026-11-18T06:10:12.424337+00:00",
+  "startup_correction": "Transfer KL scalar to reconstruction-loss GPU before combining"
+}

@@ -12,7 +12,6 @@ from vae.prepare_sentences import (
     assign_split, balanced_boxes, canonical, extract_answer, problem_id,
     protected_ranges, quality_issue, sentence_spans, prepare,
 )
-from vae.data import build_datasets, reasoning_texts
 
 
 class PreparationTests(unittest.TestCase):
@@ -93,26 +92,7 @@ class PreparationTests(unittest.TestCase):
 
     def test_damage_and_equation_preservation(self):
         self.assertEqual(quality_issue("bad\ufffdtext"), "replacement_or_control_characters")
-        self.assertEqual(reasoning_texts([{"reasoning_block": "x=3", "language": "Math"}], "Math"), ["x=3"])
-        self.assertEqual(reasoning_texts([{"reasoning_block": "x=3"}]), [])
 
-    def test_explicit_manifest_never_loads_test(self):
-        class Tokenizer:
-            eos_token_id = 99
-            def __call__(self, text, **kwargs):
-                return {"input_ids": [ord(c) for c in text]}
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            for split, value in [("train", "x=3"), ("dev", "x=4"), ("test", "NEVER LOAD")]:
-                (root / f"{split}.jsonl").write_text(json.dumps({"reasoning_block": value, "language": "Math"}) + "\n")
-            manifest = root / "sample.vae.json"
-            manifest.write_text(json.dumps({"format": "vae_sentence_splits_v1", "language": "Math", "train": ["train.jsonl"], "validation": ["dev.jsonl"], "test": ["test.jsonl"]}))
-            train, dev = build_datasets(str(manifest), Tokenizer(), language="Math", val_size=999)
-            self.assertEqual(len(train), 1)
-            self.assertEqual(len(dev), 1)
-            self.assertEqual(train[0]["input_ids"], [120, 61, 51, 99])
-            with self.assertRaises(ValueError):
-                build_datasets(str(manifest), Tokenizer(), language="Math", split_seed=42)
 
     def test_end_to_end_shared_question_and_sentence_holdout(self):
         with tempfile.TemporaryDirectory() as directory:

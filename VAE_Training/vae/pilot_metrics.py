@@ -1,32 +1,9 @@
-"""Explicit token-weighted teacher-forcing and free reconstruction metrics."""
-from dataclasses import dataclass
+"""Free reconstruction metrics; numeric agreement is literal, not algebraic equivalence."""
 import re
 
-from .reconstruction import normalized
 
-
-@dataclass
-class TokenMetrics:
-    ce_sum: float = 0.0
-    kl_sum: float = 0.0
-    tokens: int = 0
-    correct: int = 0
-    examples: int = 0
-
-    def add(self, output, batch_size):
-        count = int(output["n_tokens"])
-        self.ce_sum += float(output["ce_loss"].detach()) * count
-        self.kl_sum += float(output["kl_loss"].detach()) * batch_size
-        self.tokens += count
-        self.correct += int(output["n_correct"])
-        self.examples += batch_size
-
-    def values(self, kl_weight):
-        ce = self.ce_sum / max(self.tokens, 1)
-        kl = self.kl_sum / max(self.examples, 1)
-        return {"ce_loss": ce, "kl_loss": kl, "loss": ce + kl_weight * kl,
-                "token_accuracy": self.correct / max(self.tokens, 1),
-                "tokens": self.tokens, "examples": self.examples}
+def normalized(text):
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def numeric_strings(text):

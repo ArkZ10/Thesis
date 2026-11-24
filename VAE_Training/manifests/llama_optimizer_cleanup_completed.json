@@ -1,0 +1,10 @@
+{
+  "stage": "completed",
+  "finished_at_utc": "2026-11-18T04:41:01.301536+00:00",
+  "deleted_bytes": 138688305912,
+  "old_optimizer_states_removed": true,
+  "exact_resume_supported_for_old_runs": false,
+  "retained_llama_fp32_weights": "outputs/vae-llama-mixed-pilot-20261114-181908/weights-fp32",
+  "retained_tensor_count": 298,
+  "note": "Old Qwen experiment and superseded audit files subsequently deleted during authorized repository cleanup."
+}

@@ -1,3 +1,0 @@
-# Dataset download only. Training dependencies are in pyproject.toml.
-huggingface_hub>=0.32.2
-pyarrow>=20
