@@ -1,0 +1,5 @@
+name: BrokenMath LLaDA (1 prompts)
+slug: llada_smoke
+raw_base_folder: data/raw/sycophancy_recent
+model_configs:
+- llada/llada_8b_instruct

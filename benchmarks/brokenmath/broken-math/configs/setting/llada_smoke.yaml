@@ -1,0 +1,6 @@
+name: llada_smoke
+prompt_path: data/prompts/checker.txt
+data_path: data/postprocess/llada_smoke/test_samples.json
+default_max_tokens: 64000
+default_temperature: 0.6
+n_solutions: -1

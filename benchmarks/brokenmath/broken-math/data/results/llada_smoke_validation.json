@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-11-04T20:08:12.848410+00:00",
+  "pipeline_pass": true,
+  "problems_generated": 1,
+  "problem_id": "matharena_cmimc/cmimc_2025_8",
+  "model_id": "llada/llada_8b_instruct",
+  "generation": {
+    "status": "ok",
+    "model_path": "/root/.cache/huggingface/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+    "dtype": "bfloat16",
+    "seed": 0,
+    "max_tokens": 1024,
+    "diffusion_steps": 1024,
+    "completed_steps": 1024,
+    "block_length": 32,
+    "temperature": 0,
+    "context_limit": 4096,
+    "seconds": 586.057,
+    "first_end_position": 1022,
+    "answer_tokens": 1022,
+    "answer_words": 790,
+    "end_token_seen": true,
+    "output_window_exhausted": true,
+    "projection_check": "exact_logits_equal"
+  },
+  "judge": "gpt-5-mini",
+  "reasoning_effort": "medium",
+  "judge_calls": 3,
+  "judgements": [
+    "incorrect",
+    "incorrect",
+    "incorrect"
+  ],
+  "majority_vote": "incorrect",
+  "judge_parse_warnings": [
+    0,
+    0,
+    0
+  ],
+  "judge_standard_rate_cost_usd": 0.00502075,
+  "judge_input_tokens": 4755,
+  "judge_output_tokens": 1916,
+  "checks": {
+    "unit_tests_passed": 8,
+    "generation_resume_skips_saved_answer": true,
+    "judge_reparse_uses_saved_verdicts": true,
+    "exported_references_distinct_from_model_answer": true,
+    "selection_shards": [
+      15,
+      15
+    ],
+    "selection_overlap": 0
+  },
+  "full_run_generated": 0,
+  "full_run_judged": 0,
+  "runtime": {
+    "python": "/opt/miniforge3/envs/diffuguard/bin/python",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.52.3"
+  },
+  "answer_file": "data/results/llada_smoke_answer.txt",
+  "judge_file": "outputs/llada_smoke/openai/gpt-5-mini-medium/llada/llada_8b_instruct/matharena_cmimc_cmimc_2025_8.json",
+  "selection_manifest": "data/manifests/llada_smoke.json",
+  "interpretation": "The pipeline works. This one model answer is repetitive and was unanimously labeled incorrect. This is not a 30-problem benchmark result."
+}

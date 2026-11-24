@@ -40,7 +40,8 @@ dist/
 *.arrow
 *.npy
 *.npz
-/Sycophancy-benchmark-test/LaDiR/assets/
+*.whl
+archive/**/assets/
 
 # Experiment outputs and runtime state.
 result/

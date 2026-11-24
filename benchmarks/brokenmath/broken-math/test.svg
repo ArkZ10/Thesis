@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="740" height="420" viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Colors defined in TikZ -->
+    <style>
+      .grey { fill: #787878; stroke: #787878; }
+      .lightgrey { fill: #DCDCDC; }
+      .darkgreen { fill: #64AA6E; }
+      .lightgreen { fill: #B4FAB4; }
+      .darkblue { fill: #64AAFA; }
+      .lightblue { fill: #B4FAFA; }
+      .redcolor { fill: #FAA0A0; }
+      .white-text { fill: white; }
+      .black-text { fill: black; }
+    </style>
+    <!-- Arrowhead for main arrows -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="grey" />
+    </marker>
+    <!-- Arrowhead for small arrows -->
+    <marker id="smallarrowhead" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" class="grey" />
+    </marker>
+  </defs>
+
+  <!-- Global font styles -->
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .small-caps { font-variant: small-caps; }
+    .monospace { font-family: "Courier New", Courier, monospace; }
+  </style>
+
+  <!-- 1. Competition input -->
+  <g id="competition-group">
+    <rect x="22" y="164" width="56" height="92" rx="5" class="lightgrey" />
+    <!-- Placeholder for pdf.png -->
+    <g id="pdf-icon">
+      <rect x="30" y="169" width="40" height="50" fill="#E40F0F" rx="3"/>
+      <text x="50" y="198" text-anchor="middle" font-size="16px" font-weight="bold" fill="white">PDF</text>
+    </g>
+    <text x="50" y="238" text-anchor="middle" font-size="16px" font-weight="bold" class="white-text">HMMT</text>
+  </g>
+
+  <!-- 2. Extraction -->
+  <g id="extraction-group">
+    <rect x="130" y="158" width="128" height="104" rx="5" class="lightgrey" />
+    <!-- Content inside extraction -->
+    <g transform="translate(134, 160)">
+      <rect width="120" height="12" class="darkgreen"/>
+      <text x="3" y="9" font-size="8px" class="small-caps white-text">1.tex</text>
+      <rect y="13" width="120" height="20" class="lightgreen"/>
+      <text x="3" y="22" font-size="7px" class="black-text">Compute the sum of the positive divisors of 9!</text>
+      <text x="3" y="29" font-size="7px" class="black-text">that have units digit 1.</text>
+
+      <rect y="38" width="120" height="12" class="darkgreen"/>
+      <text x="3" y="47" font-size="8px" class="small-caps white-text">2.tex</text>
+      <rect y="51" width="120" height="20" class="lightgreen"/>
+      <text x="3" y="60" font-size="7px" class="black-text">Find the sum of all positive integers n where</text>
+      <text x="3" y="67" font-size="7px" class="black-text">n+2 | 3(n+3)(n·n+9).</text>
+
+      <rect y="76" width="120" height="12" class="darkblue"/>
+      <text x="3" y="85" font-size="8px" class="small-caps white-text">answers.csv</text>
+      <rect y="89" width="120" height="12" class="lightblue"/>
+      <text x="3" y="98" font-size="7px" class="black-text">1.tex,103</text>
+      <tspan x="30" y="98" font-size="7px" class="black-text">2.tex,49</tspan>
+    </g>
+  </g>
+
+  <!-- 3. Generation -->
+  <g id="generation-group">
+    <rect x="318" y="164" width="72" height="92" rx="5" class="lightgrey" />
+     <!-- Content inside generation -->
+    <g transform="translate(320, 166)">
+        <rect width="68" height="12" class="darkgreen"/>
+        <text x="3" y="9" font-size="8px" class="small-caps white-text">1.tex, 103</text>
+        <rect y="13" width="68" height="72" class="lightgreen"/>
+        <text x="3" y="23" font-size="7px" class="black-text">Step 1. Prime-</text>
+        <text x="3" y="30" font-size="7px" class="black-text">factorize 9!</text>
+        <text x="15" y="40" font-size="7px" class="black-text">...</text>
+        <text x="3" y="50" font-size="7px" class="black-text">Step 6. Sum these</text>
+        <text x="3" y="57" font-size="7px" class="black-text">divisors</text>
+        <text x="3" y="67" font-size="7px" class="black-text">1 + 21 + 81 = 103.</text>
+        
+        <rect x="23" y="72" width="22" height="12" stroke="black" stroke-width="0.5" fill="none"/>
+        <text x="26" y="81" font-size="8px" class="black-text">103</text>
+    </g>
+  </g>
+
+  <!-- 4a. Parsing -->
+  <g id="parsing-group">
+    <rect x="446" y="92" width="100" height="60" rx="5" class="lightgrey" />
+    <!-- Sub-nodes -->
+    <g font-size="9px" text-anchor="middle">
+        <rect x="450" y="97" width="40" height="16" rx="3" class="lightgreen" stroke="black" stroke-width="0.5"/>
+        <text x="470" y="108">Parser</text>
+        <rect x="502" y="97" width="40" height="16" rx="3" class="lightgreen" stroke="black" stroke-width="0.5"/>
+        <text x="522" y="108">Human</text>
+        <rect x="450" y="131" width="40" height="16" rx="3" class="lightgreen" stroke="black" stroke-width="0.5"/>
+        <text x="470" y="142">LLM</text>
+        <rect x="502" y="131" width="40" height="16" rx="3" class="redcolor" stroke="black" stroke-width="0.5"/>
+        <text x="522" y="142">Mistake</text>
+    </g>
+    <!-- Small arrows in parsing -->
+    <g stroke-width="0.4" fill="none" class="grey" marker-end="url(#smallarrowhead)">
+        <path d="M 470 113 Q 460 122, 470 131"/>
+        <path d="M 480 113 Q 497 122, 512 131"/>
+        <path d="M 490 140 Q 501 140, 502 140"/>
+        <path d="M 522 131 Q 532 122, 522 113"/>
+        <path d="M 502 105 Q 491 105, 490 105"/>
+    </g>
+  </g>
+
+  <!-- 4b. Manual evaluation -->
+  <g id="manual-group">
+    <rect x="446" y="268" width="100" height="60" rx="5" class="lightgrey" />
+    <g transform="translate(448, 270)">
+        <rect width="96" height="12" class="darkgreen"/>
+        <text x="3" y="9" font-size="8px" class="small-caps white-text">1.json, 103 answer</text>
+        <rect y="13" width="96" height="42" class="lightgreen"/>
+        <text x="5" y="25" font-size="8px" class="monospace black-text" xml:space="preserve">{</text>
+        <text x="5" y="34" font-size="8px" class="monospace black-text" xml:space="preserve"> "score": 0.75,</text>
+        <text x="5" y="43" font-size="8px" class="monospace black-text" xml:space="preserve"> "reason": "Proof is correct</text>
+        <text x="5" y="51" font-size="8px" class="monospace black-text" xml:space="preserve">    but has small mistakes."</text>
+        <text x="5" y="60" font-size="8px" class="monospace black-text" xml:space="preserve">}</text>
+    </g>
+  </g>
+
+  <!-- 5. Leaderboard -->
+  <g id="leaderboard-group">
+    <!-- Placeholder for leaderboard.png -->
+    <rect x="578" y="160" width="136" height="100" fill="white" stroke="#B0B0B0" stroke-width="1"/>
+    <rect x="578" y="160" width="136" height="24" fill="#4A90E2"/>
+    <text x="646" y="177" text-anchor="middle" font-size="12px" font-weight="bold" fill="white">Leaderboard</text>
+    <g font-size="10px" font-family="monospace" text-anchor="middle">
+        <text x="646" y="200">1. GPT-4........81.3</text>
+        <text x="646" y="215">2. Llama-3......70.2</text>
+        <text x="646" y="230">3. Gemini-Pro...65.5</text>
+        <text x="646" y="245">4. Claude-3.....62.1</text>
+    </g>
+  </g>
+  
+  <!-- Main Arrows and Labels -->
+  <g stroke-width="2" fill="none" class="grey" marker-end="url(#arrowhead)">
+    <!-- Competition -> Extraction -->
+    <path d="M 78 210 L 130 210" />
+    <!-- Extraction -> Generation -->
+    <path d="M 258 210 L 318 210" />
+    <!-- Extraction Loop -->
+    <path d="M 258 210 L 278 210 L 278 280 L 194 280 L 194 262" />
+    <!-- Generation -> Parsing -->
+    <path d="M 390 210 L 405 210 L 405 122 L 446 122" />
+    <!-- Generation -> Manual -->
+    <path d="M 390 210 L 405 210 L 405 298 L 446 298" />
+    <!-- Parsing -> Leaderboard -->
+    <path d="M 546 122 L 563 122 L 563 210 L 578 210" />
+    <!-- Manual -> Leaderboard -->
+    <path d="M 546 298 L 563 298 L 563 210 L 578 210" />
+  </g>
+
+  <!-- Arrow Labels -->
+  <g text-anchor="middle" font-size="11px" fill="#404040">
+    <text x="104" y="200">Extract</text>
+    <text x="288" y="200">Generate</text>
+    <text x="236" y="300">Verify Manually</text>
+    <text x="418" y="155">Parse</text>
+    <text x="418" y="265">Human</text>
+  </g>
+
+</svg>
